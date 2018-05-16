@@ -1,0 +1,131 @@
+.slides{
+	height:60%;
+}
+.slider .slides li .caption{
+    top: 20%;
+}
+.slider .slides li .caption, .texto-do-slide{
+    color: #E5E5E5;
+    text-shadow: 1px 1px 1px black;
+}
+.espacamentoSuperior{
+    margin-top: 95vh;
+}
+.equipe{
+    padding-bottom: 35px;
+}
+.integrantes{
+    padding-top:50px;    
+}
+#caixa{
+	width: 500px;
+	height: 500px;
+}
+#navbar {
+	background-color: #2F4F4F;
+}
+.page-footer {
+	background-color: #2F4F4F;
+    margin-top: 15px;
+}
+#logo {
+    padding: 10px 7px 5px 12px;
+}
+.invalido {
+    color: red;
+}
+.footer{
+    background-color: black;
+}
+.footer-copyright{
+    background-color: black;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+textarea {
+    width: 50%;
+    height: 100px;
+}
+.navbar-fixed {
+  z-index: 998;
+}
+.side-nav, background, white-text name {
+    background-color: #fff;
+}
+
+/* perfil usuario */
+#editForm{
+	text-align: left;
+	margin-left: 10%;
+	margin-right:50%;
+}
+#imageuser{
+	position: absolute;
+    top: 29%;
+    left: 70%;
+    margin-right: 50%;
+	
+}
+
+.brand-logo{
+	left: 100px;
+}
+
+.logo{
+	width: 60px;
+	margin: 5px;
+	margin-left: 20px;
+}
+.indicator-item active{
+	background-color: #263238
+}	
+
+.indicator-item{
+	background-color: #263238
+}
+
+#depoimentos, #novodepoimento{
+	position: relative;
+    left: 21%;
+    margin-right: 50%;
+	
+}
+.estilodepo{
+	width: 500px;
+	display: inline-block;
+	border: 5% solid #c3c3c340;
+	margin-bottom: 4px; 
+	background-color: #c3c3c340;
+	border-radius: 5px;
+	padding: 30px;
+	margin: 30px;
+	word-break: break-all;
+	
+}
+.bordacomentario a {
+	float: right;
+	color: red;
+	cursor: pointer;
+}
+.bordacomentario h5 {
+	padding-right: 10px;
+}
+
+#punico{
+	float: left
+	position: relative;
+    left: 100%;
+	padding: 10px;
+}
+
+#lista a{
+	color: #2F4F4F;
+}
+
+.slider .indicators .indicator-item.active {
+	background-color: #2f4f4f;
+}
+
