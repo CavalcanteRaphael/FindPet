@@ -7,54 +7,44 @@
 ?>
         <?php require 'navbar.php'; ?> 
         
-      <div id="loginUsuario" class="container">
-        <form id="login" method="post">
+  <div class="row">
+	
+	<div id="loginUsuario" class="col s5 card hoverable m6 l4 ">
+		<form id="login" method="post">
+			<center ><h4>Login</h4><div id="loginTitulo"></div></center>
+			<div class="input-field col s12 ">
+				<label for="email">E-mail:</label><input type="text" required name="email" id="login_email"><br/>
+			</div>
+			<div class="input-field col s12 ">
+				<label for="senha">Senha:</label><input type="password" required name="senha" id="login_senha"><br/>
+			</div>
+			<input type="submit" value="login" class=" blue-grey darken-4 waves-effect green btn">
+		</form>
+	</div>
+	<br/>
 
-          <center ><h1>Login</h1><div id="loginTitulo"></div></center>
-
-          <div class="input-field col s6">
-            <label for="email">E-mail:</label><input type="text" required name="email" id="login_email"><br/>
-          </div>
-
-          <div class="input-field col s6">
-            <label for="senha">Senha:</label><input type="password" required name="senha" id="login_senha"><br/>
-          </div>
-            
-          <input type="submit" value="login" class=" blue-grey darken-4 waves-effect green btn " >
-
-        </form>
-      </div>
-      <div id="cadastrarUsuario" class="container">
-
-        <form id="cadastro" method="post">
-
-        <center><h1>Cadastrar-se</h1></center>
-
-        <div class="input-field col s12">
-            <label for="nome">Nome Completo:</label><input type="text" name="nome" id="nome"><br/>
-        </div>
-
-        <div class="input-field col s12">
-          <label for="email">E-mail:</label><input type="text" name="email" id="email"><br/>
-        </div>
-
-        <div class="input-field col s12">
-          <label for="telefone">Telefone:</label><input type="text" name="telefone" id="telefone"><br/>
-        </div>
-
-        <div class="input-field col s12">
-          <label for="senha">Senha:</label><input type="password" name="senha" id="senha"><br/>
-        </div>
-
-        <div class="input-field col s12">
-          <label for="confirm_senha">Confirmar Senha:</label><input type="password" name="confirm_senha" id="confirm_senha"><br/>
-        </div>
-        
-        <input type="submit" class=" blue-grey darken-4 waves-effect green btn" name="cadastrar" value="Cadastrar">
-
-        </form>
-
-      </div>
+	<div id="cadastrarUsuario" class="col s5 card hoverable m6 l4 ">
+		<form id="cadastro" method="post">
+			<center><h4>Cadastrar-se</h4></center>
+			<div class="input-field col s12">
+				<label for="nome">Nome Completo:</label><input type="text" name="nome" id="nome"><br/>
+			</div>
+			<div class="input-field col s12">
+				<label for="email">E-mail:</label><input type="text" name="email" id="email"><br/>
+			</div>
+			<div class="input-field col s12">
+				<label for="telefone">Telefone:</label><input type="text" name="telefone" id="telefone"><br/>
+			</div>
+			<div class="input-field col s12">
+				<label for="senha">Senha:</label><input type="password" name="senha" id="senha"><br/>
+			</div>
+			<div class="input-field col s12">
+				<label for="confirm_senha">Confirmar Senha:</label><input type="password" name="confirm_senha" id="confirm_senha"><br/>
+			</div>
+			<input type="submit" class=" blue-grey darken-4 waves-effect green btn" name="" value="Cadastrar">
+		</form>
+	</div>
+</div>        
 	
       <?php
           require 'footer.php';
