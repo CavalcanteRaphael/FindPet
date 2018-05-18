@@ -8,7 +8,17 @@
             $usuario = $consulta->fetch(PDO::FETCH_ASSOC);
         ?>
 			<center><h4>Informações Pessoais</h4></center>
+            <div class="slim imageuser"
+                     data-min-size="150,150"
+                     data-size="1000,1000"
+                     data-ratio="1:1"
+                     data-instant-edit="true"
+                     data-service="ajax/editaperfil-slim-auto.php"
+                     data-push="true"
+                     style="width: 160px;height: 160px;border-radius:90px;">
         <img id="imageuser" src="img/<?php echo $usuario['img']; ?>"><br/>
+        <input type="file" name="slim[]"/>
+                </div>
 
         <form id="editForm">
             

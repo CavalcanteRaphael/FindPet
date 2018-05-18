@@ -22,9 +22,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-        <!--Import Style-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-
         <!--Import Noty-->
         <link href="css/noty.css" rel="stylesheet">
         <script src="js/noty.min.js" type="text/javascript"></script>     
@@ -32,6 +29,9 @@
         <!--Import Slim-->
         <link href="css/slim.min.css" rel="stylesheet">
         <script src="js/slim.kickstart.min.js" type="text/javascript"></script>
+
+        <!--Import Style-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 	
 	  <script>
 	
