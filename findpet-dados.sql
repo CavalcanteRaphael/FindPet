@@ -24,10 +24,10 @@ INSERT INTO `usuario` (`idusuario`, `nome`, `email`, `img`, `telefone`, `senha`)
 (3, 'Gabriel Crisostomo Soares de Farias', 'gabrielcrisostomo2001@outlook.com', 'profile.jpg', '(12) 98131-9911', 'ded43e5a454fe1bd2c09bfd499db518348abdb75'),
 (4, 'Caroline Rocha', 'carolinerocha034@gmail.com', 'profile.jpg', '(12) 99754-4206', '67cbf9b0aa143234fb538a36f234e1a30a5555f6'),
 (5, 'Bruno Barbosa', 'barbosabruno44@gmail.com', 'profile.jpg', '', '15697c06fc36e24fdb5e82e9a15fba63d8416b1d'),
-(6, 'mariozan', 'mariozanjunior15@gmail.com', 'profile.jpg', '(12) 98213-5453', 'mariozan'),
-(7, 'william', 'williamcrixi@gmail.com', 'profile.jpg', '(12) 98134-0420', '12345678910'),
-(8, 'Mario', 'mariozanjunior15@gmail.com', 'profile.jpg', '(12) 98213-5453', '12345'),
-(9, 'Mayara Barbosa', 'mbarbosam@gmail.com', 'profile.jpg', '(12) 98305-8603', 'may123');
+(6, 'mariozan', 'mariozanjunior15@gmail.com', 'profile.jpg', '(12) 98213-5453', '12126eefdb32e502cce66879e8280a4d83418270'),
+(7, 'william', 'williamcrixi@gmail.com', 'profile.jpg', '(12) 98134-0420', '9048ead9080d9b27d6b2b6ed363cbf8cce795f7f'),
+(8, 'Mario', 'mariozanjunior15@gmail.com', 'profile.jpg', '(12) 98213-5453', '8cb2237d0679ca88db6464eac60da96345513964'),
+(9, 'Mayara Barbosa', 'mbarbosam@gmail.com', 'profile.jpg', '(12) 98305-8603', 'ab222d26d933c6dcc99185dbd218ea61faabf8dd');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
