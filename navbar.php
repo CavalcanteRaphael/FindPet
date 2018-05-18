@@ -8,29 +8,30 @@
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
+        <!--Import Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
 
-        <!--Import materialize.css-->
-       
-       
-
+        <!--Import Jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		
         <!--Máscara-->
         <script src="js/jquery.maskedinput.js"></script>
 
-     
-
-        <!-- Compiled and minified CSS -->
+        <!--Import Materialize-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+        <!--Import Style-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <!--Import Noty-->
         <link href="css/noty.css" rel="stylesheet">
         <script src="js/noty.min.js" type="text/javascript"></script>     
+
+        <!--Import Slim-->
+        <link href="css/slim.min.css" rel="stylesheet">
+        <script src="js/slim.kickstart.min.js" type="text/javascript"></script>
 	
 	  <script>
 	
