@@ -7,13 +7,26 @@
             $consulta = $conn->query($sql);
             $usuario = $consulta->fetch(PDO::FETCH_ASSOC);
         ?>
+        <script type="text/javascript">
+          <?php if(isset($_GET['error'])){ ?>
+            var errors = [];
+            errors[0] = 'Nenhum dado atualizado!';
+            errors[1] = 'O arquivo não é uma imagem!';
+            errors[2] = 'Imagem muito grande!';
+            errors[3] = 'Apenas permitido JPG, JPEG e PNG!';
+            
+            $(function(){
+              notificar('error',errors[<?php echo $_GET['error']; ?>]);
+            });
+      <?php } ?>
+        </script>
 			<center><h4>Informações Pessoais</h4></center>
             <div class="slim imageuser"
                      data-min-size="150,150"
                      data-size="1000,1000"
                      data-ratio="1:1"
                      data-instant-edit="true"
-                     data-service="ajax/editaperfil-slim-auto.php"
+                     data-service="ajax/editarImagem.php"
                      data-push="true"
                      style="width: 160px;height: 160px;border-radius:90px;">
         <img id="imageuser" src="img/<?php echo $usuario['img']; ?>"><br/>
