@@ -1,5 +1,5 @@
-<?php require 'ajax/redirLogin.php'; ?>
-            <?php require 'navbar.php'; ?>
+    	<?php session_start(); ?>
+    	<?php require 'navbar.php'; ?>
 				<div id="depoimentos">
 				<h4>Depoimentos</h4>
 				<?php 
@@ -13,17 +13,19 @@
 							<div class="estilodepo">
 								
 							<div class="bordacomentario">
-							<?php if($row['iduser'] == $_SESSION['id']) { ?>
-								<a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)">Apagar</a>
+							<?php if(isset($_SESSION['id'])) { ?>	
+								<?php if($row['iduser'] == $_SESSION['id']) { ?>
+									<a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)">Apagar</a>
+								<?php } ?>
 							<?php } ?>
 							<img class="avatar" src="img/<?php echo $row['img']; ?>">
 							<h5><?php echo $row['nome']; ?></h5>
 							</div>
-					
+							
 							<div class="textodepoimento">
 								<br/><br/><p id="punico"><?php echo $row['texto']; ?></p>	
 							</div>
-								
+
 							</div>
 							
 						</div>
@@ -31,11 +33,15 @@
 					}
 				} ?>
 				</div>
-				<div id="novodepoimento">
-					<textarea cols="10"></textarea>
-					<br/>
-					<a class="blue-grey darken-4 btn" onClick="adddepoimento()">Enviar</a>
-				</div>
+
+					<div id="novodepoimento">
+					<?php if(isset($_SESSION['id'])) { ?>
+						<textarea cols="10"></textarea>
+						<br/>
+						<a class="blue-grey darken-4 btn" onClick="adddepoimento()">Enviar</a>
+					<?php } ?>
+					</div>
+					
 		<?php
           require 'footer.php';
         ?>
