@@ -163,3 +163,10 @@ textarea {
 .dropdown-content.active {
 	margin-top: 64px;
 }
+
+#dropdown3 {
+	width: 185px;
+}
+#dropdown3 li a {
+	text-align: center;
+}
