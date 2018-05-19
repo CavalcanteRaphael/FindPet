@@ -5,7 +5,7 @@
     $pedirLogin = 0;
   }
 ?>
-        <?php require 'navbr.php'; ?> 
+        <?php require 'navbar.php'; ?> 
         
   <div class="row">
 	
