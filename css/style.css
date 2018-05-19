@@ -164,9 +164,14 @@ textarea {
 	margin-top: 64px;
 }
 
+#dropdown2 {
+	width: 126px;
+}
+
 #dropdown3 {
 	width: 185px;
 }
+
 #dropdown3 li a {
 	text-align: center;
 }
