@@ -1,7 +1,7 @@
-﻿<?php 
-  if (isset($_GET['pedirLogin'])) {
-    $pedirLogin = $_GET['pedirLogin'];
-  } else {
+﻿<?php
+    if (isset($_GET['pedirLogin'])) {
+        $pedirLogin = $_GET['pedirLogin'];
+  }else{
     $pedirLogin = 0;
   }
 ?>
