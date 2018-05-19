@@ -50,11 +50,12 @@
 .brand-logo{
 	left: 100px;
 }
+
 .logo{
 	width: 60px;
 	margin: 5px;
 	margin-left: 20px;
-}
+	
 /* ---- FIM DO LOGO ---- */
 
 
@@ -82,17 +83,26 @@
 .navbar-fixed {
   z-index: 998;
 }
+.dropdown-content.active {
+	margin-top: 64px;
+}
 #dropdown2 a{
 	color: #2F4F4F;
 }
 #dropdown3 a{
 	color: #2F4F4F;
 }
+#dropdown3{
+	width: 185px;
+}
+#dropdown3 li a {
+	text-align: center;
+}
 .avatar {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-	margin-top: 8px;
+	margin-top: 5%;
 }
 /*MOBILE*/.side-nav, background, white-text name {
     background-color: #fff;
@@ -181,6 +191,10 @@ textarea {
 	margin: auto;
 }
 /* --- FIM DO EDITAR PERFIL --- */
+
+
+
+
 
 
 
