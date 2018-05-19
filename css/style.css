@@ -27,6 +27,7 @@
 .page-footer {
 	background-color: #2F4F4F;
     margin-top: 15px;
+	clear: both;
 }
 #logo {
     padding: 10px 7px 5px 12px;
@@ -58,9 +59,10 @@ textarea {
 
 /* perfil usuario */
 #editForm{
-	text-align: left;
 	margin-left: 10%;
 	margin-right:50%;
+	margin: auto;
+	width: 500px;
 }
 #imageuser{
 	position: absolute;
@@ -150,3 +152,16 @@ textarea {
 	margin-top: 45px;
 	
 }
+
+.slim imageuser{
+	margin: auto;
+}
+
+
+
+
+
+
+
+
+

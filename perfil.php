@@ -20,41 +20,46 @@
             });
       <?php } ?>
         </script>
-			<center><h4>Informações Pessoais</h4></center>
-            <div class="slim imageuser"
-                     data-min-size="150,150"
-                     data-size="1000,1000"
-                     data-ratio="1:1"
-                     data-instant-edit="true"
-                     data-service="ajax/editarImagem.php"
-                     data-push="true"
-                     style="width: 160px;height: 160px;border-radius:90px;">
-        <img id="imageuser" src="img/<?php echo $usuario['img']; ?>"><br/>
-        <input type="file" name="slim[]"/>
-                </div>
-
-        <form id="editForm">
-            
-		<div class="input-field col s6">
-          <i class="material-icons prefix">person</i>	
-			<label for="nome">Nome:</label><input type="text" id="nome" name="nome" value="<?php echo $usuario['nome']; ?>"><br/></div>
-		
-		<div class="input-field col s6">
-          <i class="material-icons prefix">mail</i>
-          <input id="icon_mail" type="text" name="email" value="<?php echo $usuario['email']; ?>">
-          <label for="icon_mail">E-mail:</label>
-        </div>
 			
-		<div class="input-field col s6">
-		<i class="material-icons prefix">call</i>
-        <label for="telefone">Telefone:</label><input type="text" id="telefone" name="telefone" value="<?php echo $usuario['telefone']; ?>"></div>
+		<center><h4>Informações Pessoais</h4></center>
+        
+		<div class="imgperfil">		
+			<div class="slim imageuser"
+						 data-min-size="150,150"
+						 data-size="1000,1000"
+						 data-ratio="1:1"
+						 data-instant-edit="true"
+						 data-service="ajax/editarImagem.php"
+						 data-push="true"
+						 style="width: 160px;height: 160px;border-radius:90px; margin:auto;">
 
-        <input type="hidden" name="id" value="<?php echo $id; ?>">
-			
-		 
-        <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">edit</i>Salvar</a>
-		
-        </form>
+				<img id="imageuser" src="img/<?php echo $usuario['img']; ?>"><br/>        
+				<input type="file" name="slim[]"/>
+			</div>
+
+			<form id="editForm">
+
+				<div class="input-field col s6">
+				  <i class="material-icons prefix">person</i>	
+					<label for="nome">Nome:</label><input type="text" id="nome" name="nome" value="<?php echo $usuario['nome']; ?>"><br/></div>
+
+				<div class="input-field col s6">
+				  <i class="material-icons prefix">mail</i>
+				  <input id="icon_mail" type="text" name="email" value="<?php echo $usuario['email']; ?>">
+				  <label for="icon_mail">E-mail:</label>
+				</div>
+
+				<div class="input-field col s6">
+				<i class="material-icons prefix">call</i>
+				<label for="telefone">Telefone:</label><input type="text" id="telefone" name="telefone" value="<?php echo $usuario['telefone']; ?>"></div>
+
+				<input type="hidden" name="id" value="<?php echo $id; ?>">
+
+
+				<a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">edit</i>Salvar</a>
+
+			</form>
+		</div>
 
         <?php require 'footer.php'; ?>
 
