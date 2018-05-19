@@ -10,7 +10,7 @@
 					foreach($result as $row){ ?>
 						<div class="depoimento" data-id-depoimentos="<?php echo $row['id']; ?>">
 							
-							<div class="estilodepo">
+							<div class="estilodepo hoverable">
 								
 							<div class="bordacomentario">
 							<?php if(isset($_SESSION['id'])) { ?>	
@@ -36,9 +36,9 @@
 
 					<div id="novodepoimento">
 					<?php if(isset($_SESSION['id'])) { ?>
-						<textarea cols="10"></textarea>
+						<textarea name="depoimento" rows=5 cols=35></textarea>
 						<br/>
-						<a class="blue-grey darken-4 btn" onClick="adddepoimento()">Enviar</a>
+						<a class="blue-grey darken-4 btn hoverable" onClick="adddepoimento()">Enviar</a>
 					<?php } ?>
 					</div>
 					
@@ -60,7 +60,7 @@
 						success: function(response){
 							if(response.deucerto){
 								$('#novodepoimento textarea').val('');
-								$('#depoimentos').append('<div class="depoimento" data-id-depoimentos="'+response.idcriado+'"><div class="estilodepo"><div class="bordacomentario"><a class="bordacomentario" onclick="apagardepoimento('+response.idcriado+')">Apagar</a><img class="avatar" src="img/<?php echo $img; ?>"><h5><?php echo $_SESSION['nome']; ?></h5></div><div class="textodepoimento"><br/><br/><p id="punico">'+txtcomment+'</p></div></div></div>');
+								$('#depoimentos').append('<div class="depoimento" data-id-depoimentos="'+response.idcriado+'"><div class="estilodepo hoverable"><div class="bordacomentario"><a class="bordacomentario" onclick="apagardepoimento('+response.idcriado+')">Apagar</a><img class="avatar" src="img/<?php echo $img; ?>"><h5><?php echo $_SESSION['nome']; ?></h5></div><div class="textodepoimento"><br/><br/><p id="punico">'+txtcomment+'</p></div></div></div>');
 									notificar('success','Depoimento adicionado com sucesso!');	
 							} else{
 								notificar('error',response.mensagem);

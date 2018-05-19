@@ -48,7 +48,7 @@
     padding: 10px 7px 5px 12px;
 }
 .brand-logo{
-	left: 100px;
+	left: %;
 }
 
 .logo{
@@ -116,39 +116,40 @@
 /* ---- INICIO DO DEPOIMENTO ---- */ 
 #depoimentos, #novodepoimento{
 	position: relative;
-    left: 21%;
+    left: 28%;
     margin-right: 50%;
+    
 }
 .estilodepo{
-	width: 500px;
+	width: 65%;
 	display: inline-block;
-	border: 5% solid #c3c3c340;
-	margin-bottom: 4px; 
+	border: 6% solid #c3c3c340;
 	background-color: #c3c3c340;
-	border-radius: 5px;
-	padding: 30px;
-	margin: 30px;
+	border-radius: 1%;
+	padding: 5%;
+	margin: 4%;
 	word-break: break-all;
 }
 .bordacomentario a {
 	float: right;
-	color: red;
+    margin-top: 5%;
+	color: #B22222;
 	cursor: pointer;
 }
 .bordacomentario h5 {
-	padding-right: 10px;
+	padding-right: 10%;
 }
 #punico{
-	float: left
-	position: relative;
-    left: 100%;
-	padding: 10px;
+	padding: 1%;
+    margin-top: -3%;
 }
 textarea {
-    width: 75%;
-    height: 120px;
+    width: 65%;
+    height: 1%;
 	margin-left: 4%;
+    border-radius: 2%;
 }
+
 /* ---- FIM DO DEPOIMENTO ---- */
 
 
