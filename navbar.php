@@ -115,7 +115,7 @@
           <li><a href="depoimentos.php">Depoimentos</a></li>
 			
         <ul class="right hide-on-med-and-down" id="areaLogin">
-          <li><a href="javascript:;" onclick="login()">Cadastrar/Entrar</a><img class="avatar" src="img/<?php echo $row['img']; ?>"></li>
+          <li><a href="javascript:;" onclick="login()">Cadastrar/Entrar<img class="avatar" src="img/<?php echo $row['img']; ?>"></a></li>
         </ul>
 			
         </ul>
@@ -163,7 +163,7 @@
               $img = $_SESSION['img'];
 ?>
 <script type="text/javascript">
-  $("#areaLogin").html('<li><a class="dropdown-button" data-activates="dropdown3" href="javascript:;"><?php echo $nome; ?></a><img class="avatar" src="img/<?php echo $img; ?>"></li>');
+  $("#areaLogin").html('<li><a class="dropdown-button" data-activates="dropdown3" href="javascript:;"><?php echo $nome; ?><img class="avatar" src="img/<?php echo $img; ?>"></a></li>');
   $("#areaLoginMobile").html('<div class="user-view"><div class="background"><a href="javascript:;" onclick="login()"><img src="img/ground.png"></a></div><a href="javascript:;" onclick="login()"><img class="circle" src="img/<?php echo $img; ?>"></a><a href="javascript:;" onclick="login()"><span class="white-text name"><?php echo $nome; ?></span></a></div>');
 </script>
 <?php  } ?>
