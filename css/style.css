@@ -134,7 +134,6 @@ textarea {
 	background-color: #2f4f4f;
 }
 
-/* login site */
 #cadastrarUsuario{
 	height: 550px;
 	width: 400px;
@@ -145,6 +144,7 @@ textarea {
 	margin-top: 20px;
 	
 }
+
 #loginUsuario {
 	width: 400px;
 	height: 300px;
@@ -156,7 +156,6 @@ textarea {
 	
 }
 
-/* imagem do usuario com formulario */
 .slim imageuser{
 	margin: auto;
 }
