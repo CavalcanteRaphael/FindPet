@@ -1,9 +1,9 @@
-﻿<?php 
-  if (isset($_GET['pedirLogin'])) {
-    $pedirLogin = $_GET['pedirLogin'];
-  } else {
-    $pedirLogin = 0;
-  }
+﻿<?php
+    if (isset($_GET['pedirLogin'])) {
+        $pedirLogin = $_GET['pedirLogin'];
+    }else{
+        $pedirLogin = 0;
+    }
 ?>
         <?php require 'navbar.php'; ?> 
         
