@@ -1,16 +1,4 @@
-.slides{
-	height:60%;
-}
-.slider .slides li .caption{
-    top: 20%;
-}
-.slider .slides li .caption, .texto-do-slide{
-    color: #E5E5E5;
-    text-shadow: 1px 1px 1px black;
-}
-.espacamentoSuperior{
-    margin-top: 95vh;
-}
+/* indefinidos */
 .equipe{
     padding-bottom: 35px;
 }
@@ -21,22 +9,61 @@
 	width: 500px;
 	height: 500px;
 }
-#navbar {
-	background-color: #2F4F4F;
+.invalido {
+    color: red;
 }
-.avatar{
-    margin-top: 8px;
+/* indefinidos */
+
+
+
+/* ---- INICIO DO SLIDE ---- */
+.slides{
+	height:60%;
 }
+.slider .slides li .caption{
+    top: 20%;
+}
+.slider .slides li .caption, .texto-do-slide{
+    color: #E5E5E5;
+    text-shadow: 1px 1px 1px black;
+}
+.slider .indicators .indicator-item.active {
+	background-color: #2f4f4f;
+}
+.espacamentoSuperior{
+    margin-top: 95vh;
+}
+.indicator-item active{
+	background-color: #263238
+}	
+.indicator-item{
+	background-color: #263238
+}
+/* ---- FIM DO SLIDE ---- */
+
+
+
+/* ---- INICIO DO LOGO ---- */
+#logo {
+    padding: 10px 7px 5px 12px;
+}
+.brand-logo{
+	left: 100px;
+}
+.logo{
+	width: 60px;
+	margin: 5px;
+	margin-left: 20px;
+}
+/* ---- FIM DO LOGO ---- */
+
+
+
+/* ---- INICIO DO FOOTER ---- */
 .page-footer {
 	background-color: #2F4F4F;
     margin-top: 15px;
 	clear: both;
-}
-#logo {
-    padding: 10px 7px 5px 12px;
-}
-.invalido {
-    color: red;
 }
 .footer{
     background-color: black;
@@ -44,59 +71,41 @@
 .footer-copyright{
     background-color: black;
 }
-.avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-}
-textarea {
-    width: 50%;
-    height: 100px;
+/* ---- FIM DO FOOTER ---- */ 
+
+
+
+/* ---- INICIO DO NAVBAR ---- */ 
+#navbar {
+	background-color: #2F4F4F;
 }
 .navbar-fixed {
   z-index: 998;
 }
-.side-nav, background, white-text name {
+#dropdown2 a{
+	color: #2F4F4F;
+}
+#dropdown3 a{
+	color: #2F4F4F;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+	margin-top: 8px;
+}
+/*MOBILE*/.side-nav, background, white-text name {
     background-color: #fff;
 }
+/* ---- FIM DO NAVBAR ---- */ 
 
-/* perfil usuario */
-#editForm{
-	margin-left: 10%;
-	margin-right:50%;
-	margin: auto;
-	width: 500px;
-}
-#imageuser{
-	position: absolute;
-    top: 29%;
-    left: 70%;
-    margin-right: 50%;
-	
-}
 
-.brand-logo{
-	left: 100px;
-}
 
-.logo{
-	width: 60px;
-	margin: 5px;
-	margin-left: 20px;
-}
-.indicator-item active{
-	background-color: #263238
-}	
-
-.indicator-item{
-	background-color: #263238
-}
-
+/* ---- INICIO DO DEPOIMENTO ---- */ 
 #depoimentos, #novodepoimento{
 	position: relative;
     left: 21%;
     margin-right: 50%;
-	
 }
 .estilodepo{
 	width: 500px;
@@ -108,7 +117,6 @@ textarea {
 	padding: 30px;
 	margin: 30px;
 	word-break: break-all;
-	
 }
 .bordacomentario a {
 	float: right;
@@ -118,22 +126,22 @@ textarea {
 .bordacomentario h5 {
 	padding-right: 10px;
 }
-
 #punico{
 	float: left
 	position: relative;
     left: 100%;
 	padding: 10px;
 }
-
-#lista a{
-	color: #2F4F4F;
+textarea {
+    width: 75%;
+    height: 120px;
+	margin-left: 4%;
 }
+/* ---- FIM DO DEPOIMENTO ---- */
 
-.slider .indicators .indicator-item.active {
-	background-color: #2f4f4f;
-}
 
+
+/* ---- INICIO LOGIN ---- */
 #cadastrarUsuario{
 	height: 550px;
 	width: 400px;
@@ -142,9 +150,7 @@ textarea {
 	border-radius: 5px;
 	margin-right: 190px;
 	margin-top: 20px;
-	
 }
-
 #loginUsuario {
 	width: 400px;
 	height: 300px;
@@ -153,17 +159,28 @@ textarea {
 	margin-left: 150px;
 	float: left;
 	margin-top: 45px;
-	
 }
+/* ----- FIM DO LOGIN ----- */
 
+
+
+/* --- INICIO DO EDITAR PERFIL --- */
+#editForm{
+	margin-left: 10%;
+	margin-right:50%;
+	margin: auto;
+	width: 400px;
+}
+#imageuser{
+	position: absolute;
+    top: 29%;
+    left: 70%;
+    margin-right: 50%;
+}
 .slim imageuser{
 	margin: auto;
 }
-
-
-
-
-
+/* --- FIM DO EDITAR PERFIL --- */
 
 
 
