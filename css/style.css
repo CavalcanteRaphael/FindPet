@@ -149,29 +149,28 @@ textarea {
 	margin-left: 4%;
     border-radius: 2%;
 }
-
 /* ---- FIM DO DEPOIMENTO ---- */
 
 
 
 /* ---- INICIO LOGIN ---- */
 #cadastrarUsuario{
-	height: 550px;
-	width: 400px;
+	height: 533px;
+	width: 27%;
 	float: right;
 	background-color: #c3c3c340;
-	border-radius: 5px;
-	margin-right: 190px;
-	margin-top: 20px;
+	border-radius: 2%;
+	margin-right: 19%;
+	margin-top: 1%;
 }
 #loginUsuario {
-	width: 400px;
+	width: 27%;
 	height: 300px;
 	background-color: #c3c3c340;
-	border-radius: 5px;
-	margin-left: 150px;
+	border-radius: 2%;
+	margin-left: 19%;
 	float: left;
-	margin-top: 45px;
+	margin-top: 3%;
 }
 /* ----- FIM DO LOGIN ----- */
 
