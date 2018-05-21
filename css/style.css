@@ -90,6 +90,14 @@
 #dropdown2 a{
 	color: #2F4F4F;
 }
+#avatarnavbar{
+    float: right;
+    margin: -34% -5% 0% 10%;
+}
+#avatarnavbarlogado{
+    float: right;
+    margin: -74% -9% 0% 10%;
+}
 #dropdown3 a{
 	color: #2F4F4F;
 }
