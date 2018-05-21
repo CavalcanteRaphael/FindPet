@@ -95,9 +95,11 @@
 #dropdown2 a{
 	color: #2F4F4F;
 }
-#avatarnavbar{
+#avatarnavbarlogado{
     float: right;
-    margin: -34% -5% 0% 10%;
+    position: relative;
+    margin-right: -6%;
+    margin-top: 4%;
 }
 #avatarnavbarlogado{
     float: right;
