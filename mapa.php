@@ -1,6 +1,7 @@
       <?php session_start(); ?>
       <?php require 'navbar.php'; ?> 
-      <div id="map"></div>
+      <center><h4>Mapa</h4></center>
+	<div id="map"></div>
             <script>
       var map;
       function initMap() {
@@ -40,11 +41,11 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
     </script>
-      <div id="cadastrarUsuario" class="container">
+      <div id="Mapa" class="container hoverable">
 
         <form id="cadastro" method="post">
             
-        <center><h1>Cadastrar Animal Perdido</h1></center>
+        <center><h4>Cadastrar Pet Perdido</h4></center>
             
         <div class="input-field col s12">
             <label for="nome">Nome do Animal:</label><input type="text" name="nome" id="nome"><br/>
@@ -115,17 +116,7 @@
 
             <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
             
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Add imagens</span>
-            <input class="waves-effect green" type="file" multiple>
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text" placeholder="Adicionar imagens">
-          </div>
-        </div>
-            
-        <input type="submit" class="waves-effect green btn" name="" value="Cadastrar Animal">
+        <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
 
         </form>
 

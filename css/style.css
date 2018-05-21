@@ -218,14 +218,26 @@ textarea {
 
 /* --- INICIO DO MAPA --- */
 #map{
-    height: 100%;
-    width: 94%;
+    height: 70%;
+    width: 60%;
+	margin: auto;
 }
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
   }
+
+#Mapa{
+	width: 60%;
+	height: 118%;
+	background-color: #c3c3c340;
+	border-radius: 2%;
+	margin-left: 20%;
+	float: left;
+	margin-top: 2%;
+	padding: 2%;
+	margin-bottom: 5%;
+	
+}
 /* --- FIM DO MAPA --- */
 
 
@@ -247,7 +259,21 @@ html, body {
 [type="radio"].with-gap:checked+label:after {
     border: 2px solid  #fff;
 	background-color: #2F4F4F;
+}
 /* --- FIM DO CADASTRO DE PET PARA ADOÇÃO --- */
-	
-	
-	
+
+
+
+/* --- INICIO DO CADASTRO DE PET ENCONTRADO --- */
+#CadastroPetEncontrado{
+	width: 50%;
+	height: 93%;
+	background-color: #c3c3c340;
+	border-radius: 2%;
+	margin-left: 25%;
+	float: left;
+	margin-top: 2%;
+	padding: 2%;
+	margin-bottom: 5%;
+}
+/* --- FIM DO CADASTRO DE PET PARA ADOÇÃO --- */
