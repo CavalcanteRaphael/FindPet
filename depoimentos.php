@@ -83,7 +83,7 @@
 							success: function(response){
 								if(response.deucerto){
 									$('div[data-id-depoimentos='+id+']').fadeOut('slow');
-									notificar('error','Depoimento apagado com sucesso!');
+									notificar('success','Depoimento apagado com sucesso!');
 								} else{
 									notificar('error',response.mensagem);
 									console.log(response.erro);
