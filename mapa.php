@@ -1,3 +1,4 @@
+      <?php session_start(); ?>
       <?php require 'navbar.php'; ?> 
       <div id="map"></div>
             <script>
