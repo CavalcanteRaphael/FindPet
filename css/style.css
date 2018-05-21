@@ -15,6 +15,7 @@
 /* indefinidos */
 
 
+
 /* ---- INICIO DO SLIDE ---- */
 .slides{
 	height:60%;
@@ -41,6 +42,7 @@
 /* ---- FIM DO SLIDE ---- */
 
 
+
 /* ---- INICIO DO LOGO ---- */
 #logo {
     padding: 10px 7px 5px 12px;
@@ -58,6 +60,7 @@
 /* ---- FIM DO LOGO ---- */
 
 
+
 /* ---- INICIO DO FOOTER ---- */
 .page-footer {
 	background-color: #2F4F4F;
@@ -73,11 +76,13 @@
 /* ---- FIM DO FOOTER ---- */
 
 
+
 /* ----- INICIO SOBRE ----- */
 .sobrefoto{
     width: 100%;
 }
 /* ----- FIM SOBRE ------ */
+
 
 
 /* ---- INICIO DO NAVBAR ---- */ 
@@ -165,6 +170,7 @@ textarea {
 /* ---- FIM DO DEPOIMENTO ---- */
 
 
+
 /* ---- INICIO LOGIN ---- */
 #cadastrarUsuario{
 	height: 533px;
@@ -174,6 +180,7 @@ textarea {
 	border-radius: 2%;
 	margin-right: 19%;
 	margin-top: 1%;
+	margin-bottom: 5%;
 }
 #loginUsuario {
 	width: 27%;
@@ -185,6 +192,7 @@ textarea {
 	margin-top: 3%;
 }
 /* ----- FIM DO LOGIN ----- */
+
 
 
 /* --- INICIO DO EDITAR PERFIL --- */
@@ -213,7 +221,6 @@ textarea {
     height: 100%;
     width: 94%;
 }
-
 html, body {
     height: 100%;
     margin: 0;
@@ -240,7 +247,7 @@ html, body {
 [type="radio"].with-gap:checked+label:after {
     border: 2px solid  #fff;
 	background-color: #2F4F4F;
-	
 /* --- FIM DO CADASTRO DE PET PARA ADOÇÃO --- */
-
-
+	
+	
+	
