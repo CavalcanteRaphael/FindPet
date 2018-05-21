@@ -101,7 +101,7 @@
               senhaValida = 0
             }
 
-            if ($('#senha') === $('#confirm_senha')) {
+            if ($('#senha').val() === $('#confirm_senha').val()) {
               var senhaConfere = 1
             } else {
               notificar('error', 'Senhas não conferem!')
