@@ -1,4 +1,17 @@
       <?php require 'navbar.php'; ?> 
+      <div id="map"></div>
+            <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -23.620972, lng: -45.6372588},
+          zoom: 8
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
+    </script>
       <div id="cadastrarUsuario" class="container">
 
         <form id="cadastro" method="post">
@@ -37,7 +50,6 @@
         <div class="input-field col s12">
           <label for="raca">Raça:</label><input type="text" name="raca" id="raca"><br/>
         </div>
-
         
             Sexo:
                 <p>
