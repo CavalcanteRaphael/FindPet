@@ -16,8 +16,8 @@
                 <li>
                     <img src="img/adocao.jpg"> <!-- random image -->
                     <div class="caption left-align">
-                        <h3>Adote um filhote hoje!</h3>
-                        <h5 class="text-slides">Faça uma boa ação.</h5>
+                        <h3>Adote um pet hoje!</h3>
+                        <h5 class="text-slides">Porque toda vida vale a pena.</h5>
                     </div>
                 </li>
                 <li>
