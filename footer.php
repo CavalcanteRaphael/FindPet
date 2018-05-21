@@ -10,7 +10,7 @@
                     <ul>
                         <li><a class="grey-text text-lighten-3"  href="#">Adotar</a></li>
                         <li><a class="grey-text text-lighten-3"  href="doacao.php">Doar</a></li>
-                        <li><a class="grey-text text-lighten-3"  href="perdido.php">Procurar</a></li>
+                        <li><a class="grey-text text-lighten-3"  href="mapa.php">Procurar</a></li>
                         <li><a class="grey-text text-lighten-3"  href="encontrado.php">Encontrados</a></li>  
                     </ul>
                 </div>
