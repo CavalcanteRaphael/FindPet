@@ -75,6 +75,9 @@
                     data: $('#editForm').serialize(),
                     dataType: 'json',
                     success: function(response){
+                        if(response.deucerto === 1){
+                            notificar('success','Perfil editado com sucesso!')
+                        }
                         location.reload(this);
                     } 
                 });
