@@ -73,8 +73,13 @@
 .footer-copyright{
     background-color: black;
 }
-/* ---- FIM DO FOOTER ---- */ 
+/* ---- FIM DO FOOTER ---- */
 
+/* ----- INICIO SOBRE ----- */
+.sobrefoto{
+    width: 100%;
+}
+/* ----- FIM SOBRE ------ */
 
 
 /* ---- INICIO DO NAVBAR ---- */ 
@@ -96,7 +101,9 @@
 }
 #avatarnavbarlogado{
     float: right;
-    margin: -74% -9% 0% 10%;
+    position: relative;
+    margin-right: -6%;
+    margin-top: 4%;
 }
 #dropdown3 a{
 	color: #2F4F4F;
