@@ -1,10 +1,10 @@
       <?php require 'ajax/redirLogin.php'; ?>
       <?php require 'navbar.php'; ?> 
-      <div id="cadastrarUsuario" class="container">
+      <div id="cadastrarDoaPet" class="hoverable">
 
         <form id="cadastro" method="post">
             
-        <center><h1>Cadastrar Animal Para Doação</h1></center>
+        <center><h4>Cadastrar Pet Para Doação</h4></center>
 
         <div class="input-field col s12">
           <label for="cor">Cor:</label><input type="text" name="cor" id="cor"><br/>
@@ -70,7 +70,7 @@
                   </label>
                 </p>
             <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 ">
                 <input type="text" name="descricao" class="marerialize-textarea">
                 <label for="textarea2">Descrição</label>
                 </div>
@@ -82,17 +82,7 @@
 
             <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
             
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Add imagens</span>
-            <input class="waves-effect green" type="file" multiple>
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text" placeholder="Adicionar imagens">
-          </div>
-        </div>
-            
-        <input type="submit" class="waves-effect green btn" name="" value="Cadastrar Animal">
+        <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
 
         </form>
 
