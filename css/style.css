@@ -15,7 +15,6 @@
 /* indefinidos */
 
 
-
 /* ---- INICIO DO SLIDE ---- */
 .slides{
 	height:60%;
@@ -42,7 +41,6 @@
 /* ---- FIM DO SLIDE ---- */
 
 
-
 /* ---- INICIO DO LOGO ---- */
 #logo {
     padding: 10px 7px 5px 12px;
@@ -60,7 +58,6 @@
 /* ---- FIM DO LOGO ---- */
 
 
-
 /* ---- INICIO DO FOOTER ---- */
 .page-footer {
 	background-color: #2F4F4F;
@@ -76,14 +73,11 @@
 /* ---- FIM DO FOOTER ---- */
 
 
-
 /* ----- INICIO SOBRE ----- */
 .sobrefoto{
     width: 100%;
 }
 /* ----- FIM SOBRE ------ */
-
-
 
 
 /* ---- INICIO DO NAVBAR ---- */ 
@@ -171,7 +165,6 @@ textarea {
 /* ---- FIM DO DEPOIMENTO ---- */
 
 
-
 /* ---- INICIO LOGIN ---- */
 #cadastrarUsuario{
 	height: 533px;
@@ -192,7 +185,6 @@ textarea {
 	margin-top: 3%;
 }
 /* ----- FIM DO LOGIN ----- */
-
 
 
 /* --- INICIO DO EDITAR PERFIL --- */
