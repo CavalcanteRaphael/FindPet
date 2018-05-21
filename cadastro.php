@@ -87,14 +87,14 @@
               senhaValida = 1
             }
 
-            if (alfabeto.test($('#senha'))) {
+            if (alfabeto.test($('#senha').val())) {
               senhaValida = 1
             } else {
               notificar('error', 'A senha deve conter letras e números!')
               senhaValida = 0
             }
 
-            if (numeros.test($('#senha'))) {
+            if (numeros.test($('#senha').val())) {
               senhaValida = 1
             } else {
               notificar('error', 'A senha deve conter letras e números!')
