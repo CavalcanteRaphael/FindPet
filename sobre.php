@@ -1,5 +1,9 @@
-    <?php session_start(); ?>
-    <?php require 'navbar.php'; ?>
+<?php
+    session_start();
+?>
+<?php
+    require 'navbar.php';
+?>
 <!--Equipe-->
     <section class="equipe grey lighten-3">
         <div class="container">
