@@ -114,16 +114,18 @@
             if (emailvalido === 1 && nomevalido === 1 && senhaValida === 1 && senhaConfere === 1) {
 
               $.ajax({
-              url: 'ajax/cadastro.php',
-              type: 'POST',
-              data: $('#cadastro').serialize(),
-              dataType: 'json',
-              success: function(response){
-                console.log(response);
-                notificar('success','Cadastro realizado com sucesso!')
-                $("#cadastro").trigger("reset");
-              }
-            });
+                url: 'ajax/cadastro.php',
+                type: 'POST',
+                data: $('#cadastro').serialize(),
+                dataType: 'json',
+                success: function(response){
+                  console.log(response);
+                  if(response.deucerto === 1){ 
+                    notificar('success','Cadastro realizado com sucesso!')
+                    $("#cadastro").trigger("reset");
+                  }
+                }
+              });
 
             }
 

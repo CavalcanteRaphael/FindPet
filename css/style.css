@@ -105,14 +105,16 @@
 }
 #avatarnavbarlogado{
     float: right;
-    margin: -74% -9% 0% 10%;
+    position: relative;
+    margin-right: -6%;
+    margin-top: 4%;
 }
 #dropdown3 a{
 	color: #2F4F4F;
 }
 
 #dropdown3{
-	width: 185px;
+	width: 100%;
 }
 #dropdown3 li a {
 	text-align: center;
@@ -211,3 +213,14 @@ textarea {
 	margin: auto;
 }
 /* --- FIM DO EDITAR PERFIL --- */
+
+#map{
+    height: 100%;
+    width: 94%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
