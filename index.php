@@ -50,17 +50,17 @@
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">room</i>
                             <p></p>
-                            <a class=" blue-grey darken-4 btn">Encontrar Pet</a>
+                            <a class=" blue-grey darken-4 btn" href="mapa.php">Encontrar Pet</a>
                         </div>
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">favorite_border</i>
                             <p></p>
-                            <a class=" blue-grey darken-4 btn">Adotar Mascote</a>
+                            <a class=" blue-grey darken-4 btn" >Adotar Mascote</a>
                         </div>
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">pets</i>
                             <p></p>
-                            <a class=" blue-grey darken-4 btn">Doar Animal</a>
+                            <a class=" blue-grey darken-4 btn" href="doacao.php">Doar Animal</a>
                         </div>
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">attach_money</i>
