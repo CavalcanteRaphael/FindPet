@@ -9,18 +9,30 @@
 		$telefone = $_POST['telefone'];
 
 		try{
-			$stmt = $conn->prepare("UPDATE usuario SET nome = :nome, email = :email, telefone = :telefone WHERE idusuario = :id");
-			$stmt->bindParam(':id', $id);
-			$stmt->bindParam(':nome', $nome);
-			$stmt->bindParam(':email', $email);
-			$stmt->bindParam(':telefone', $telefone);
-			// $stmt->bindParam(':senha', $senha);
-			$stmt->execute();
-			$resultado['mensagem'] = "Perfil editado com sucesso";
-			$resultado['deucerto'] = 1;
-			$_SESSION['nome'] = $nome;
-			$_SESSION['email'] = $email;
-			$_SESSION['telefone'] = $telefone;
+
+			if($nome == $_SESSION['nome'] && $email == $_SESSION['email']){
+				$resultado['deucerto'] = 3; // Dados iguais, sem alteração!
+			} else { 
+				if($nome && $email != ''){
+
+					$stmt = $conn->prepare("UPDATE usuario SET nome = :nome, email = :email, telefone = :telefone WHERE idusuario = :id");
+					$stmt->bindParam(':id', $id);
+					$stmt->bindParam(':nome', $nome);
+					$stmt->bindParam(':email', $email);
+					$stmt->bindParam(':telefone', $telefone);
+					// $stmt->bindParam(':senha', $senha);
+					$stmt->execute();
+					$resultado['mensagem'] = "Perfil editado com sucesso";
+					$resultado['deucerto'] = 1;
+					$_SESSION['nome'] = $nome;
+					$_SESSION['email'] = $email;
+					$_SESSION['telefone'] = $telefone;
+
+				} else {
+					$resultado['deucerto'] = 2; // Dados vazios!
+				}
+			}
+
 			echo json_encode($resultado);
 			
 		}catch(PDOException $e){
