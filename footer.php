@@ -25,6 +25,7 @@
                     <h5>Informações</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="sobre.php">Sobre</a></li>
+                        <li><a class="grey-text text-lighten-3" href="depoimentos.php">Depoimentos</a></li>
                     </ul>
                 </div>
         </div>
