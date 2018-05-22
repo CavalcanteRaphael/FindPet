@@ -18,9 +18,11 @@
           icon: 'img/iconeMapa.png'
         });
 
-        var posicao = marcador.getPosition()
-        var lat = posicao.lat()
-        var lng = posicao.lng()
+        google.maps.event.addListener(marcador, 'dragend', function(event) {
+          document.getElementById("inputLat").value = event.latLng.lat();
+          document.getElementById("inputLng").value = event.latLng.lng();
+
+        })
 
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
@@ -124,6 +126,8 @@
 
             <input type="hidden" name="tipo" id="tipo" value="perdido">
 
+            <input type="hidden" name="lat" id="inputLat">
+            <input type="hidden" name="lng" id="inputLng">
 
             <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
             
