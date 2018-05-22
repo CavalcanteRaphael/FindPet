@@ -81,10 +81,10 @@
             </script>
             
             <ul id="dropdown2" class="dropdown-content">
-                <li><a href="encontrado.php">Encontrei Um Pet</a></li> 
-                <li><a href="perdido.php">Perdi Meu Pet</a></li>
                 <li><a href="adotar.php">Adotar</a></li>
                 <li><a href="doacao.php">Doar</a></li>
+                <li><a href="encontrado.php">Encontrei Um Pet</a></li> 
+                <li><a href="perdido.php">Perdi Meu Pet</a></li>
             </ul>
             <ul id="dropdown3" class="dropdown-content">
                 <li><a href="perfil.php">Meu Perfil</a></li>
