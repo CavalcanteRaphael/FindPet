@@ -168,7 +168,7 @@
 .bordacomentario a {
     float: right;
     margin-top: 5%;
-    color: #B22222;
+    color: black;
     cursor: pointer;
 }
 .bordacomentario h5 {
@@ -331,4 +331,14 @@ html, body {
 /* --- FIM DO CADASTRO DE PET ENCONTRADO --- */
 
 
+.collapsible{
+	width: 30%;
+	border-radius: 2%;
+	border-right: 10px solid #263238;
+	margin: auto;
+}
+
+.a{
+	text-align: blue;
+}
 
