@@ -90,7 +90,7 @@
                                                         <div class="bordacomentario">
                                                             <?php if(isset($_SESSION['id'])) { ?>
                                                                 <?php if($row['iduser'] == $_SESSION['id']) { ?>
-                                                                    <a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)">Apagar</a>
+                                                                    <a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)"><i class="Small material-icons">delete</i></a>
                                                                 <?php } ?>
                                                             <?php } ?>
                                                             <img class="avatardepoimento" src="img/<?php echo $row['img']; ?>">
