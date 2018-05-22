@@ -4,10 +4,10 @@
 <?php
     require 'navbar.php';
 ?>
+        <center>    
+            <h4>Depoimentos</h4>
+        </center>
         <div id="depoimentos">
-            <center>    
-                <h4>Depoimentos</h4>
-            </center>
             <?php 
                 require "ajax/conexao.php";
                 $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario;");
