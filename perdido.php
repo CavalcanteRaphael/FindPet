@@ -2,7 +2,7 @@
       <?php require 'navbar.php'; ?> 
       <center><h4>Informe onde o pet foi visto pela última vez (opcional)</h4></center>
 	<div id="map"></div>
-            <script>
+    <script>
       var map;
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -17,6 +17,12 @@
           draggable: true,
           icon: 'img/iconeMapa.png'
         });
+
+        google.maps.event.addListener(marcador, 'dragend', function(event) {
+          document.getElementById("inputLat").value = event.latLng.lat();
+          document.getElementById("inputLng").value = event.latLng.lng();
+
+        })
 
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
@@ -120,6 +126,8 @@
 
             <input type="hidden" name="tipo" id="tipo" value="perdido">
 
+            <input type="hidden" name="lat" id="inputLat">
+            <input type="hidden" name="lng" id="inputLng">
 
             <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
             

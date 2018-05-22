@@ -95,7 +95,7 @@
                 <div class="navbar-fixed">
                     <nav id="navbar">
                         <div class="nav-wrapper">
-                            <img src="img/Logo.png" class="logo">
+                            <img src="img/Logo.svg" class="logo">
                             <a href="index.php" class="brand-logo">FindPet</a>
                             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                             <ul id="nav-mobile" class="right hide-on-med-and-down"><!-- Navbar computador -->
