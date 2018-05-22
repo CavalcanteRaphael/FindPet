@@ -10,7 +10,7 @@
           <label for="cor">Cor:</label><input type="text" name="cor" id="cor"><br/>
         </div>
             
-        <div class="input-field col s12">
+        <div class="input-field ">
             <select name="porte">
               <option value="" disabled selected>Selecione o Porte:</option>
               <option value="mini">Mini</option>

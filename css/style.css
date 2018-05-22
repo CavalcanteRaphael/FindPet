@@ -184,7 +184,7 @@ textarea {
 
 
 
-/* ---- INICIO LOGIN ---- */
+/* ---- INICIO LOGIN  E CADASTRO---- */
 #cadastrarUsuario{
 	height: 533px;
 	width: 27%;
@@ -205,6 +205,38 @@ textarea {
 	margin-top: 3%;
 }
 /* ----- FIM DO LOGIN ----- */
+
+
+
+/* --- INICO DO -OU-  --- */
+.box {
+	width: 1%;
+	height: 100px;/*Altura da linha*/
+	margin: -3% auto;
+}
+.linha-vertical {
+	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+	box-sizing: border-box;
+	margin: auto;
+	color: #666666;
+}
+#ou{
+	margin-left: 49%;
+	margin-top: 5%;
+}
+.box2 {
+	width: 1%;
+	margin: auto;
+	height: 100%;/*Altura da linha*/
+	margin-top: 5%;
+}
+.linha-vertical2 {
+	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+	box-sizing: border-box;
+	margin: auto;
+	color: 	#666666;
+}
+/* --- FIM DO -OU-  --- */
 
 
 
@@ -231,8 +263,8 @@ textarea {
 
 /* --- INICIO DO MAPA --- */
 #map{
-    height: 70%;
-    width: 60%;
+    height: 90%;
+    width: 90%;
 	margin: auto;
 }
 html, body {
@@ -289,39 +321,7 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
-/* --- FIM DO CADASTRO DE PET PARA ADOÇÃO --- */
-
-.box {
-	width: 1%;
-	height: 100px;/*Altura da linha*/
-	margin: -3% auto;
-}
-
-.linha-vertical {
-	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
-	box-sizing: border-box;
-	margin: auto;
-	color: #666666;
-}
-
-
-#ou{
-	margin-left: 49%;
-	margin-top: 5%;
-}
+/* --- FIM DO CADASTRO DE PET ENCONTRADO --- */
 
 
 
-.box2 {
-	width: 1%;
-	margin: auto;
-	height: 100%;/*Altura da linha*/
-	margin-top: 5%;
-}
-
-.linha-vertical2 {
-	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
-	box-sizing: border-box;
-	margin: auto;
-	color: 	#666666;
-}
