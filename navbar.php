@@ -83,8 +83,7 @@
             <ul id="dropdown2" class="dropdown-content">
                 <li><a href="adotar.php">Adotar</a></li>
                 <li><a href="doacao.php">Doar</a></li>
-                <li><a href="mapa.php">Procurar</a></li>
-                <li><a href="encontrado.php">Encontrados</a></li>  
+                <li><a href="encontrado.php">Encontrei Um Pet</a></li>  
             </ul>
             <ul id="dropdown3" class="dropdown-content">
                 <li><a href="perfil.php">Meu Perfil</a></li>
@@ -99,6 +98,7 @@
                             <a href="index.php" class="brand-logo">FindPet</a>
                             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                             <ul id="nav-mobile" class="right hide-on-med-and-down"><!-- Navbar computador -->
+                                <li><a href="mapa.php">Ver Animais</a></li>
                                 <li><a class="dropdown-button" href="#" data-activates="dropdown2">Serviços<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a href="depoimentos.php">Depoimentos</a></li>
                                 <ul class="right hide-on-med-and-down" id="areaLogin">
