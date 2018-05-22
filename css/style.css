@@ -322,25 +322,46 @@ html, body {
 	background-color: #c3c3c340;
 	border-radius: 2%;
 	margin-left: 25%;
-	float: left;
 	margin-top: 2%;
 	padding: 2%;
 	margin-bottom: 5%;
 }
+#map1{
+    height: 50%;
+    width: 50%;
+	margin: auto;
+}
+html, body {
+    height: 100%;
+  }
+
+#Mapa{
+	width: 60%;
+	height: 118%;
+	background-color: #c3c3c340;
+	border-radius: 2%;
+	margin-left: 20%;
+	float: left;
+	margin-top: 2%;
+	padding: 2%;
+	margin-bottom: 5%;
+	
+}
+
 /* --- FIM DO CADASTRO DE PET ENCONTRADO --- */
 
 
+
+/* ---  --- */
 .collapsible{
 	width: 30%;
 	border-radius: 2%;
 	border-right: 10px solid #263238;
 	margin: auto;
 }
-
 .a{
 	text-align: blue;
 }
-
 #badgeAzul{
     color: #0000cc;
 }
@@ -350,3 +371,4 @@ html, body {
 #badgeVerde{
     color: olivedrab;
 }
+/* ---  --- */
