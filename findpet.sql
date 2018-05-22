@@ -32,6 +32,14 @@ CREATE TABLE `usuario` (
   `senha` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `findpet`.`mapa` (
+  `idmapa` INT NOT NULL AUTO_INCREMENT,
+  `idanimal` INT NOT NULL,
+  `latitude` FLOAT(15) NOT NULL,
+  `longitude` FLOAT(15) NOT NULL,
+  PRIMARY KEY (`idmapa`),
+  UNIQUE INDEX `idmapa_UNIQUE` (`idmapa` ASC));
+
 ALTER TABLE `animal`
   ADD PRIMARY KEY (`idanimal`),
   ADD UNIQUE KEY `idanimal_UNIQUE` (`idanimal`);
