@@ -132,21 +132,22 @@
 
 
 /* ---- INICIO DO DEPOIMENTO ---- */ 
-#depoimentos, #novodepoimento{
+#depoimentos{
 	position: relative;
-    left: 28%;
-    margin-right: 50%;
-    
+    margin: auto;
+}
+#novodepoimento{
+    text-align: center;
 }
 .estilodepo{
-	width: 65%;
-	display: inline-block;
+	width: 40%;
 	border: 6% solid #c3c3c340;
 	background-color: #c3c3c340;
 	border-radius: 1%;
 	padding: 5%;
-	margin: 4%;
+	margin: auto;
 	word-break: break-all;
+    margin-bottom: 5%;
 }
 .bordacomentario a {
 	float: right;
