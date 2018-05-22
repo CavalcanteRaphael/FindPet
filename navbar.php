@@ -81,7 +81,7 @@
             </script>
             
             <ul id="dropdown2" class="dropdown-content">
-                <li><a href="#">Adotar</a></li>
+                <li><a href="adotar.php">Adotar</a></li>
                 <li><a href="doacao.php">Doar</a></li>
                 <li><a href="mapa.php">Procurar</a></li>
                 <li><a href="encontrado.php">Encontrados</a></li>  
