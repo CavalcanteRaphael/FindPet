@@ -8,7 +8,7 @@
     <div class="collapsible-header">
       <i class="material-icons">add_location</i>
       Doação
-      <span class="badge">AZUL</span></div>
+      <span class="badge" id="badgeAzul">AZUL</span></div>
     <div class="collapsible-body"><p>Os pets em azul no mapa estão para doação.</p></div>
   </li>
 		
@@ -16,7 +16,7 @@
     <div class="as collapsible-header">
       <i class="material-icons">add_alert</i>
       Perdidos
-      <span class="badge">VERMELHO</span></div>
+      <span class="badge" id="badgeVermelho">VERMELHO</span></div>
     <div class="collapsible-body"><p>Os pets em vermelho no mapa estão perdidos.</p></div>
   </li>
 </ul>
