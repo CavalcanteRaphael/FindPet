@@ -34,6 +34,7 @@
                         } 
                     }?>
         </div>
+		
         <div id="novodepoimento">
             <?php
                 if(isset($_SESSION['id'])) {

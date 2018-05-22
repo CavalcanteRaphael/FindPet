@@ -342,8 +342,11 @@ html, body {
 }
 
 #badgeAzul{
-    color: #0000ff;
+    color: #0000cc;
 }
 #badgeVermelho{
-    color: #ff0000;
+    color: #990000;
+}
+#badgeVerde{
+    color: olivedrab;
 }
