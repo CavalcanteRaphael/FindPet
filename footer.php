@@ -8,7 +8,7 @@
                 <div class="col s12 m6 l3">
                     <h5>Serviços</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3"  href="#">Adotar</a></li>
+                        <li><a class="grey-text text-lighten-3"  href="adotar.php">Adotar</a></li>
                         <li><a class="grey-text text-lighten-3"  href="doacao.php">Doar</a></li>
                         <li><a class="grey-text text-lighten-3"  href="mapa.php">Procurar</a></li>
                         <li><a class="grey-text text-lighten-3"  href="encontrado.php">Encontrados</a></li>  

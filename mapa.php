@@ -11,6 +11,12 @@
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
+        var marcador = new google.maps.Marker({
+          position: {lat: -23.63324584, lng: -45.4241625},
+          map: map,
+          icon: 'img/iconeMapa.png'
+        });
+
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {

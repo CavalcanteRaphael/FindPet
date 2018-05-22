@@ -22,7 +22,7 @@
                                                 <a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)">Apagar</a>
                                             <?php } ?>
                                         <?php } ?>
-                                        <img class="avatar" src="img/<?php echo $row['img']; ?>">
+                                        <img class="avatardepoimento" src="img/<?php echo $row['img']; ?>">
                                         <h5><?php echo $row['nome']; ?></h5>
                                     </div>
                                     <div class="textodepoimento">

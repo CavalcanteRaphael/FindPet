@@ -10,8 +10,8 @@
 
 		try{
 
-			if($nome == $_SESSION['nome'] && $email == $_SESSION['email']){
-				$resultado['deucerto'] = 3; // Dados iguais, sem alteração!
+			if($nome == $_SESSION['nome'] && $email == $_SESSION['email'] && $telefone == $_SESSION['telefone']){
+				$resultado['deucerto'] = 3; // ERRO! Dados iguais, sem alteração!
 			} else { 
 				if($nome && $email != ''){
 
