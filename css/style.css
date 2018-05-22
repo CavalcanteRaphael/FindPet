@@ -131,20 +131,23 @@
 
 
 
-/* ---- INICIO DO DEPOIMENTO ---- */ 
+/* ---- INICIO DO DEPOIMENTO ---- */
 #depoimentos{
 	position: relative;
     margin: auto;
 }
 #novodepoimento{
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    width: 60%;
 }
 .estilodepo{
-	width: 40%;
+	width: 50%;
 	border: 6% solid #c3c3c340;
 	background-color: #c3c3c340;
 	border-radius: 1%;
-	padding: 5%;
+	padding: 2%;
 	margin: auto;
 	word-break: break-all;
     margin-bottom: 5%;
@@ -167,6 +170,9 @@ textarea {
     height: 1%;
 	margin-left: 4%;
     border-radius: 2%;
+}
+.botaocomentario{
+    margin: auto;
 }
 /* ---- FIM DO DEPOIMENTO ---- */
 
