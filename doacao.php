@@ -7,12 +7,13 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -23.620972, lng: -45.6372588},
-          zoom: 13
+          zoom: 14
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         var marcador = new google.maps.Marker({
           position: {lat: -23.63324584, lng: -45.4241625},
+          draggable: true,
           map: map,
           icon: 'img/iconeMapa.png'
         });
