@@ -186,8 +186,8 @@ textarea {
 	float: right;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-right: 19%;
-	margin-top: 1%;
+	margin-right: 10%;
+	margin-top: -27%;
 	margin-bottom: 5%;
 }
 #loginUsuario {
@@ -195,7 +195,7 @@ textarea {
 	height: 300px;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-left: 19%;
+	margin-left: 10%;
 	float: left;
 	margin-top: 3%;
 }
@@ -285,3 +285,38 @@ html, body {
 	margin-bottom: 5%;
 }
 /* --- FIM DO CADASTRO DE PET PARA ADOÇÃO --- */
+
+.box {
+	width: 1%;
+	height: 100px;/*Altura da linha*/
+	margin: -3% auto;
+}
+
+.linha-vertical {
+	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+	box-sizing: border-box;
+	margin: auto;
+	color: #666666;
+}
+
+
+#ou{
+	margin-left: 49%;
+	margin-top: 5%;
+}
+
+
+
+.box2 {
+	width: 1%;
+	margin: auto;
+	height: 100%;/*Altura da linha*/
+	margin-top: 5%;
+}
+
+.linha-vertical2 {
+	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+	box-sizing: border-box;
+	margin: auto;
+	color: 	#666666;
+}
