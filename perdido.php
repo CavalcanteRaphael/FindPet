@@ -2,7 +2,7 @@
       <?php require 'navbar.php'; ?> 
       <center><h4>Informe onde o pet foi visto pela última vez (opcional)</h4></center>
 	<div id="map"></div>
-            <script>
+    <script>
       var map;
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -17,6 +17,10 @@
           draggable: true,
           icon: 'img/iconeMapa.png'
         });
+
+        var posicao = marcador.getPosition()
+        var lat = posicao.lat()
+        var lng = posicao.lng()
 
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
