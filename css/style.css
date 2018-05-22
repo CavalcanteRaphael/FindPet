@@ -104,9 +104,14 @@
 }
 #avatarnavbarlogado{
     float: right;
-    position: relative;
-    margin-right: -6%;
-    margin-top: 4%;
+    display: block;
+    margin: 10px -2px 0 13px;
+}
+#nomedousuario{
+    height: 64px;
+    width: auto;
+    line-height: 64px;
+    float: left;
 }
 #dropdown3 a{
 	color: #2F4F4F;
@@ -119,8 +124,8 @@
 	text-align: center;
 }
 .avatar {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 25px;
 	margin-top: 5%;
 }
@@ -193,8 +198,8 @@ textarea {
 	float: right;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-right: 19%;
-	margin-top: 1%;
+	margin-right: 10%;
+	margin-top: -27%;
 	margin-bottom: 5%;
 }
 #loginUsuario {
@@ -202,7 +207,7 @@ textarea {
 	height: 300px;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-left: 19%;
+	margin-left: 10%;
 	float: left;
 	margin-top: 3%;
 }
@@ -292,3 +297,38 @@ html, body {
 	margin-bottom: 5%;
 }
 /* --- FIM DO CADASTRO DE PET PARA ADOÇÃO --- */
+
+.box {
+	width: 1%;
+	height: 100px;/*Altura da linha*/
+	margin: -3% auto;
+}
+
+.linha-vertical {
+	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+	box-sizing: border-box;
+	margin: auto;
+	color: #666666;
+}
+
+
+#ou{
+	margin-left: 49%;
+	margin-top: 5%;
+}
+
+
+
+.box2 {
+	width: 1%;
+	margin: auto;
+	height: 100%;/*Altura da linha*/
+	margin-top: 5%;
+}
+
+.linha-vertical2 {
+	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+	box-sizing: border-box;
+	margin: auto;
+	color: 	#666666;
+}

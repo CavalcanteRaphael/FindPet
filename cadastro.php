@@ -11,7 +11,7 @@
 
   <div class="row">
 	
-	<div id="loginUsuario" class="col s5 card hoverable m6 l4 ">
+	<div id="loginUsuario" class="col s5 hoverable m6 l4 ">
 		<form id="login" method="post">
 			<center ><h4>Login</h4><div id="loginTitulo"></div></center>
 			<div class="input-field col s12 ">
@@ -23,9 +23,23 @@
 			<input type="submit" value="login" class=" blue-grey darken-4 btn">
 		</form>
 	</div>
-	<br/>
-
-	<div id="cadastrarUsuario" class="col s5 card hoverable m6 l4 ">
+	<br/>	
+	  				
+	  		
+			<div class="box">
+			</div>
+			<div class="box linha-vertical">
+			</div>
+	  
+	  		<div id="ou">ou</div>
+	  
+	  		<div class="box2">
+			</div>
+			<div class="box linha-vertical2">
+			</div>
+	  
+	  
+	<div id="cadastrarUsuario" class="col s5 hoverable m6 l4 ">
 		<form id="cadastro" method="post">
 			<center><h4>Cadastrar-se</h4></center>
 			<div class="input-field col s12">

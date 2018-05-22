@@ -140,7 +140,7 @@
                     $img = $_SESSION['img'];
             ?>
             <script type="text/javascript">
-                $("#areaLogin").html('<li><a class="dropdown-button" data-activates="dropdown3" href="javascript:;"><?php echo $nome; ?><img class="avatar" id="avatarnavbarlogado" src="img/<?php echo $img; ?>"></a></li>');
+                $("#areaLogin").html('<li><a class="dropdown-button" data-activates="dropdown3" href="javascript:;"><spam class="nomedousuario"><?php echo $nome; ?></spam><img class="avatar" id="avatarnavbarlogado" src="img/<?php echo $img; ?>"></a></li>');
                 $("#areaLoginMobile").html('<div class="user-view"><div class="background"><a href="javascript:;" onclick="login()"><img src="img/ground.png"></a></div><a href="javascript:;" onclick="login()"><img class="circle" src="img/<?php echo $img; ?>"></a><a href="javascript:;" onclick="login()"><span class="white-text name"><?php echo $nome; ?></span></a></div>');
             </script>
             <?php  } ?>
