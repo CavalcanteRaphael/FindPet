@@ -71,24 +71,34 @@
                 </div>
             </div>
         </section>
+        <hr>
         <section class="depoimentosFavoritos">
             <div class="container">
                 <div class="row">
                     <div class="col s12">
                         <h1 class="center-align">O que dizem sobre o site</h1>
+                        
                         <div id="depoimentos">
                             <?php 
                                 require "ajax/conexao.php";
-                                    $stmt = $conn->query("SELECT depoimentos.id, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('1', '2', '3');");
+                                    $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('1', '2', '3');");
                                     $result = $stmt->fetchAll();
                                         if($result){
                                             foreach($result as $row){ ?>
-                                                <div class="depoimento" data-id-comentario="<?php echo $row['id']; ?>">
-                                                    <i class="icon-trash" onclick="apagarDepoimento(<?php echo $row['id']; ?>)"></i>
-                                                    <img class="avatar" src="img/<?php echo $row['img']; ?>">
-                                                    <div class="textodepoiemnto">
-                                                        <h5><?php echo $row['nome']; ?></h5>
-                                                        <p><?php echo $row['texto']; ?></p>
+                                                <div class="depoimento" data-id-depoimentos="<?php echo $row['id']; ?>">
+                                                    <div class="estilodepo hoverable">
+                                                        <div class="bordacomentario">
+                                                            <?php if(isset($_SESSION['id'])) { ?>
+                                                                <?php if($row['iduser'] == $_SESSION['id']) { ?>
+                                                                    <a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)">Apagar</a>
+                                                                <?php } ?>
+                                                            <?php } ?>
+                                                            <img class="avatardepoimento" src="img/<?php echo $row['img']; ?>">
+                                                            <h5><?php echo $row['nome']; ?></h5>
+                                                        </div>
+                                                        <div class="textodepoimento">
+                                                            <br/><br/><p id="punico"><?php echo $row['texto']; ?></p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                     <?php 
