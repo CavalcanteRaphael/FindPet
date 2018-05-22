@@ -133,7 +133,7 @@
 
 /* ---- INICIO DO DEPOIMENTO ---- */
 #depoimentos{
-	position: relative;
+    position: relative;
     margin: auto;
     margin-top: 3%;
 }
@@ -143,33 +143,40 @@
     text-align: center;
     width: 60%;
 }
+.avatardepoimento{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+	margin-top: 5%;
+}
 .estilodepo{
-	width: 50%;
-	border: 6% solid #c3c3c340;
-	background-color: #c3c3c340;
-	border-radius: 1%;
-	padding: 2%;
-	margin: auto;
-	word-break: break-all;
+    width: 50%;
+    border: 6% solid #c3c3c340;
+    background-color: #c3c3c340;
+    border-radius: 1%;
+    padding: 2%;
+    margin: auto;
+    word-break: break-all;
     margin-bottom: 5%;
 }
 .bordacomentario a {
-	float: right;
+    float: right;
     margin-top: 5%;
-	color: #B22222;
-	cursor: pointer;
+    color: #B22222;
+    cursor: pointer;
 }
 .bordacomentario h5 {
-	padding-right: 10%;
+    padding-right: 10%;
 }
 #punico{
-	padding: 1%;
+    padding: 1%;
     margin-top: -3%;
 }
 textarea {
     width: 65%;
     height: 1%;
-	margin-left: 4%;
+    margin-left: 4%;
     border-radius: 2%;
 }
 .botaocomentario{
