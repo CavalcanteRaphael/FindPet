@@ -440,4 +440,15 @@ html, body {
 	
 }
 
-/* ---  --- */
+/* --- mapa --- */
+#mapdoacao{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+}
+#mapperdido{
+    margin: auto;
+    width: 60%;
+    height: 50%;
+}
+/*---- mapa ----*/
