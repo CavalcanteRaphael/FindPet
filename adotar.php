@@ -5,11 +5,14 @@
 
 <br/>
 <center><h4> Faça uma boa ação e adote um Pet. </h4></center>
-<br/>
 
-<div id="adotarlogin"> 
-<h6>Faça seu login para adotar.</h6>  <a class="blue-grey darken-4 btn" href="cadastro.php" ><i class="material-icons left">account_circle</i>Login</a>
-</div>
+
+<?php if(!isset($_SESSION['id'])){ ?>
+    <br/>
+    <div id="adotarlogin"> 
+    <h6>Faça seu login para adotar.</h6>  <a class="blue-grey darken-4 btn" href="cadastro.php" ><i class="material-icons left">account_circle</i>Login</a>
+    </div>
+<?php } ?>
 
 <hr/>
 <br/>
