@@ -40,18 +40,18 @@
             </div>
             <form id="editForm">
                 <div class="input-field col s6">
-                    <i class="material-icons prefix">person</i>	
+                    <i class="Small material-icons prefix">person</i>	
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" value="<?php echo $usuario['nome']; ?>">
                     <br/>
                 </div>
                 <div class="input-field col s6">
-                    <i class="material-icons prefix">mail</i>
+                    <i class="Small material-icons prefix">mail</i>
                     <label for="icon_mail">E-mail:</label>
                     <input id="icon_mail" type="text" name="email" value="<?php echo $usuario['email']; ?>">
                 </div>
                 <div class="input-field col s6">
-                    <i class="material-icons prefix">call</i>
+                    <i class="Small material-icons prefix">call</i>
                     <label for="telefone">Telefone:</label>
                     <input type="text" id="telefone" name="telefone" value="<?php echo $usuario['telefone']; ?>">
                 </div>

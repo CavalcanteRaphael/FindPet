@@ -372,3 +372,49 @@ html, body {
     color: olivedrab;
 }
 /* ---  --- */
+
+
+
+/* ---  --- */
+#pet{
+    color: darkgray;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #263238;
+}
+hr{
+    width: 50%;
+    margin-top: 2%;
+}
+#adotarlogin{
+    margin-left: 45%;
+    padding-left: 0.5rem;
+}
+
+.btn, .btn-large, .btn-flat {
+    padding: 0px 1rem;
+    border-radius: 8%;
+    margin-left: 3%;
+}
+
+.cardpet{
+    margin-top: 10%;
+    margin-left: 8%;
+    margin-bottom: 3%;
+}
+
+.cardpet2{
+    margin-top: -100%;
+    margin-left: 8%;
+    margin-bottom: 3%;
+}
+.cardpet3{
+    margin-top: -100%;
+    margin-left: 8%;
+    margin-bottom: 3%;
+}
+
+.row .col.l3{
+    margin-left: 5%;
+}
+/* ---  --- */
