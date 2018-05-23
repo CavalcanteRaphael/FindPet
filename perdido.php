@@ -1,5 +1,5 @@
-      <?php session_start(); ?>
-      <?php require 'navbar.php'; ?> 
+      <?php require 'ajax/redirLogin.php'; ?>
+      <?php require 'navbar.php'; ?>  
       <center><h4>Informe onde o pet foi visto pela última vez (opcional)</h4></center>
 	<div id="map"></div>
     <script>

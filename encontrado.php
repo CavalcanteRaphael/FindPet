@@ -1,5 +1,5 @@
-      <?php session_start(); ?>
-      <?php require 'navbar.php'; ?> 
+      <?php require 'ajax/redirLogin.php'; ?>
+      <?php require 'navbar.php'; ?>  
 
       <div id="CadastroPetEncontrado" class="hoverable">
 

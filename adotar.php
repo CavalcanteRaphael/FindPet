@@ -18,10 +18,11 @@
       require "ajax/conexao.php";
       $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
       $result = $stmt->fetchAll();
+          $i = 1;
           if($result){
               foreach($result as $row){ ?>
-                
-                <div class=" row cardpet<?php echo $row['idanimal'] ?> col s12 m6 l3 ">
+              
+                <div class=" row cardpet<?php echo $i; ?> col s12 m6 l3 "><?php $i++; ?>
                     <div class="col s12 m6 l3">
                         <div class="card sticky-action" style="overflow: visible;">
                           <div class="card-image waves-effect waves-block waves-light">
