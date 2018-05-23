@@ -78,7 +78,7 @@
             </form>
         </div>
         <center>
-            <h4>Informe onde o pet foi visto pela última vez (opcional)</h4>
+            <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez (opcional)</h4>
         </center>
         <div id="mapperdido"></div>
         <script>

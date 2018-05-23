@@ -65,7 +65,7 @@
 </div>
 
 <center>
-    <h4>Informe onde o pet foi visto pela última vez</h4>
+    <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez</h4>
 </center>
 <div id="map1"></div>
 <script>

@@ -85,7 +85,7 @@
         </div>
         <br/>
         <center>
-            <h4>Informe onde o pet está disponível para adoção(opcional)</h4>
+            <h4 style="display:inline-block;">Informe onde o pet está disponível para adoção(opcional)</h4>
         </center>
         <div id="mapdoacao"></div>
         <script>

@@ -414,10 +414,6 @@ hr{
     margin-bottom: 3%;
 }
 
-.row .col.l3{
-    margin-left: 5%;
-}
-
 #map1a{
     height: 50%;
     width: 200%;
@@ -440,7 +436,7 @@ html, body {
 	
 }
 
-/* --- mapa --- */
+/* --- mapa doação e perdido --- */
 #mapdoacao{
     margin: auto;
     width: 50%;
