@@ -153,7 +153,10 @@
               data: $('#cadastro').serialize(),
               dataType: 'json',
               success: function(response){
-                console.log(response);
+                  if(response.deucerto === 1){
+                      notificar('success','Pet cadastrado com sucesso!')
+                      $("#cadastro").trigger("reset");
+                  }
               }
             });
 
