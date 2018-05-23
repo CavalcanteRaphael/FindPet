@@ -119,6 +119,53 @@
                 <p>Raça: marley</p>
                 <p>Sexo: Macho</p> 
                 <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>
+                 
+                  <div id="map1a"></div>
+            <script>
+      var map;
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map1a'), {
+          center: {lat: -23.620972, lng: -45.6372588},
+          zoom: 13
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        var marcador = new google.maps.Marker({
+          position: {lat: -23.63324584, lng: -45.4241625},
+          map: map,
+          icon: 'img/iconeMapa.png'
+        });
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
+    </script>
             </div>
             </div>
                 
