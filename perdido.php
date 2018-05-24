@@ -71,6 +71,7 @@
                     </div>
                 </div>
                 <input type="hidden" name="tipo" id="tipo" value="perdido">
+                <input type="hidden" name="castrado" id="castrado" value="">
                 <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
                 <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
@@ -89,6 +90,12 @@
                     zoom: 14
                 });
                 var infoWindow = new google.maps.InfoWindow({map: map});
+                var marcador = new google.maps.Marker({
+                      position: {lat: -23.63324584, lng: -45.4241625},
+                      map: map,
+                      icon: 'img/iconeMapa.png',
+                      draggable: true
+                    });
                 <?php 
         require "ajax/conexao.php";
                 $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
