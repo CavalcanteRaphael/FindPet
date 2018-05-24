@@ -42,8 +42,82 @@
                                     <p><?php echo $row['descricao']; ?></p>
                                 </div>
 
+<<<<<<< HEAD
                         <div class="card-action card-title activator ">
                         <a class="card-title activator">Mais Informações</a>
+=======
+                          <div class="card-action card-title activator ">
+                            <a class="card-title activator">Mais Informações</a>
+                          </div>
+                            
+                        
+                          <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                            <span class="card-title grey-text text-darken-4">Informações do Pet<i class="material-icons right">close</i></span>
+                              <br/>
+                            <p>Cor: <?php echo $row['cor']; ?></p>
+                            <p>Porte: <?php echo $row['porte']; ?></p>
+                            <p>Espécie: <?php echo $row['especie']; ?></p>
+                            <p>Raça: <?php echo $row['raca']; ?></p>
+                            <p>Sexo: Macho</p> 
+                            <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>
+                              
+                        <div id="map2"></div>
+                        <script>
+                  var map;
+                  function initMap() {
+                    var map = new google.maps.Map(document.getElementById('map2'), {
+                      center: {lat: -23.620972, lng: -45.6372588},
+                      zoom: 13
+                    });
+                    var infoWindow = new google.maps.InfoWindow({map: map});
+
+                    <?php 
+        require "ajax/conexao.php";
+                $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $result = $stmt->fetchAll();
+                    if($result){
+        foreach ($result as $row) { ?>
+        
+        var marcador = new google.maps.Marker({
+          position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
+          map: map,
+          icon: 'img/iconeMapa.png'
+        });
+
+        <?php }} ?>
+
+                    // Try HTML5 geolocation.
+                    if (navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(function(position) {
+                        var pos = {
+                          lat: position.coords.latitude,
+                          lng: position.coords.longitude
+                        };
+
+                        infoWindow.setPosition(pos);
+                        infoWindow.setContent('Location found.');
+                        map.setCenter(pos);
+                      }, function() {
+                        handleLocationError(true, infoWindow, map.getCenter());
+                      });
+                    } else {
+                      // Browser doesn't support Geolocation
+                      handleLocationError(false, infoWindow, map.getCenter());
+                    }
+                  }
+
+                  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent(browserHasGeolocation ?
+                                          'Error: The Geolocation service failed.' :
+                                          'Error: Your browser doesn\'t support geolocation.');
+                  }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
+                </script>
+                              
+>>>>>>> aea6c124797cb15deacec5e4facba1df3fa91de3
                         </div>
 
 

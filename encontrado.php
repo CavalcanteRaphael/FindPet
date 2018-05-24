@@ -63,7 +63,6 @@
                 <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
             </form>
         </div>
-
         <center>
             <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez</h4>
         </center>
@@ -110,7 +109,48 @@
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
         </script>
+<?php 
+        require "ajax/conexao.php";
+                $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $result = $stmt->fetchAll();
+                    if($result){
+        foreach ($result as $row) { ?>
+        
+        var marcador = new google.maps.Marker({
+          position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
+          map: map,
+          icon: 'img/iconeMapa.png'
+        });
 
+        <?php }} ?>
+
+<script>
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            map.setCenter(pos);
+        },function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+        });
+    } else {
+        // Browser doesn't support Geolocation
+        handleLocationError(false, infoWindow, map.getCenter());
+    }
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+    }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
+</script>
 
 <?php
     require 'footer.php';
