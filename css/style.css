@@ -16,6 +16,26 @@
 
 
 
+/* ---- INICIO DO index---- */
+#map22{
+    margin: 2%;
+    width: 60%;
+    height: 70%;
+    
+}
+#ajudamapa{
+	width: 30%;
+	border-radius: 2%;
+	border-right: 10px solid #263238;
+	float: right;
+    margin: 2%;
+    margin-top: 10%
+}
+
+/* ---- INICIO DO index ---- */
+
+
+
 /* ---- INICIO DO SLIDE ---- */
 .slides{
 	height:60%;
