@@ -77,12 +77,20 @@ zoom: 14
 });
 var infoWindow = new google.maps.InfoWindow({map: map});
 
-var marcador = new google.maps.Marker({
-position: {lat: -23.63324584, lng: -45.4241625},
-map: map,
-draggable: true,
-icon: 'img/iconeMapa.png'
-});
+<?php 
+        require "ajax/conexao.php";
+                $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $result = $stmt->fetchAll();
+                    if($result){
+        foreach ($result as $row) { ?>
+        
+        var marcador = new google.maps.Marker({
+          position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
+          map: map,
+          icon: 'img/iconeMapa.png'
+        });
+
+        <?php }} ?>
 
 // Try HTML5 geolocation.
 if (navigator.geolocation) {

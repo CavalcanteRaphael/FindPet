@@ -17,6 +17,7 @@ CREATE TABLE `animal` (
   `nascimento` DATE DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
 CREATE TABLE `depoimentos` (
   `id` int(10) UNSIGNED NOT NULL,
   `iduser` int(10) NOT NULL,
@@ -43,6 +44,7 @@ CREATE TABLE `findpet`.`mapa` (
 ALTER TABLE `animal`
   ADD PRIMARY KEY (`idanimal`),
   ADD UNIQUE KEY `idanimal_UNIQUE` (`idanimal`);
+ALTER TABLE `animal` ADD `sexo` INT(1) NOT NULL AFTER `raca`;  
 ALTER TABLE `depoimentos`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id_UNIQUE` (`id`);
