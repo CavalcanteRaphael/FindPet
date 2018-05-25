@@ -42,10 +42,8 @@
                                     <p><?php echo $row['descricao']; ?></p>
                                 </div>
 
-<<<<<<< HEAD
                         <div class="card-action card-title activator ">
                         <a class="card-title activator">Mais Informações</a>
-=======
                           <div class="card-action card-title activator ">
                             <a class="card-title activator">Mais Informações</a>
                           </div>
@@ -117,7 +115,6 @@
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
                 </script>
                               
->>>>>>> aea6c124797cb15deacec5e4facba1df3fa91de3
                         </div>
 
 
@@ -134,6 +131,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             <?php
               } 
           }?>
