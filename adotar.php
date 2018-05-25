@@ -31,16 +31,12 @@
                                     <img class="activator" src="img/doggo.jpg">
                                 </div>
                                 <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4">
-                                        <h6 id="pet">Nome do Pet:</h6>
-                                        <h5>Scooby</h5>
-                                        <i class="material-icons right">more_vert</i>
-                                    </span>
-                                    <br/>
-                                    <h6 id="pet">Descriçao:</h6>
-                                    <br/>
-                                    <p><?php echo $row['descricao']; ?></p>
-                                </div>
+                                <span class="card-title activator grey-text text-darken-4"><h10 id="pet">Nome do Pet:</h10><h5>Scooby</h5><i class="material-icons right">more_vert</i></span>
+                                  <br/>
+                                  <h10 id="pet">Descriçao:</h10>
+                                  <br/>
+                                  <p><?php echo $row['descricao']; ?></p>
+                          </div>
 
                         <div class="card-action card-title activator ">
                         <a class="card-title activator">Mais Informações</a>
@@ -69,6 +65,11 @@
                     });
                     var infoWindow = new google.maps.InfoWindow({map: map});
 
+                    var marcador = new google.maps.Marker({
+                      position: {lat: -23.63324584, lng: -45.4241625},
+                      map: map,
+                      icon: 'img/iconeMapa.png'
+                    });
                     <?php 
         require "ajax/conexao.php";
                 $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
