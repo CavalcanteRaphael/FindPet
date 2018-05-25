@@ -71,6 +71,7 @@
                     </div>
                 </div>
                 <input type="hidden" name="tipo" id="tipo" value="perdido">
+                <input type="hidden" name="castrado" id="castrado" value="null">
                 <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
                 <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">

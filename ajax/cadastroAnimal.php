@@ -49,8 +49,9 @@
 			$stmt->bindParam(':vacinado', $vacinado);
 			$stmt->execute();
 
+			$idanimal = $conn->lastInsertId();
 
-			$stmt2 = $conn->prepare("INSERT INTO mapa (idmapa, idanimal, latitude, longitude) Values (null,:idanimal, :latitude, :longitude;");
+			$stmt2 = $conn->prepare("INSERT INTO mapa (idmapa, idanimal, latitude, longitude) Values (null,:idanimal, :latitude, :longitude);");
 			
 			$stmt2->bindParam(':idanimal', $idanimal);
 			$stmt2->bindParam(':latitude', $lat);
