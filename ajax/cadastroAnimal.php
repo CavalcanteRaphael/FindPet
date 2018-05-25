@@ -12,8 +12,6 @@
 		$castrado = $_POST['castrado'];
 		$idusuario = $_POST['id'];
 		$vacinado = $_POST['vacinado'];
-		$lat = $_POST['lat'];
-		$lng = $_POST['lng'];
 
 		if ($castrado === 'nao') {
 			$castrado = 0;
@@ -40,16 +38,6 @@
 			$stmt->bindParam(':idusuario', $idusuario);
 			$stmt->bindParam(':vacinado', $vacinado);
 			$stmt->execute();
-
-
-			$stmt = $conn->prepare("INSERT INTO mapa (idmapa, idanimal, latitude, longitude) Values (null,:idanimal, :latitude, :longitude;");
-			
-			$stmt->bindParam(':idanimal', $idanimal);
-			$stmt->bindParam(':latitude', $lat);
-			$stmt->bindParam(':longitude', $lng);
-			$stmt->execute();
-
-
 			$resultado['mensagem'] = "Animal cadastrado com sucesso";
 			$resultado['deucerto'] = 1;
 			echo json_encode($resultado);
