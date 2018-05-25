@@ -36,8 +36,8 @@ CREATE TABLE `usuario` (
 CREATE TABLE `findpet`.`mapa` (
   `idmapa` INT NOT NULL AUTO_INCREMENT,
   `idanimal` INT NOT NULL,
-  `latitude` FLOAT(15) NOT NULL,
-  `longitude` FLOAT(15) NOT NULL,
+  `latitude` DECIMAL(20,16) NOT NULL,
+  `longitude` DECIMAL(20,16) NOT NULL,
   PRIMARY KEY (`idmapa`),
   UNIQUE INDEX `idmapa_UNIQUE` (`idmapa` ASC));
 
