@@ -5,6 +5,7 @@
 		$nome = $_POST['nome'];
 		$especie = $_POST['especie'];
 		$raca = $_POST['raca'];
+		$sexo = $_POST['sexo'];
 		$porte = $_POST['porte'];
 		$cor = $_POST['cor'];
 		$tipo = $_POST['tipo'];
@@ -27,11 +28,18 @@
 			$vacinado = 1;
 		}
 
+		if ($sexo === 'macho') {
+			$sexo = 1;
+		} else {
+			$sexo = 2;
+		}
+
 		try{
-			$stmt = $conn->prepare("INSERT INTO animal (idanimal, especie, raca, porte, cor, tipo, descricao, nome, castrado, idusuario, vacinado) Values (null,:especie,:raca,:porte,:cor,:tipo,:descricao,:nome,:castrado,:idusuario,:vacinado);");
+			$stmt = $conn->prepare("INSERT INTO animal (idanimal, especie, raca, sexo, porte, cor, tipo, descricao, nome, castrado, idusuario, vacinado) Values (null,:especie,:raca,:sexo,:porte,:cor,:tipo,:descricao,:nome,:castrado,:idusuario,:vacinado);");
 			$stmt->bindParam(':nome', $nome);
 			$stmt->bindParam(':especie', $especie);
 			$stmt->bindParam(':raca', $raca);
+			$stmt->bindParam(':sexo', $sexo);
 			$stmt->bindParam(':porte', $porte);
 			$stmt->bindParam(':cor', $cor);
 			$stmt->bindParam(':tipo', $tipo);
@@ -42,12 +50,12 @@
 			$stmt->execute();
 
 
-			$stmt = $conn->prepare("INSERT INTO mapa (idmapa, idanimal, latitude, longitude) Values (null,:idanimal, :latitude, :longitude;");
+			$stmt2 = $conn->prepare("INSERT INTO mapa (idmapa, idanimal, latitude, longitude) Values (null,:idanimal, :latitude, :longitude;");
 			
-			$stmt->bindParam(':idanimal', $idanimal);
-			$stmt->bindParam(':latitude', $lat);
-			$stmt->bindParam(':longitude', $lng);
-			$stmt->execute();
+			$stmt2->bindParam(':idanimal', $idanimal);
+			$stmt2->bindParam(':latitude', $lat);
+			$stmt2->bindParam(':longitude', $lng);
+			$stmt2->execute();
 
 
 			$resultado['mensagem'] = "Animal cadastrado com sucesso";

@@ -43,7 +43,7 @@
                     <div class="col s12">
                         <h1 class="center-align">Nossos serviços</h1>
                         <p class="flow-text center-align">
-                        Nosso slider é um carrocel de imagem simples e elegante. Você pode ter legendas que farão a 
+                       Venha conhecer a maior plataforma de Pets.
                         </p>
                     </div>
                     <div class="row">
