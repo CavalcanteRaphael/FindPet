@@ -16,54 +16,7 @@
 
 
 
-/* ---- INICIO DO index---- */
-#map22{
-    margin: 2%;
-    width: 60%;
-    height: 70%;
-    
-}
-#ajudamapa{
-	width: 30%;
-	border-radius: 2%;
-	border-right: 10px solid #263238;
-	float: right;
-    margin: 2%;
-    margin-top: 10%
-}
-
-/* ---- INICIO DO index ---- */
-
-
-
-/* ---- INICIO DO SLIDE ---- */
-.slides{
-	height:60%;
-}
-.slider .slides li .caption{
-    top: 20%;
-}
-.slider .slides li .caption, .texto-do-slide{
-    color: #E5E5E5;
-    text-shadow: 1px 1px 1px black;
-}
-.slider .indicators .indicator-item.active {
-	background-color: #2f4f4f;
-}
-.espacamentoSuperior{
-    margin-top: 95vh;
-}
-.indicator-item active{
-	background-color: #263238
-}	
-.indicator-item{
-	background-color: #263238
-}
-/* ---- FIM DO SLIDE ---- */
-
-
-
-/* ---- INICIO DO LOGO ---- */
+/* ---------------------------------------   INICIO DO INDEX.PHP ------------------------- */
 #logo {
     padding: 10px 7px 5px 12px;
 }
@@ -76,36 +29,9 @@
 	margin: 5px;
 	margin-left: 20px;
 }
-	
-/* ---- FIM DO LOGO ---- */
 
 
 
-/* ---- INICIO DO FOOTER ---- */
-.page-footer {
-	background-color: #2F4F4F;
-    margin-top: 15px;
-	clear: both;
-}
-.footer{
-    background-color: black;
-}
-.footer-copyright{
-    background-color: black;
-}
-/* ---- FIM DO FOOTER ---- */
-
-
-
-/* ----- INICIO SOBRE ----- */
-.sobrefoto{
-    width: 100%;
-}
-/* ----- FIM SOBRE ------ */
-
-
-
-/* ---- INICIO DO NAVBAR ---- */ 
 #navbar {
 	background-color: #2F4F4F;
 }
@@ -152,11 +78,79 @@
 /*MOBILE*/.side-nav, background, white-text name {
     background-color: #fff;
 }
-/* ---- FIM DO NAVBAR ---- */ 
 
 
 
-/* ---- INICIO DO DEPOIMENTO ---- */
+.slides{
+	height:60%;
+}
+.slider .slides li .caption{
+    top: 20%;
+}
+.slider .slides li .caption, .texto-do-slide{
+    color: #E5E5E5;
+    text-shadow: 1px 1px 1px black;
+}
+.slider .indicators .indicator-item.active {
+	background-color: #2f4f4f;
+}
+.espacamentoSuperior{
+    margin-top: 95vh;
+}
+.indicator-item active{
+	background-color: #263238
+}	
+.indicator-item{
+	background-color: #263238
+}
+
+
+
+
+#map22{
+    margin: 2%;
+    width: 60%;
+    height: 70%;
+    
+}
+#ajudamapa{
+	width: 30%;
+	border-radius: 2%;
+	border-right: 10px solid #263238;
+	float: right;
+    margin: 2%;
+    margin-top: 10%
+}
+
+/* ---------------------------------------   FIM DO INDEX.PHP ------------------------- */
+
+
+
+/* ---------------------------------------   INICIO DO FOOTER.PHP ------------------------- */
+.page-footer {
+	background-color: #2F4F4F;
+    margin-top: 15px;
+	clear: both;
+}
+.footer{
+    background-color: black;
+}
+.footer-copyright{
+    background-color: black;
+}
+/* ---------------------------------------   FIM DO FOOTER.PHP ------------------------- */
+
+
+
+/* ---------------------------------------   INICIO DO SOBRE.PHP ------------------------- */
+.sobrefoto{
+    width: 100%;
+}
+/* ---------------------------------------   FIM DO SOBRE.PHP ------------------------- */
+
+
+
+/* ---------------------------------------   INICIO DO DEPOIMENTO.PHP ------------------------- */
 #depoimentos{
     position: relative;
     margin: auto;
@@ -206,11 +200,11 @@ textarea {
 .botaocomentario{
     margin: auto;
 }
-/* ---- FIM DO DEPOIMENTO ---- */
+/* ---------------------------------------   FIM DO DEPOIMENTO.PHP ------------------------- */
 
 
 
-/* ---- INICIO LOGIN  E CADASTRO---- */
+/* ---------------------------------------   INICIO DO LOGIN E CADASTRO -> CADASTRO.PHP ------------------------- */
 #cadastrarUsuario{
 	height: 533px;
 	width: 27%;
@@ -230,11 +224,11 @@ textarea {
 	float: left;
 	margin-top: 3%;
 }
-/* ----- FIM DO LOGIN ----- */
+/* ---------------------------------------   INICIO DO LOGIN E CADASTRO -> CADASTRO.PHP  ------------------------- */
 
 
 
-/* --- INICO DO -OU-  --- */
+/* ---------------------------------------   INICO DO -OU-  -> CADASTRO.PHP  ------------------------- */
 .box {
 	width: 1%;
 	height: 100px;/*Altura da linha*/
@@ -262,11 +256,11 @@ textarea {
 	margin: auto;
 	color: 	#666666;
 }
-/* --- FIM DO -OU-  --- */
+/* ---------------------------------------   FIM DO -OU-  -> CADASTRO.PHP  ------------------------- */
 
 
 
-/* --- INICIO DO EDITAR PERFIL --- */
+/* ---------------------------------------   INICIO DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
 #editForm{
 	margin-left: 10%;
 	margin-right:50%;
@@ -283,11 +277,11 @@ textarea {
 .slim imageuser{
 	margin: auto;
 }
-/* --- FIM DO EDITAR PERFIL --- */
+/* ---------------------------------------   FIM DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
 
 
 
-/* --- INICIO DO MAPA --- */
+/* ---------------------------------------   INICIO VER ANIMAIS -> MAPA.PHP  ------------------------- */
 #map{
     height: 90%;
     width: 90%;
@@ -296,7 +290,6 @@ textarea {
 html, body {
     height: 100%;
   }
-
 #Mapa{
 	width: 60%;
 	height: 118%;
@@ -307,24 +300,40 @@ html, body {
 	margin-top: 2%;
 	padding: 2%;
 	margin-bottom: 5%;
-	
 }
-/* --- FIM DO MAPA --- */
+.collapsible{
+	width: 30%;
+	border-radius: 2%;
+	border-right: 10px solid #263238;
+	margin: auto;
+}
+.a{
+	text-align: blue;
+}
+#badgeAzul{
+    color: #0000cc;
+}
+#badgeVermelho{
+    color: #990000;
+}
+#badgeVerde{
+    color: olivedrab;
+}
+/* ---------------------------------------   FIM DO VER ANIMAIS -> MAPA.PHP  ------------------------- */
 
 
 
-/* --- doação e perdido --- */
+/* ---------------------------------------   INICIO DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 #mapperdido{
     margin: auto;
     width: 60%;
     height: 50%;
 }
-
-/*---- doação e perdido ----*/
-
+/* ---------------------------------------   FIM DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 
 
-/* --- INICIO DO CADASTRO DE PET PARA DOAR --- */
+
+/* ---------------------------------------   INICIO DO CADASTRO DE PET PARA DOAR -> DOACAO.PHP  ------------------------- */
 #cadastrarDoaPet{
 	width: 50%;
 	height: 115%;
@@ -347,11 +356,42 @@ html, body {
     width: 50%;
     height: 50%;
 }
-/* --- FIM DO CADASTRO DE PET PARA DOAR --- */
+/* ---------------------------------------   FIM DO CADASTRO DE PET PARA DOAR -> DOACAO.PHP  ------------------------- */
 
 
 
-/* --- INICIO DO CADASTRO DE PET ENCONTRADO --- */
+/* ---------------------------------------   INICIO DO ADOTAR  ------------------------- */
+/*COR NOME E DESCRIÇÃO */#pet{
+    color: darkgray;
+}
+/*COR DA IFOMAÇÕES DO CARD */.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+    color: #263238;
+}
+hr{
+    width: 50%;
+    margin-top: 2%;
+}
+#adotarlogin{
+    margin-left: 45%;
+    padding-left: 0.5rem;
+}
+.cardpet{
+    margin-top: 10%;
+    margin-left: 8%;
+    margin-bottom: 3%;
+    
+}
+#map2{
+    margin: auto;
+    width: 108%%;
+    height: 50%;
+    margin-top: 5%
+}
+/* ---------------------------------------   INICIO DO ADOTAR  ------------------------- */
+
+
+
+/* ---------------------------------------   INICIO DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
 #CadastroPetEncontrado{
 	width: 50%;
 	height: 93%;
@@ -381,58 +421,6 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
-/* --- FIM DO CADASTRO DE PET ENCONTRADO --- */
+/* ---------------------------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
 
 
-
-/* --- INICIO VER ANIMAIS  --- */
-.collapsible{
-	width: 30%;
-	border-radius: 2%;
-	border-right: 10px solid #263238;
-	margin: auto;
-}
-.a{
-	text-align: blue;
-}
-#badgeAzul{
-    color: #0000cc;
-}
-#badgeVermelho{
-    color: #990000;
-}
-#badgeVerde{
-    color: olivedrab;
-}
-/* --- FIM DO VER ANIMAIS  --- */
-
-
-
-/* --- INICIO DO DOAR --- */
-/*COR NOME E DESCRIÇÃO */#pet{
-    color: darkgray;
-}
-/*COR DA IFOMAÇÕES DO CARD */.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-    color: #263238;
-}
-hr{
-    width: 50%;
-    margin-top: 2%;
-}
-#adotarlogin{
-    margin-left: 45%;
-    padding-left: 0.5rem;
-}
-.cardpet{
-    margin-top: 10%;
-    margin-left: 8%;
-    margin-bottom: 3%;
-    
-}
-#map2{
-    margin: auto;
-    width: 108%%;
-    height: 50%;
-    margin-top: 5%
-}
-/* --- FIM DO DOAR --- */
