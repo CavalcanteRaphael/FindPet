@@ -83,7 +83,7 @@ var marcador = new google.maps.Marker({
 position: {lat: -23.63324584, lng: -45.4241625},
 map: map,
 draggable: true,
-icon: 'img/iconeMapa.png'
+icon: 'img/iconeVerde.png'
 });
 
 google.maps.event.addListener(marcador, 'dragend', function(event) {

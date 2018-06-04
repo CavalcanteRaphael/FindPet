@@ -108,7 +108,7 @@
         position: {lat: -23.63324584, lng: -45.4241625},
         draggable: true,
         map: map,
-        icon: 'img/iconeMapa.png'
+        icon: 'img/iconeAzul.png'
         });
 
         google.maps.event.addListener(marcador, 'dragend', function(event) {
