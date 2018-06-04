@@ -96,10 +96,12 @@
                     draggable: true,
                     icon: 'img/iconeMapa.png'
                 });
+
                 google.maps.event.addListener(marcador, 'dragend', function(event) {
                     document.getElementById("inputLat").value = event.latLng.lat();
                     document.getElementById("inputLng").value = event.latLng.lng();
                 })
+                
                 // Try HTML5 geolocation.
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {

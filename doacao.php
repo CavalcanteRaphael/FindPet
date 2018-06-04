@@ -79,6 +79,8 @@
                 </div>
                 <input type="hidden" name="nome" id="nome" value="null">
                 <input type="hidden" name="tipo" id="tipo" value="doacao">
+                <input type="hidden" name="lat" id="inputLat">
+                <input type="hidden" name="lng" id="inputLng">
                 <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
                 <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
             </form>
@@ -103,6 +105,11 @@
         map: map,
         icon: 'img/iconeMapa.png'
         });
+
+        google.maps.event.addListener(marcador, 'dragend', function(event) {
+                    document.getElementById("inputLat").value = event.latLng.lat();
+                    document.getElementById("inputLng").value = event.latLng.lng();
+                })
 
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
