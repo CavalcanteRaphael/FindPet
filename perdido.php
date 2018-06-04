@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <input type="hidden" name="tipo" id="tipo" value="perdido">
-                <input type="hidden" name="castrado" id="castrado" value="">
+                <input type="hidden" name="castrado" id="castrado" value="null">
                 <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
                 <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
@@ -91,29 +91,17 @@
                 });
                 var infoWindow = new google.maps.InfoWindow({map: map});
                 var marcador = new google.maps.Marker({
-                      position: {lat: -23.63324584, lng: -45.4241625},
-                      map: map,
-                      icon: 'img/iconeMapa.png',
-                      draggable: true
-                    });
-                <?php 
-        require "ajax/conexao.php";
-                $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
-                $result = $stmt->fetchAll();
-                    if($result){
-        foreach ($result as $row) { ?>
-        
-        var marcador = new google.maps.Marker({
-          position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
-          map: map,
-          icon: 'img/iconeMapa.png'
-        });
+                    position: {lat: -23.63324584, lng: -45.4241625},
+                    map: map,
+                    draggable: true,
+                    icon: 'img/iconeMapa.png'
+                });
 
-        <?php }} ?>
                 google.maps.event.addListener(marcador, 'dragend', function(event) {
                     document.getElementById("inputLat").value = event.latLng.lat();
                     document.getElementById("inputLng").value = event.latLng.lng();
                 })
+                
                 // Try HTML5 geolocation.
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {

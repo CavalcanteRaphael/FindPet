@@ -17,7 +17,6 @@ CREATE TABLE `animal` (
   `nascimento` DATE DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
 CREATE TABLE `depoimentos` (
   `id` int(10) UNSIGNED NOT NULL,
   `iduser` int(10) NOT NULL,
@@ -34,17 +33,35 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `findpet`.`mapa` (
-  `idmapa` INT NOT NULL AUTO_INCREMENT,
-  `idanimal` INT NOT NULL,
+  `idmapa` INT(11) NOT NULL AUTO_INCREMENT,
+  `idanimal` INT(11) NOT NULL,
   `latitude` FLOAT(15) NOT NULL,
   `longitude` FLOAT(15) NOT NULL,
+  `idmapa` INT NOT NULL AUTO_INCREMENT,
+  `idanimal` INT NOT NULL,
+  `latitude` DECIMAL(20,16) NOT NULL,
+  `longitude` DECIMAL(20,16) NOT NULL,
   PRIMARY KEY (`idmapa`),
   UNIQUE INDEX `idmapa_UNIQUE` (`idmapa` ASC));
 
+CREATE TABLE `mensagem` (
+  `id` int(11) NOT NULL,
+  `id_de` int(11) NOT NULL,
+  `id_para` int(11) NOT NULL,
+  `mensagem` varchar(255) NOT NULL,
+  `time` datetime NOT NULL,
+  `lido` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `mensagem`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `mensagem`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  
 ALTER TABLE `animal`
   ADD PRIMARY KEY (`idanimal`),
   ADD UNIQUE KEY `idanimal_UNIQUE` (`idanimal`);
-ALTER TABLE `animal` ADD `sexo` INT(1) NOT NULL AFTER `raca`;  
+  ALTER TABLE `animal` ADD `sexo` INT(1) NOT NULL AFTER `raca`;
 ALTER TABLE `depoimentos`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id_UNIQUE` (`id`);
