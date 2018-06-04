@@ -9,6 +9,11 @@
                 <center>
                     <h4>Cadastrar Pet Para Doação</h4>
                 </center>
+                  <div class="input-field col s12">
+                    <label for="nome">Nome do Animal (opcional) :</label>
+                    <input type="text" name="nome" id="nome">
+                    <br/>
+                </div>
                 <div class="input-field col s12">
                     <label for="cor">Cor:</label>
                     <input type="text" name="cor" id="cor">
