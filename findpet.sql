@@ -40,6 +40,20 @@ CREATE TABLE `findpet`.`mapa` (
   PRIMARY KEY (`idmapa`),
   UNIQUE INDEX `idmapa_UNIQUE` (`idmapa` ASC));
 
+CREATE TABLE `mensagem` (
+  `id` int(11) NOT NULL,
+  `id_de` int(11) NOT NULL,
+  `id_para` int(11) NOT NULL,
+  `mensagem` varchar(255) NOT NULL,
+  `time` datetime NOT NULL,
+  `lido` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `mensagem`
+  ADD PRIMARY KEY (`id`);
+ALTER TABLE `mensagem`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  
 ALTER TABLE `animal`
   ADD PRIMARY KEY (`idanimal`),
   ADD UNIQUE KEY `idanimal_UNIQUE` (`idanimal`);
