@@ -118,7 +118,7 @@
       <i class="material-icons">loupe</i>
       Doação
       <span class="badge" id="badgeAzul">AZUL</span></div>
-    <div class="collapsible-body"><p>Os pets em azul no mapa estão para doação.</p></div>
+    <div class="collapsible-body"><p>Os pets em azul no mapa estão para disponíveis para doação.</p></div>
   </li>
 		
   <li>
