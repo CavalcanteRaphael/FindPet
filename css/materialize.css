@@ -4023,6 +4023,189 @@ nav ul a span.badge {
   }
 }
 
+@media only screen and (min-width: 1919px) {
+  .row .col.xxl1 {
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl11 {
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.xxl12 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+  }
+  .row .col.offset-m1 {
+    margin-left: 8.3333333333%;
+  }
+  .row .col.pull-m1 {
+    right: 8.3333333333%;
+  }
+  .row .col.push-m1 {
+    left: 8.3333333333%;
+  }
+  .row .col.offset-m2 {
+    margin-left: 16.6666666667%;
+  }
+  .row .col.pull-m2 {
+    right: 16.6666666667%;
+  }
+  .row .col.push-m2 {
+    left: 16.6666666667%;
+  }
+  .row .col.offset-m3 {
+    margin-left: 25%;
+  }
+  .row .col.pull-m3 {
+    right: 25%;
+  }
+  .row .col.push-m3 {
+    left: 25%;
+  }
+  .row .col.offset-m4 {
+    margin-left: 33.3333333333%;
+  }
+  .row .col.pull-m4 {
+    right: 33.3333333333%;
+  }
+  .row .col.push-m4 {
+    left: 33.3333333333%;
+  }
+  .row .col.offset-m5 {
+    margin-left: 41.6666666667%;
+  }
+  .row .col.pull-m5 {
+    right: 41.6666666667%;
+  }
+  .row .col.push-m5 {
+    left: 41.6666666667%;
+  }
+  .row .col.offset-m6 {
+    margin-left: 50%;
+  }
+  .row .col.pull-m6 {
+    right: 50%;
+  }
+  .row .col.push-m6 {
+    left: 50%;
+  }
+  .row .col.offset-m7 {
+    margin-left: 58.3333333333%;
+  }
+  .row .col.pull-m7 {
+    right: 58.3333333333%;
+  }
+  .row .col.push-m7 {
+    left: 58.3333333333%;
+  }
+  .row .col.offset-m8 {
+    margin-left: 66.6666666667%;
+  }
+  .row .col.pull-m8 {
+    right: 66.6666666667%;
+  }
+  .row .col.push-m8 {
+    left: 66.6666666667%;
+  }
+  .row .col.offset-m9 {
+    margin-left: 75%;
+  }
+  .row .col.pull-m9 {
+    right: 75%;
+  }
+  .row .col.push-m9 {
+    left: 75%;
+  }
+  .row .col.offset-m10 {
+    margin-left: 83.3333333333%;
+  }
+  .row .col.pull-m10 {
+    right: 83.3333333333%;
+  }
+  .row .col.push-m10 {
+    left: 83.3333333333%;
+  }
+  .row .col.offset-m11 {
+    margin-left: 91.6666666667%;
+  }
+  .row .col.pull-m11 {
+    right: 91.6666666667%;
+  }
+  .row .col.push-m11 {
+    left: 91.6666666667%;
+  }
+  .row .col.offset-m12 {
+    margin-left: 100%;
+  }
+  .row .col.pull-m12 {
+    right: 100%;
+  }
+  .row .col.push-m12 {
+    left: 100%;
+  }
+}
+
 @media only screen and (min-width: 1201px) {
   .row .col.xl1 {
     width: 8.3333333333%;
@@ -8309,10 +8492,19 @@ input[type=range]:focus::-ms-fill-upper {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8365,10 +8557,19 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
