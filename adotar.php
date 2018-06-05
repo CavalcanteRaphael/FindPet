@@ -25,7 +25,7 @@
           if($result){
               foreach($result as $row){ ?>
               
-                <div class=" row cardpet<?php echo $i; ?> col s12 m3 l4 "><?php $i++; ?>
+                <div class=" row cardpet<?php echo $i; ?> col s12 m6 l4 xl4 "><?php $i++; ?>
                     <div class="col-sm-6">
                         <div class="card sticky-action" style="overflow: visible;">
                           <div class="card-image waves-effect waves-block waves-light">

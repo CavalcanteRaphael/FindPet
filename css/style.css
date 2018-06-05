@@ -387,8 +387,8 @@ hr{
     height: 50%;
     margin-top: 5%
 }
-.petsAdotar{
-    max-width: 354px;
+#petsAdotar{
+    max-width: 82%;
 }
 /* ---------------------------------------   INICIO DO ADOTAR  ------------------------- */
 
