@@ -140,7 +140,7 @@ type: 'POST',
 data: $('#cadastro').serialize(),
 dataType: 'json',
 success: function(response){
-if(response.deucerto === 1){
+if(response.deucerto == 1){
 notificar('success','Pet cadastrado com sucesso!')
 $("#cadastro").trigger("reset");
 }

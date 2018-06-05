@@ -23,9 +23,8 @@
 			<input type="submit" value="login" class=" blue-grey darken-4 btn">
 		</form>
 	</div>
-	<br/>	
-	  				
-	  		
+	<br/>		
+
 			<div class="box">
 			</div>
 			<div class="box linha-vertical">
@@ -37,8 +36,7 @@
 			</div>
 			<div class="box linha-vertical2">
 			</div>
-	  
-	  
+
 	<div id="cadastrarUsuario" class="col s5 hoverable m6 l4 ">
 		<form id="cadastro" method="post">
 			<center><h4>Cadastrar-se</h4></center>
@@ -66,7 +64,7 @@
 ?>
 
         <script type="text/javascript">
-            if (<?php echo $pedirLogin; ?> === 1) {
+            if (<?php echo $pedirLogin; ?> == 1) {
                 notificar('error', 'Faça login antes de continuar!')
             }
             $(document).ready(function() {
@@ -74,61 +72,83 @@
             });
             $('#cadastro').submit(function(event){
                 event.preventDefault();
-                if ($('#nome').val().lenght < 3){
+
+                //INÍCIO DA VALIDAÇÃO DO NOME
+                if ($('#nome').val().length < 3){
                     notificar('error', 'Nome Inválido!')
-                    var nomevalido = 0
+                    var nomeValido = 0
                 } else {
-                    var nomevalido = 1
+                    var nomeValido = 1
                 }
+                //FIM DA VALIDAÇÃO DO NOME
+
+                //INÍCIO DA VALIDAÇÃO DO EMAIL
                 if (document.getElementById("email").value.indexOf("@") == -1 ||
                     document.getElementById("email").value.indexOf(".com") == -1 ||
                     document.getElementById("email").value.length < 7) {
                     notificar('error', 'Email Inválido!')
-                    var emailvalido = 0
+                    var emailValido = 0
                     } else {
-                        var emailvalido = 1
+                        var emailValido = 1
                     }
+                //FIM DA VALIDAÇÃO DO EMAIL
+
+                //INÍCIO DA VALIDAÇÃO DA SENHA
                 var alfabeto = /[a-zA-Z\u00C0-\u00FF ]+/i
                 var numeros = /[0-9]/
                 var senhaValida = 0
-                if ($('senha').lenght < 6) {
+                if ($('#senha').val().length < 6) {
                     notificar('error', 'A senha deve conter no mínimo 6 caracteres!')
                     senhaValida = 0
                 } else {
                     senhaValida = 1
                 }
-                if (alfabeto.test($('#senha').val())) {
+                if (alfabeto.test($('#senha').val()) && numeros.test($('#senha').val())) {
                     senhaValida = 1
                 } else {
                     notificar('error', 'A senha deve conter letras e números!')
                     senhaValida = 0
                 }
-                if (numeros.test($('#senha').val())) {
-                    senhaValida = 1
-                } else {
-                    notificar('error', 'A senha deve conter letras e números!')
-                    senhaValida = 0
-                }
-                if ($('#senha').val() === $('#confirm_senha').val()) {
+                if ($('#senha').val() == $('#confirm_senha').val()) {
                     var senhaConfere = 1
                     } else {
                         notificar('error', 'Senhas não conferem!')
                     }
-                if (emailvalido === 1 && nomevalido === 1 && senhaValida === 1 && senhaConfere === 1) {
-                    $.ajax({
-                        url: 'ajax/cadastro.php',
+                //FIM DA VALIDAÇÃO DA SENHA
+
+                $.ajax({
+                        url: 'ajax/verificaEmail.php',
                         type: 'POST',
-                        data: $('#cadastro').serialize(),
+                        data: $('#email'),
                         dataType: 'json',
                         success: function(response){
-                            console.log(response);
-                            if(response.deucerto === 1){
-                                notificar('success','Cadastro realizado com sucesso!')
-                                $("#cadastro").trigger("reset");
+                            if(response.valido) {
+                                emailValido = 1
+                            } else {
+                                emailValido = 0
+                                console.log(emailValido)
+                                notificar('error', 'Email já Cadastrado!')
                             }
+
+                            if (emailValido == 1 && nomeValido == 1 && senhaValida == 1 && senhaConfere == 1) {
+                            $.ajax({
+                                url: 'ajax/cadastro.php',
+                                type: 'POST',
+                                data: $('#cadastro').serialize(),
+                                dataType: 'json',
+                                success: function(response){
+                                    console.log(response);
+                                    if(response.deucerto == 1){
+                                        notificar('success','Cadastro realizado com sucesso!')
+                                        $("#cadastro").trigger("reset");
+                                    }
+                                }
+                            });
+                }
+
                         }
                     });
-                }
+
             });
             $('#login').submit(function(event){
                 event.preventDefault();
@@ -138,7 +158,7 @@
                     data: $('#login').serialize(),
                     dataType: 'json',
                     success: function(response){
-                        if (response.login === 1) {
+                        if (response.login == 1) {
                             window.location = 'index.php';
                         } else {
                             $('#loginTitulo').html('<p class="invalido">Email ou senha incorretos</p>')

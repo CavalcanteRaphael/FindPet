@@ -77,7 +77,7 @@
                 <div class="row">
                     <div class="col s12">
                         <h1 class="center-align">O que dizem sobre o site</h1>
-                        
+
                         <div id="depoimentos">
                             <?php 
                                 require "ajax/conexao.php";
@@ -112,7 +112,7 @@
         <hr>
         <center><h2>Mapa</h2></center>
         <ul class="collapsible" id="ajudamapa">
-		
+
   <li>
     <div class="collapsible-header">
       <i class="material-icons">loupe</i>
@@ -120,7 +120,7 @@
       <span class="badge" id="badgeAzul">AZUL</span></div>
     <div class="collapsible-body"><p>Os pets em azul no mapa estão para disponíveis para doação.</p></div>
   </li>
-		
+
   <li>
     <div class="as collapsible-header">
       <i class="material-icons">notifications_active</i>
@@ -148,20 +148,26 @@
                     });
                     var infoWindow = new google.maps.InfoWindow({map: map});
 
-                    <?php 
-                    require "ajax/conexao.php";
-                            $stmt = $conn->query("SELECT latitude, longitude FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
-                            $result = $stmt->fetchAll();
-                            if($result){
-                              foreach ($result as $row) { ?>
-                              
-                              var marcador = new google.maps.Marker({
-                                position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
-                                map: map,
-                                icon: 'img/iconeMapa.png'
-                              });
+        <?php 
+        require "ajax/conexao.php";
+                $stmt = $conn->query("SELECT latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $result = $stmt->fetchAll();
+                if($result){
+                  foreach ($result as $row) { ?>
+                  if ('<?php echo $row['tipo']; ?>' == 'perdido') {
+                    var imgMarcador = 'img/iconeVermelho.png'
+                  } else if('<?php echo $row['tipo']; ?>' == 'doacao') {
+                    var imgMarcador = 'img/iconeAzul.png'
+                  } else {
+                    var imgMarcador = 'img/iconeVerde.png'
+                  }
+                  var marcador = new google.maps.Marker({
+                    position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
+                    map: map,
+                    icon: imgMarcador
+                  });
 
-                            <?php }} ?>
+                <?php }} ?>
 
                     // Try HTML5 geolocation.
                     if (navigator.geolocation) {
