@@ -12,7 +12,7 @@
                 <div class="col s12">
                     <h3 class="center-align">Quem Somos</h3>
                     <p class="flow-text center-align">Nosso site foi criado em 2018, no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo para o projeto de conclusão do 3°Modulo de Informática para Internet, com o intuito de ajudar a comunidade.
-                    O Site é voltado para que as pessoas que perderam animais ou queiram adotar, possam encontrar um animal para adotar ou seu animal perdido.</p>
+                    O Site é voltado para as pessoas que perderam animais, queiram adotar e que queiram doar.</p>
                 </div>
             </div>
             <div class="row">
