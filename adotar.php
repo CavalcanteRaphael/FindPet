@@ -25,7 +25,7 @@
           if($result){
               foreach($result as $row){ ?>
               
-                <div class=" row cardpet<?php echo $i; ?> col s12 m6 l4 xl4 "><?php $i++; ?>
+                <div class=" row cardpet<?php echo $i; ?> col s12 m6 l4 xl4 xxl2 "><?php $i++; ?>
                     <div class="col-sm-6">
                         <div class="card sticky-action" style="overflow: visible;">
                           <div class="card-image waves-effect waves-block waves-light">
@@ -68,7 +68,7 @@
                     var marcador = new google.maps.Marker({
                       position: {lat: -23.63324584, lng: -45.4241625},
                       map: map,
-                      icon: 'img/iconeMapa.png'
+                      icon: 'img/iconeAzul.png'
                     });
 
                     // Try HTML5 geolocation.

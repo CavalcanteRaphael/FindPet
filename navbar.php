@@ -22,7 +22,7 @@
             <script src="js/jquery.maskedinput.js"></script>
 
             <!--Import Materialize-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection">
+            <link rel="stylesheet" href="css/materialize.css" media="screen,projection">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
             <!--Import Noty-->
