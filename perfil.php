@@ -67,27 +67,62 @@
                 $("#telefone").mask("(99) 99999-9999")
             });
             $('#salvar').click(function(){
-                $.ajax({
-                    url: 'ajax/editarperfil.php',
-                    type: 'POST',
-                    data: $('#editForm').serialize(),
-                    dataType: 'json',
-                    success: function(response){
-                        if(response.deucerto == 1){
-                            notificar('success','Perfil editado com sucesso!')
-                            location.reload(this);
-                        }
-                        if(response.deucerto == 2){
-                            notificar('error','Dados precisam ser preenchidos!')
-                            location.reload(this);
-                        }
-                        if(response.deucerto == 3){
-                            notificar('error','Dados permanecem iguais!')
-                        }
 
-                        
-                    } 
-                });
+                //INÍCIO DA VALIDAÇÃO DO NOME
+                if ($('#nome').val().length < 3){
+                    notificar('error', 'Nome Inválido!')
+                    var nomeValido = 0
+                } else {
+                    var nomeValido = 1
+                }
+                //FIM DA VALIDAÇÃO DO NOME
+
+                //INÍCIO DA VALIDAÇÃO DO EMAIL
+                if (document.getElementById("icon_mail").value.indexOf("@") == -1 ||
+                    document.getElementById("icon_mail").value.indexOf(".com") == -1 ||
+                    document.getElementById("icon_mail").value.length < 7) {
+                    notificar('error', 'Email Inválido!')
+                    var emailValido = 0
+                    } else {
+                        var emailValido = 1
+                    }
+                //FIM DA VALIDAÇÃO DO EMAIL
+
+                if (emailValido == 1 && nomeValido == 1) {
+                    $.ajax({
+                        url: 'ajax/verificaEmail.php',
+                        type: 'POST',
+                        data: $('#icon_mail'),
+                        dataType: 'json',
+                        success: function(response){
+                            if(response.valido) {
+                                emailValido = 1
+                            } else {
+                                emailValido = 0
+                                console.log(emailValido)
+                                notificar('error', 'Email já Cadastrado!')
+                            }
+                            if (emailValido == 1) {
+                                $.ajax({
+                                url: 'ajax/editarperfil.php',
+                                type: 'POST',
+                                data: $('#editForm').serialize(),
+                                dataType: 'json',
+                                success: function(response){
+                                    if(response.deucerto == 1){
+                                        notificar('success','Perfil editado com sucesso!')
+                                        location.reload(this);
+                                    }
+                                    else if(response.deucerto == 3){
+                                        notificar('error','Dados permanecem iguais!')
+                                    }
+
+                                } 
+                            });
+                        }
+                        }
+                    })
+                }
             });
         </script>
     </body>
