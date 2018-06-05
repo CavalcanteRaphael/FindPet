@@ -1,5 +1,5 @@
 <?php
-    require 'ajax/redirLogin.php'
+    require 'ajax/redirLogin.php';
 ?>
 <?php
     require 'navbar.php';
@@ -73,15 +73,15 @@
                     data: $('#editForm').serialize(),
                     dataType: 'json',
                     success: function(response){
-                        if(response.deucerto === 1){
+                        if(response.deucerto == 1){
                             notificar('success','Perfil editado com sucesso!')
                             location.reload(this);
                         }
-                        if(response.deucerto === 2){
+                        if(response.deucerto == 2){
                             notificar('error','Dados precisam ser preenchidos!')
                             location.reload(this);
                         }
-                        if(response.deucerto === 3){
+                        if(response.deucerto == 3){
                             notificar('error','Dados permanecem iguais!')
                         }
 

@@ -30,6 +30,22 @@
   </li>
 </ul>
 		<br/>
+
+    <form action="">
+      Filtros:
+      <label>Categoria:</label><br />
+      <input type="radio" name="categoria" value="adocao">Adoção<br />
+      <input type="radio" name="categoria" value="perdido">Perdido<br />
+      <input type="radio" name="categoria" value="encontrado">Encontrado<br />
+
+      <label>Categoria:</label><br />
+      <input type="radio" name="especie" value="cachorro">Cachorro<br />
+      <input type="radio" name="especie" value="gato">Gato<br />
+      <input type="radio" name="especie" value="outro">Outro <br />
+
+      <input type="submit" name="Filtrar">
+    </form>
+
 	<div id="map"></div>
             <script>
       var map;
@@ -46,9 +62,9 @@
                 $result = $stmt->fetchAll();
                 if($result){
                   foreach ($result as $row) { ?>
-                  if ('<?php echo $row['tipo']; ?>' === 'perdido') {
+                  if ('<?php echo $row['tipo']; ?>' == 'perdido') {
                     var imgMarcador = 'img/iconeVermelho.png'
-                  } else if('<?php echo $row['tipo']; ?>' === 'doacao') {
+                  } else if('<?php echo $row['tipo']; ?>' == 'doacao') {
                     var imgMarcador = 'img/iconeAzul.png'
                   } else {
                     var imgMarcador = 'img/iconeVerde.png'
