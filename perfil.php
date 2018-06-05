@@ -1,5 +1,5 @@
 <?php
-    require 'ajax/redirLogin.php'
+    require 'ajax/redirLogin.php';
 ?>
 <?php
     require 'navbar.php';
