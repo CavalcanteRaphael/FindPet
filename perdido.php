@@ -20,28 +20,51 @@
                     <input type="text" name="cor" id="cor">
                     <br/>
                 </div>
-                <div class="input-field col s12">
-                    <select name="porte">
-                        <option value="" disabled selected>Selecione o Porte:</option>
-                        <option value="mini">Mini</option>
-                        <option value="pequeno">Pequeno</option>
-                        <option value="medio">Médio</option>
-                        <option value="grande">Grande</option>
-                        <option value="gigante">Gigante</option>
-                    </select>
-                    <label>Porte:</label>
-                </div>
-                <div class="input-field col s12">
-                    <select name="especie">
-                        <option value="" disabled selected>Selecione a espécie:</option>
-                        <option value="cachorro">Cachorro</option>
-                        <option value="gato">Gato</option>
-                    </select>
-                    <label>Espécie:</label>
-                </div>
+
+                Porte:
+                <p>
+                    <input name="porte" type="radio" value="mini" id="mini" checked class="with-gap" />
+                    <label for="mini">
+                        <span>Mini</span>
+                    </label>
+                    <input name="porte" type="radio" value="pequeno" id="pequeno" class="with-gap" />
+                    <label for="pequeno">
+                        <span>Pequeno</span>
+                    </label>
+                    <input name="porte" type="radio" value="medio" id="medio" class="with-gap" />
+                    <label for="medio">
+                        <span>Médio</span>
+                    </label>
+                    <input name="porte" type="radio" value="grande" id="grande" class="with-gap" />
+                    <label for="grande">
+                        <span>Grande</span>
+                    </label>
+                    <input name="porte" type="radio" value="gigante" id="gigante" class="with-gap" />
+                    <label for="gigante">
+                        <span>Gigante</span>
+                    </label>
+                </p>
+
+                Espécie:
+                <p>
+                    <input name="especie" type="radio" value="cachorro" id="cachorro" checked class="with-gap" />
+                    <label for="cachorro">
+                        <span>Cachorro</span>
+                    </label>
+                    <input name="especie" type="radio" value="gato" id="gato" class="with-gap" />
+                    <label for="gato">
+                        <span>Gato</span>
+                    </label>
+                    <input name="especie" type="radio" value="outros" id="outros" class="with-gap" />
+                    <label for="outros">
+                        <span>Outros</span>
+                    </label>
+                </p>
+
                 <div class="input-field col s12">
                     <label for="raca">Raça:</label><input type="text" name="raca" id="raca"><br/>
                 </div>
+
                 Sexo:
                 <p>
                     <input name="sexo" type="radio" value="macho" id="macho" checked class="with-gap" />
@@ -53,6 +76,7 @@
                         <span>Fêmea</span>
                     </label>
                 </p>
+                
                 Vacinado:
                 <p>
                     <input name="vacinado" type="radio" value="sim" id="simvac" checked class="with-gap" />
