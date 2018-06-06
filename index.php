@@ -55,12 +55,12 @@
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">favorite_border</i>
                             <p></p>
-                            <a class=" blue-grey darken-4 btn" href="adotar.php">Adotar Mascote</a>
+                            <a class=" blue-grey darken-4 btn" href="adotar.php">Adotar Pet</a>
                         </div>
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">pets</i>
                             <p></p>
-                            <a class=" blue-grey darken-4 btn" href="doacao.php">Doar Animal</a>
+                            <a class=" blue-grey darken-4 btn" href="doacao.php">Doar Pet</a>
                         </div>
                         <div class="col s12 m6 xl3 center-align">
                             <i class="medium material-icons">attach_money</i>
