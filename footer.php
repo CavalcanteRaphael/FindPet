@@ -17,8 +17,8 @@
                 <div class="col s12 m6 l3">
                     <h5 class="white-text">Redes Sociais</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/EquipeFindPet/">Facebook</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/findpet_ifsp/?hl=pt-br">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/EquipeFindPet/" target="_blank">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/findpet_ifsp/?hl=pt-br" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
                 <div class="col s12 m6 l3">
