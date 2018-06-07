@@ -105,7 +105,6 @@
                         <label for="textarea2">Descrição</label>
                     </div>
                 </div>
-                <input type="hidden" name="nome" id="nome" value="null">
                 <input type="hidden" name="tipo" id="tipo" value="doacao">
                 <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
