@@ -91,9 +91,6 @@
 .slider .indicators .indicator-item.active {
 	background-color: #2f4f4f;
 }
-.espacamentoSuperior{
-    margin-top: 95vh;
-}
 .indicator-item active{
 	background-color: #263238
 }	
@@ -165,6 +162,15 @@
 }
 .estilodepo{
     width: 50%;
+    border: 6% solid #c3c3c340;
+    background-color: #c3c3c340;
+    border-radius: 1%;
+    padding: 2%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.estilodepo2{
+    width: 100%;
     border: 6% solid #c3c3c340;
     background-color: #c3c3c340;
     border-radius: 1%;
