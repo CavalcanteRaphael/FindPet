@@ -23,7 +23,7 @@
                                             <?php } ?>
                                         <?php } ?>
                                         <img class="avatardepoimento" src="img/<?php echo $row['img']; ?>">
-                                        <h5><?php echo $row['nome']; ?></h5>
+                                        <h5 class="nomedepouser"><?php echo $row['nome']; ?></h5>
                                     </div>
                                     <div class="textodepoimento">
                                         <br/><br/><p id="punico"><?php echo $row['texto']; ?></p>

@@ -175,8 +175,11 @@
     border-radius: 1%;
     padding: 2%;
     margin: auto;
-    word-break: break-all;
     margin-bottom: 5%;
+}
+.nomedepouser{
+    display: block;
+    padding: 10px 0px 0px 60px;
 }
 .bordacomentario a {
     float: right;
