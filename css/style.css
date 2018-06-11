@@ -105,6 +105,7 @@
     margin: 2%;
     width: 60%;
     height: 70%;
+	border-radius: 1%; 
     
 }
 #ajudamapa{
@@ -282,6 +283,7 @@ textarea {
     height: 90%;
     width: 90%;
 	margin: auto;
+	border-radius: 1%; 
 }
 html, body {
     height: 100%;
@@ -330,6 +332,7 @@ html, body {
     margin: auto;
     width: 60%;
     height: 50%;
+	border-radius: 1%; 
 }
 /* ---------------------------------------   FIM DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 
@@ -357,6 +360,7 @@ html, body {
     margin: auto;
     width: 50%;
     height: 50%;
+	border-radius: 1%; 
 }
 /* ---------------------------------------   FIM DO CADASTRO DE PET PARA DOAR -> DOACAO.PHP  ------------------------- */
 
@@ -387,6 +391,7 @@ html, body {
     
 }
 #map2{
+	border-radius: 1%; 
     margin: auto;
     width: 108%%;
     height: 50%;
@@ -414,6 +419,7 @@ html, body {
     height: 50%;
     width: 50%;
 	margin: auto;
+	border-radius: 1%; 
 }
 html, body {
     height: 100%;
