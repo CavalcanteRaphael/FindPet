@@ -58,7 +58,7 @@
         </label>
         <input name="especie" type="radio" value="outro" id="outro" class="with-gap" />
         <label for="outro">
-            <span>Outro</span>
+            <span>Outros</span>
         </label><br />
         
         <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;"></center>
