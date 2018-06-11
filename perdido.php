@@ -134,7 +134,6 @@
                             lng: position.coords.longitude
                         };
                         infoWindow.setPosition(pos);
-                        infoWindow.setContent('Location found.');
                         map.setCenter(pos);
                         map.setZoom(14);
                         marcador.setPosition(pos);

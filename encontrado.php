@@ -124,7 +124,6 @@ google.maps.event.addListener(marcador, 'dragend', function(event) {
     };
 
     infoWindow.setPosition(pos);
-    infoWindow.setContent('Location found.');
     map.setCenter(pos);
     map.setZoom(14);
     marcador.setPosition(pos);
