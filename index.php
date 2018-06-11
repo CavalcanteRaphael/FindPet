@@ -75,7 +75,7 @@
         <section class="depoimentosFavoritos">
             <div class="container">
                 <div class="row">
-                    <div class="col s12">
+                    <div class="col-sm-6">
                         <h1 class="center-align">O que dizem sobre o site</h1>
 
                         <div id="depoimentos">
@@ -85,7 +85,7 @@
                                     $result = $stmt->fetchAll();
                                         if($result){
                                             foreach($result as $row){ ?>
-                                                <div class="depoimento" data-id-depoimentos="<?php echo $row['id']; ?>">
+                                                <div class="depoimento col s12 m6 l4 xl4 xxl2" data-id-depoimentos="<?php echo $row['id']; ?>">
                                                     <div class="estilodepo hoverable">
                                                         <div class="bordacomentario">
                                                             <?php if(isset($_SESSION['id'])) { ?>
