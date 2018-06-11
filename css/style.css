@@ -29,9 +29,6 @@
 	margin: 5px;
 	margin-left: 20px;
 }
-
-
-
 #navbar {
 	background-color: #2F4F4F;
 }
@@ -104,9 +101,6 @@
 	background-color: #263238
 }
 
-
-
-
 #map22{
     margin: 2%;
     width: 60%;
@@ -178,7 +172,6 @@
     margin-bottom: 5%;
 }
 .nomedepouser{
-    display: block;
     padding: 10px 0px 0px 60px;
 }
 .bordacomentario a {
@@ -370,9 +363,12 @@ html, body {
 /*COR DA IFOMAÇÕES DO CARD */.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
     color: #263238;
 }
-hr{
+.hr{
     width: 50%;
     margin-top: 2%;
+}
+#hrindex{
+    width: 80%;
 }
 #adotarlogin{
     margin-left: 45%;

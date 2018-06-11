@@ -39,39 +39,37 @@
         <!-- Serviços -->
         <section class="espacamentoSuperior">
             <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h1 class="center-align">Nossos serviços</h1>
-                        <p class="flow-text center-align">
-                       Venha conhecer a maior plataforma de Pets.
-                        </p>
+                <div class="col s12">
+                    <h1 class="center-align">Nossos serviços</h1>
+                    <p class="flow-text center-align">
+                   Venha conhecer a maior plataforma de Pets.
+                    </p>
+                </div>
+                <div class="row" style="margin-top:6%; margin-bottom:10%;"> 
+                    <div class="col s12 m6 xl3 center-align">
+                        <i class="medium material-icons">room</i>
+                        <p></p>
+                        <a class=" blue-grey darken-4 btn" href="mapa.php">Encontrar Pet</a>
                     </div>
-                    <div class="row">
-                        <div class="col s12 m6 xl3 center-align">
-                            <i class="medium material-icons">room</i>
-                            <p></p>
-                            <a class=" blue-grey darken-4 btn" href="mapa.php">Encontrar Pet</a>
-                        </div>
-                        <div class="col s12 m6 xl3 center-align">
-                            <i class="medium material-icons">favorite_border</i>
-                            <p></p>
-                            <a class=" blue-grey darken-4 btn" href="adotar.php">Adotar Pet</a>
-                        </div>
-                        <div class="col s12 m6 xl3 center-align">
-                            <i class="medium material-icons">pets</i>
-                            <p></p>
-                            <a class=" blue-grey darken-4 btn" href="doacao.php">Doar Pet</a>
-                        </div>
-                        <div class="col s12 m6 xl3 center-align">
-                            <i class="medium material-icons">attach_money</i>
-                            <p></p>
-                            <a class="blue-grey darken-4 btn">Ajude-nos</a>
-                        </div>
+                    <div class="col s12 m6 xl3 center-align">
+                        <i class="medium material-icons">favorite_border</i>
+                        <p></p>
+                        <a class=" blue-grey darken-4 btn" href="adotar.php">Adotar Pet</a>
+                    </div>
+                    <div class="col s12 m6 xl3 center-align">
+                        <i class="medium material-icons">pets</i>
+                        <p></p>
+                        <a class=" blue-grey darken-4 btn" href="doacao.php">Doar Pet</a>
+                    </div>
+                    <div class="col s12 m6 xl3 center-align">
+                        <i class="medium material-icons">attach_money</i>
+                        <p></p>
+                        <a class="blue-grey darken-4 btn">Ajude-nos</a>
                     </div>
                 </div>
             </div>
         </section>
-        <hr>
+        <hr id="hrindex">
         <section class="depoimentosFavoritos">
             <div class="container">
                 <div class="row">

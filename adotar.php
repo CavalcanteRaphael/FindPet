@@ -14,7 +14,7 @@
     </div>
 <?php } ?>
 
-<hr/>
+<hr class="hr">
 <br/>
     <div id="petsAdotar" class="row">
     <?php 
