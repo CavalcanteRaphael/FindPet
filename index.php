@@ -73,7 +73,7 @@
         <section class="depoimentosFavoritos">
             <div class="container" style="margin-top:10%;margin-bottom:10%;">
                 <div class="row">
-                    <h1 class="center-align" style="margin-bottom:5%;">O que dizem sobre o site</h1>
+                    <h1 class="center-align" style="margin-bottom:8%;">O que dizem sobre o site</h1>
                     <div id="depoimentos">
                         <?php 
                             require "ajax/conexao.php";
