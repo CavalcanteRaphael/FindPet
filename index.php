@@ -107,35 +107,40 @@
                 </div>
             </div>
         </section>
-        <hr>
+        <hr id="hrindex">
         <center><h2>Mapa</h2></center>
         <ul class="collapsible" id="ajudamapa">
-
-  <li>
-    <div class="collapsible-header">
-      <i class="material-icons">loupe</i>
-      Doação
-      <span class="badge" id="badgeAzul">AZUL</span></div>
-    <div class="collapsible-body"><p>Os pets em azul no mapa estão para disponíveis para doação.</p></div>
-  </li>
-
-  <li>
-    <div class="as collapsible-header">
-      <i class="material-icons">notifications_active</i>
-      Perdidos
-      <span class="badge" id="badgeVermelho">VERMELHO</span></div>
-    <div class="collapsible-body"><p>Os pets em vermelho no mapa estão perdidos.</p></div>
-  </li>
-
-
-<li>
-    <div class="as collapsible-header">
-      <i class="material-icons">add_location</i>
-      Encontrados
-      <span class="badge" id="badgeVerde">VERDE</span></div>
-    <div class="collapsible-body"><p>Os pets em verde no mapa foram encontrados.</p></div>
-  </li>
-</ul>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">loupe</i>
+                    Doação
+                    <span class="badge" id="badgeAzul">AZUL</span>
+                </div>
+                <div class="collapsible-body">
+                    <p>Os pets em azul no mapa estão para disponíveis para doação.</p>
+                </div>
+            </li>
+            <li>
+                <div class="as collapsible-header">
+                    <i class="material-icons">notifications_active</i>
+                    Perdidos
+                    <span class="badge" id="badgeVermelho">VERMELHO</span>
+                </div>
+                <div class="collapsible-body">
+                    <p>Os pets em vermelho no mapa estão perdidos.</p>
+                </div>
+            </li>
+            <li>
+                <div class="as collapsible-header">
+                    <i class="material-icons">add_location</i>
+                    Encontrados
+                    <span class="badge" id="badgeVerde">VERDE</span>
+                </div>
+                <div class="collapsible-body">
+                    <p>Os pets em verde no mapa foram encontrados.</p>
+                </div>
+            </li>
+        </ul>
         <div id="map22"></div>
                         <script>
                   var map;
