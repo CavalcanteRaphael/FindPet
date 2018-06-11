@@ -259,11 +259,10 @@ textarea {
 
 /* ---------------------------------------   INICIO DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
 #editForm{
-	margin-left: 10%;
-	margin-right:50%;
 	margin: auto;
 	width: 400px;
-	margin-top: 2%;
+	margin-top: 3%;
+    padding: 2%;
 }
 #imageuser{
 	position: absolute;
@@ -273,6 +272,16 @@ textarea {
 }
 .slim imageuser{
 	margin: auto;
+}
+#corperfil{
+	width: 38%;
+    border: 6% solid #c3c3c340;
+    background-color: #c3c3c340;
+    border-radius: 1%;
+    padding: 2%;
+    margin: auto;
+    margin-bottom: 3%;
+	margin-top: 2%
 }
 /* ---------------------------------------   FIM DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
 
