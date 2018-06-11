@@ -144,6 +144,9 @@
                   function initMap() {
                     var map = new google.maps.Map(document.getElementById('map22'), {
                       center: {lat: -13.700000, lng: -47.9200000},
+                      mapTypeControl: false,
+                      streetViewControl: false,
+                      fullscreenControl: false,
                       zoom: 4
                     });
                     var infoWindow = new google.maps.InfoWindow({map: map});
@@ -178,8 +181,8 @@
                         };
 
                         infoWindow.setPosition(pos);
-                        infoWindow.setContent('Location found.');
                         map.setCenter(pos);
+                        map.setZoom(9);
                       }, function() {
                         handleLocationError(true, infoWindow, map.getCenter());
                       });

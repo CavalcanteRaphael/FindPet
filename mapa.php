@@ -31,7 +31,7 @@
 </ul>
 		<br/>
 
-    <form action="">
+    <form action="#">
       Filtros:
       <label>Categoria:</label><br />
       <input type="radio" name="categoria" value="adocao">Adoção<br />
@@ -52,6 +52,9 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -13.700000, lng: -47.9200000},
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
           zoom: 4
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
@@ -87,7 +90,7 @@
 
             infoWindow.setPosition(pos);
             map.setCenter(pos);
-            map.setZoom(12);
+            map.setZoom(9);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });

@@ -99,6 +99,9 @@ var map;
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map1'), {
         center: {lat: -13.700000, lng: -47.9200000},
+        mapTypeControl: false,
+        streetViewControl: false,
+        fullscreenControl: false,
         zoom: 4
     });
     var infoWindow = new google.maps.InfoWindow({map: map});
