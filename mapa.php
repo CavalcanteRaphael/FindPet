@@ -31,6 +31,7 @@
 </ul>
 		<br/>
 
+<<<<<<< HEAD
     <form action="#">
       Filtros:
       <label>Categoria:</label><br />
@@ -44,6 +45,40 @@
       <input type="radio" name="especie" value="outro">Outro <br />
 
       <input type="submit" name="Filtrar">
+=======
+    <form  class="filtros" action="">
+     
+       <center><h4 style="margin-top:-5%;">Filtros:</h4></center>
+       	<p>Categoria:</p>
+        <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
+        <label for="adocao">
+            <span>Adoção</span>
+        </label>
+        <input name="categoria" type="radio" value="perdido" id="perdido" class="with-gap" />
+        <label for="perdido">
+            <span>Perdido</span>
+        </label>
+        <input name="categoria" type="radio" value="encontrado" id="encontrado" class="with-gap" />
+        <label for="encontrado">
+            <span>Encontrado</span><br />
+        </label><br/>
+        <p style="margin-top: 10%;">Especie:</p>
+        <input name="especie" type="radio" value="cachorro" id="cachorro" checked class="with-gap" />
+        <label for="cachorro">
+            <span>Cachorro</span>
+        </label>
+        <input name="especie" type="radio" value="gato" id="gato" class="with-gap" />
+        <label for="gato">
+            <span>Gato</span>
+        </label>
+        <input name="especie" type="radio" value="outro" id="outro" class="with-gap" />
+        <label for="outro">
+            <span>Outros</span>
+        </label><br />
+        
+        <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;"></center>
+    
+>>>>>>> d9da9eab8fe0c4482c08d262d65fb4bbebf3da32
     </form>
 
 	<div id="map"></div>
