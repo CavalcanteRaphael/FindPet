@@ -322,6 +322,12 @@ html, body {
 #badgeVerde{
     color: #03D93A;
 }
+.filtros{
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin: 0% 35% 2% 35%;
+    padding: 2%;
+}
 /* ---------------------------------------   FIM DO VER ANIMAIS -> MAPA.PHP  ------------------------- */
 
 
