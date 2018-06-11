@@ -177,6 +177,10 @@
     margin: auto;
     margin-bottom: 5%;
 }
+.nomedepouser{
+    display: block;
+    padding: 10px 0px 0px 60px;
+}
 .bordacomentario a {
     float: right;
     margin-top: 5%;
