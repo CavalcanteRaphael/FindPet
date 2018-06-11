@@ -121,22 +121,22 @@
         var map;
         function initMap() {
         var map = new google.maps.Map(document.getElementById('mapdoacao'), {
-        center: {lat: -23.620972, lng: -45.6372588},
-        zoom: 14
+        center: {lat: -13.700000, lng: -47.9200000},
+        zoom: 4
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         var marcador = new google.maps.Marker({
-        position: {lat: -23.63324584, lng: -45.4241625},
+        position: {lat: -15.826691, lng: -47.9218204},
         draggable: true,
         map: map,
         icon: 'img/iconeAzul.png'
         });
 
         google.maps.event.addListener(marcador, 'dragend', function(event) {
-                    document.getElementById("inputLat").value = event.latLng.lat();
-                    document.getElementById("inputLng").value = event.latLng.lng();
-                })
+            document.getElementById("inputLat").value = event.latLng.lat();
+            document.getElementById("inputLng").value = event.latLng.lng();
+        })
 
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
@@ -149,6 +149,8 @@
         infoWindow.setPosition(pos);
         infoWindow.setContent('Location found.');
         map.setCenter(pos);
+        map.setZoom(14);
+        marcador.setPosition(pos);
         }, function() {
         handleLocationError(true, infoWindow, map.getCenter());
         });

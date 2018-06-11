@@ -110,12 +110,12 @@
             var map;
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('mapperdido'), {
-                    center: {lat: -23.620972, lng: -45.6372588},
-                    zoom: 14
+                    center: {lat: -13.700000, lng: -47.9200000},
+                    zoom: 4
                 });
                 var infoWindow = new google.maps.InfoWindow({map: map});
                 var marcador = new google.maps.Marker({
-                    position: {lat: -23.63324584, lng: -45.4241625},
+                    position: {lat: -15.826691, lng: -47.9218204},
                     map: map,
                     draggable: true,
                     icon: 'img/iconeVermelho.png'
@@ -136,6 +136,8 @@
                         infoWindow.setPosition(pos);
                         infoWindow.setContent('Location found.');
                         map.setCenter(pos);
+                        map.setZoom(14);
+                        marcador.setPosition(pos);
                     }, function() {
                         handleLocationError(true, infoWindow, map.getCenter());
                     });
