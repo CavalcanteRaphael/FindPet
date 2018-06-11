@@ -295,8 +295,8 @@ textarea {
 
 /* ---------------------------------------   INICIO VER ANIMAIS -> MAPA.PHP  ------------------------- */
 #map{
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
 	margin: auto;
 	border-radius: 1%; 
 }
@@ -320,7 +320,7 @@ html, body {
 	border-right: 10px solid #263238;
 	float: right;
 	margin-right: 15%;
-	margin-top: 4%;
+	margin-top: 6%;
 	
 	
 }

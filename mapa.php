@@ -33,7 +33,8 @@
 
     <form  class="filtros" action="">
      
-       <h4>Filtros:</h4>
+       <center><h4 style="margin-top:-5%;">Filtros:</h4></center>
+       	<p>Categoria:</p>
         <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
         <label for="adocao">
             <span>Adoção</span>
@@ -46,7 +47,7 @@
         <label for="encontrado">
             <span>Encontrado</span><br />
         </label><br/>
-        
+        <p style="margin-top: 10%;">Especie:</p>
         <input name="especie" type="radio" value="cachorro" id="cachorro" checked class="with-gap" />
         <label for="cachorro">
             <span>Cachorro</span>
@@ -60,7 +61,7 @@
             <span>Outro</span>
         </label><br />
         
-        <input type="submit" class="blue-grey darken-4 btn" name="Filtrar">
+        <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;"></center>
     
     </form>
 
