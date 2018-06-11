@@ -73,7 +73,7 @@
         <section class="depoimentosFavoritos">
             <div class="container">
                 <div class="row">
-                    <div class="col s12">
+                    <div class="col-sm-6">
                         <h1 class="center-align">O que dizem sobre o site</h1>
 
                         <div id="depoimentos">
@@ -83,7 +83,7 @@
                                     $result = $stmt->fetchAll();
                                         if($result){
                                             foreach($result as $row){ ?>
-                                                <div class="depoimento" data-id-depoimentos="<?php echo $row['id']; ?>">
+                                                <div class="depoimento col s12 m6 l4 xl4 xxl2" data-id-depoimentos="<?php echo $row['id']; ?>">
                                                     <div class="estilodepo hoverable">
                                                         <div class="bordacomentario">
                                                             <?php if(isset($_SESSION['id'])) { ?>
@@ -141,8 +141,8 @@
                   var map;
                   function initMap() {
                     var map = new google.maps.Map(document.getElementById('map22'), {
-                      center: {lat: -23.620972, lng: -45.6372588},
-                      zoom: 13
+                      center: {lat: -13.700000, lng: -47.9200000},
+                      zoom: 4
                     });
                     var infoWindow = new google.maps.InfoWindow({map: map});
 

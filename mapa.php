@@ -31,19 +31,37 @@
 </ul>
 		<br/>
 
-    <form action="">
-      Filtros:
-      <label>Categoria:</label><br />
-      <input type="radio" name="categoria" value="adocao">Adoção<br />
-      <input type="radio" name="categoria" value="perdido">Perdido<br />
-      <input type="radio" name="categoria" value="encontrado">Encontrado<br />
-
-      <label>Categoria:</label><br />
-      <input type="radio" name="especie" value="cachorro">Cachorro<br />
-      <input type="radio" name="especie" value="gato">Gato<br />
-      <input type="radio" name="especie" value="outro">Outro <br />
-
-      <input type="submit" name="Filtrar">
+    <form  class="filtros" action="">
+     
+       <h4>Filtros:</h4>
+        <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
+        <label for="adocao">
+            <span>Adoção</span>
+        </label>
+        <input name="categoria" type="radio" value="perdido" id="perdido" class="with-gap" />
+        <label for="perdido">
+            <span>Perdido</span>
+        </label>
+        <input name="categoria" type="radio" value="encontrado" id="encontrado" class="with-gap" />
+        <label for="encontrado">
+            <span>Encontrado</span><br />
+        </label><br/>
+        
+        <input name="especie" type="radio" value="cachorro" id="cachorro" checked class="with-gap" />
+        <label for="cachorro">
+            <span>Cachorro</span>
+        </label>
+        <input name="especie" type="radio" value="gato" id="gato" class="with-gap" />
+        <label for="gato">
+            <span>Gato</span>
+        </label>
+        <input name="especie" type="radio" value="outro" id="outro" class="with-gap" />
+        <label for="outro">
+            <span>Outro</span>
+        </label><br />
+        
+        <input type="submit" class="blue-grey darken-4 btn" name="Filtrar">
+    
     </form>
 
 	<div id="map"></div>
@@ -51,8 +69,8 @@
       var map;
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -23.620972, lng: -45.6372588},
-          zoom: 13
+          center: {lat: -13.700000, lng: -47.9200000},
+          zoom: 4
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -86,8 +104,8 @@
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
             map.setCenter(pos);
+            map.setZoom(12);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
