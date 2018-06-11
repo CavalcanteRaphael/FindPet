@@ -107,7 +107,7 @@
                 </div>
             </div>
         </section>
-        <hr id="hrindex">
+        <hr>
         <center><h2>Mapa</h2></center>
         <ul class="collapsible" id="ajudamapa">
 
