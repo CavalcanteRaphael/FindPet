@@ -105,7 +105,7 @@
             </div>
         </section>
         <hr id="hrindex">
-        <center><h2>Mapa</h2></center>
+        <center><h3>Mapa dos Pets</h3></center>
         <ul class="collapsible" id="ajudamapa">
             <li>
                 <div class="collapsible-header">
