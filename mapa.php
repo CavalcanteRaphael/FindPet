@@ -31,8 +31,12 @@
 </ul>
 		<br/>
 
+<<<<<<< HEAD
     <form  class="filtros" action="">
      
+=======
+    <form class="filtros" action="#">     
+>>>>>>> 3306f795b24de12e0f6e5056f44cea6ba54ddac3
        <center><h4 style="margin-top:-5%;">Filtros:</h4></center>
        	<p>Categoria:</p>
         <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
@@ -71,6 +75,9 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -13.700000, lng: -47.9200000},
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
           zoom: 4
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
@@ -106,7 +113,7 @@
 
             infoWindow.setPosition(pos);
             map.setCenter(pos);
-            map.setZoom(12);
+            map.setZoom(9);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
