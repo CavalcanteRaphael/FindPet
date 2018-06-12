@@ -62,7 +62,7 @@
                         success: function(response){
                             if(response.deucerto){
                                 $('#novodepoimento textarea').val('');
-                                $('#depoimentos').append('<div class="depoimento" data-id-depoimentos="'+response.idcriado+'"><div class="estilodepo hoverable"><div class="bordacomentario"><a class="bordacomentario" onclick="apagardepoimento('+response.idcriado+')"><i class="Small material-icons">delete</i></a><img class="avatardepoimento" src="img/<?php echo $img; ?>"><h5><?php echo $_SESSION['nome']; ?></h5></div><div class="textodepoimento"><br/><br/><p id="punico">'+txtcomment+'</p></div></div></div>');
+                                $('#depoimentos').append('<div class="depoimento" data-id-depoimentos="'+response.idcriado+'"><div class="estilodepo hoverable"><div class="bordacomentario"><a class="bordacomentario" onclick="apagardepoimento('+response.idcriado+')"><i class="Small material-icons">delete</i></a><img class="avatardepoimento" src="img/<?php echo $img; ?>"><h5 class="nomedepouser"><?php echo $_SESSION['nome']; ?></h5></div><div class="textodepoimento"><br/><br/><p id="punico">'+txtcomment+'</p></div></div></div>');
                                 notificar('success','Depoimento adicionado com sucesso!');	
                             } else{
                                 notificar('error',response.mensagem);
