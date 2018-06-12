@@ -31,21 +31,7 @@
 </ul>
 		<br/>
 
-    <form action="">
-      Filtros:
-      <label>Categoria:</label><br />
-      <input type="radio" name="categoria" value="adocao">Adoção<br />
-      <input type="radio" name="categoria" value="perdido">Perdido<br />
-      <input type="radio" name="categoria" value="encontrado">Encontrado<br />
-
-      <label>Categoria:</label><br />
-      <input type="radio" name="especie" value="cachorro">Cachorro<br />
-      <input type="radio" name="especie" value="gato">Gato<br />
-      <input type="radio" name="especie" value="outro">Outro <br />
-
-      <input type="submit" name="Filtrar">
-    <form  class="filtros" action="">
-     
+    <form class="filtros" action="#">     
        <center><h4 style="margin-top:-5%;">Filtros:</h4></center>
        	<p>Categoria:</p>
         <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
@@ -84,6 +70,9 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -13.700000, lng: -47.9200000},
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
           zoom: 4
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
@@ -119,7 +108,7 @@
 
             infoWindow.setPosition(pos);
             map.setCenter(pos);
-            map.setZoom(12);
+            map.setZoom(9);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
