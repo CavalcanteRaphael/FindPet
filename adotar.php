@@ -14,7 +14,7 @@
     </div>
 <?php } ?>
 
-<hr/>
+<hr class="hr">
 <br/>
     <div id="petsAdotar" class="row">
     <?php 
@@ -60,13 +60,13 @@
                   var map;
                   function initMap() {
                     var map = new google.maps.Map(document.getElementById('map2'), {
-                      center: {lat: -23.620972, lng: -45.6372588},
-                      zoom: 13
+                      center: {lat: -13.700000, lng: -47.9200000},
+                      zoom: 4
                     });
                     var infoWindow = new google.maps.InfoWindow({map: map});
 
                     var marcador = new google.maps.Marker({
-                      position: {lat: -23.63324584, lng: -45.4241625},
+                      position: {lat: -15.826691, lng: -47.9218204},
                       map: map,
                       icon: 'img/iconeAzul.png'
                     });
@@ -80,8 +80,8 @@
                         };
 
                         infoWindow.setPosition(pos);
-                        infoWindow.setContent('Location found.');
                         map.setCenter(pos);
+                        map.setZoom(13);
                       }, function() {
                         handleLocationError(true, infoWindow, map.getCenter());
                       });
