@@ -315,11 +315,13 @@ html, body {
 	width: 30%;
 	border-radius: 2%;
 	border-right: 10px solid #263238;
+	margin: auto;
+    text-align: left;
+    display: block;
+    margin: 4% 0% -2% 55%;
 	float: right;
 	margin-right: 15%;
 	margin-top: 6%;
-	
-	
 }
 .a{
 	text-align: blue;
@@ -336,7 +338,10 @@ html, body {
 .filtros{
     background-color: #c3c3c340;
     border-radius: 2%;
-    padding: 2%;
+    margin: -12% 14% 3% 19%;
+    padding: 1%;
+    float: left;
+    padding: 1%;
 	float: left;
 	margin-left: 15%;
 	margin-bottom: 3%;

@@ -31,7 +31,6 @@
 </ul>
 		<br/>
 
-<<<<<<< HEAD
     <form action="#">
       Filtros:
       <label>Categoria:</label><br />
@@ -45,7 +44,6 @@
       <input type="radio" name="especie" value="outro">Outro <br />
 
       <input type="submit" name="Filtrar">
-=======
     <form  class="filtros" action="">
      
        <center><h4 style="margin-top:-5%;">Filtros:</h4></center>
@@ -78,7 +76,6 @@
         
         <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;"></center>
     
->>>>>>> d9da9eab8fe0c4482c08d262d65fb4bbebf3da32
     </form>
 
 	<div id="map"></div>
