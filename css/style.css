@@ -121,7 +121,7 @@
 /* ---------------------------------------   INICIO DO FOOTER.PHP ------------------------- */
 .page-footer {
 	background-color: #2F4F4F;
-    margin-top: 15px;
+    margin-top: 15%;
 	clear: both;
 }
 .footer{
@@ -206,14 +206,14 @@ textarea {
 
 /* ---------------------------------------   INICIO DO LOGIN E CADASTRO -> CADASTRO.PHP ------------------------- */
 #cadastrarUsuario{
+    position: absolute;
 	height: 533px;
 	width: 27%;
 	float: right;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-right: 10%;
-	margin-top: -27%;
-	margin-bottom: 5%;
+	margin-left: 57%;
+	margin-top: -28%;
 }
 #loginUsuario {
 	width: 27%;
@@ -238,7 +238,7 @@ textarea {
 	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
 	box-sizing: border-box;
 	margin: auto;
-	color: #666666;
+	color: #575757;
 }
 #ou{
 	margin-left: 49%;
@@ -254,7 +254,7 @@ textarea {
 	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
 	box-sizing: border-box;
 	margin: auto;
-	color: 	#666666;
+	color: 	#575757;
 }
 /* ---------------------------------------   FIM DO -OU-  -> CADASTRO.PHP  ------------------------- */
 
