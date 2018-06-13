@@ -19,7 +19,7 @@
     <div id="petsAdotar" class="row">
     <?php 
       require "ajax/conexao.php";
-      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
+      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo, animal.nome FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
       $result = $stmt->fetchAll();
           $i = 1;
           if($result){
@@ -33,7 +33,7 @@
                           </div>
                             
                           <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><h10 id="pet">Nome do Pet:</h10><h5>Scooby</h5><i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4"><h10 id="pet">Nome do Pet:</h10><h5><?php if($row['nome'] == ''){ echo "Sem nome";} else{ echo $row['nome'];} ?></h5><i class="material-icons right">more_vert</i></span>
                               <br/>
                               <h10 id="pet">Descriçao:</h10>
                               <br/>
