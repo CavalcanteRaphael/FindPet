@@ -106,9 +106,8 @@
               lng: position.coords.longitude
             };
 
-            infoWindow.setPosition(pos);
             map.setCenter(pos);
-            map.setZoom(9);
+            map.setZoom(10);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
@@ -118,12 +117,6 @@
         }
       }
 
-      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
-      }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
