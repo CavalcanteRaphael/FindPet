@@ -10,13 +10,12 @@ SET time_zone = "+00:00";
 
 
 INSERT INTO `depoimentos` (`id`, `iduser`, `texto`) VALUES
-(1, 2, 'Site maravilhoso, muito eficaz. Achei meu cachorro graças a esse site espetacular!! Não sei nem como agradecer!'),
+(1, 2, 'Maravilhoso, site muito eficaz. Achei meu cachorro graças a esse site espetacular!! Não sei nem como agradecer!'),
 (2, 3, 'Site excelente, de procedência total, cumpre além do que diz. Muito bom!'),
 (3, 9, 'Único site que conseguiu encontrar meu cachorro, sou muito grata!'),
-(4, 9, 'Amoo'),
 (5, 3, 'Muito bom site , perdi meu gato a pouco tempo e já encontrou , obrigado FindPet'),
 (6, 3, 'Meu gato fugiu novamente e graças ao site ele voltou !!! Obrigado'),
-(7, 5, 'Olha, nunca achei que iria existir um site com tanta qualidade. Meu papagaio que estava com roupa de gato, fugiu, em menos de 2 dias eu achei ele, obrigado ao criador do site e todos que participaram da construção dessa maravilhosa ferramenta, Obrigado.');
+(7, 5, 'Olha, nunca achei que iria existir um site com tanta qualidade. Meu gato fugiu, em menos de 2 dias eu achei ele, obrigado ao criador do site e todos que participaram da construção dessa maravilhosa ferramenta, Obrigado.');
 
 INSERT INTO `usuario` (`idusuario`, `nome`, `email`, `img`, `telefone`, `senha`) VALUES
 (1, 'Sandro Mariano', 'sandrolalo@hotmail.com', 'profile.jpg', '12997261834', 'a5d124e34bcdc8f005b7d06ad05d5944e499a50e'),
