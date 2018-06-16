@@ -81,10 +81,10 @@
             </script>
             
             <ul id="dropdown2" class="dropdown-content">
-                <li><a href="adotar.php">Adotar</a></li>
                 <li><a href="doacao.php">Doar</a></li>
-                <li><a href="encontrado.php">Encontrei Um Pet</a></li> 
+                <li><a href="adotar.php">Adotar</a></li>
                 <li><a href="perdido.php">Perdi Meu Pet</a></li>
+                <li><a href="encontrado.php">Encontrei Um Pet</a></li> 
             </ul>
             <ul id="dropdown3" class="dropdown-content">
                 <li><a href="perfil.php">Meu Perfil</a></li>
@@ -118,13 +118,14 @@
                                         <a href="javascript:;" onclick="login()"><span class="white-text name">Cadastro/Entrar</span></a>
                                     </div>
                                 </li>
-                                <li><a href="depoimentos.php">Depoimentos</a></li>
+                                <li><a href="mapa.php">Ver Animais</a></li>
                                 <li><a class="dropdown-button" href="#" data-activates="dropdown1">Serviços<i class="material-icons right">arrow_drop_down</i></a></li>
+                                <li><a href="depoimentos.php">Depoimentos</a></li>
                                 <ul id="dropdown1" class="dropdown-content">
-                                    <li><a href="#">Adotar</a></li>
                                     <li><a href="doacao.php">Doar</a></li>
-                                    <li><a href="mapa.php">Procurar</a></li>
-                                    <li><a href="encontrado.php">Encontrados</a></li>  
+                                    <li><a href="adotar.php">Adotar</a></li>
+                                    <li><a href="mapa.php">Perdi meu pet</a></li> 
+                                    <li><a href="encontrado.php">Encontrei um pet</a></li> 
                                 </ul>
                                 <ul class="right hide-on-med-and-down" id="areaLogin">
                                     <li><a href="javascript:;" onclick="login()"><i class="large material-icons right">account_circle</i>Cadastrar/Entrar</a></li>

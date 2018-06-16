@@ -32,7 +32,7 @@
 		<br/>
 
     <form class="filtros" action="#">     
-       <center><h4 style="margin-top:-5%;">Filtros:</h4></center>
+       <center><h4 style="margin-top:3%;">Filtros:</h4></center>
        	<p>Categoria:</p>
         <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
         <label for="adocao">
@@ -60,7 +60,7 @@
             <span>Outros</span>
         </label><br />
         
-        <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;"></center>
+        <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;margin-bottom: 3%;"></center>
     
     </form>
 

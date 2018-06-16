@@ -25,9 +25,15 @@
 }
 
 .logo{
-	width: 60px;
-	margin: 5px;
-	margin-left: 20px;
+    width: 47px;
+	margin: 3px;
+}
+@media only screen and (min-width: 901px) {
+    .logo{
+        width: 60px;
+        margin: 5px;
+        margin-left: 20px;
+    }
 }
 #navbar {
 	background-color: #2F4F4F;
@@ -208,22 +214,38 @@ textarea {
 
 
 /* ---------------------------------------   INICIO DO LOGIN E CADASTRO -> CADASTRO.PHP ------------------------- */
-#cadastrarUsuario{
-    position: absolute;
-	height: 533px;
-	width: 27%;
-	float: right;
-	background-color: #c3c3c340;
-	border-radius: 2%;
-	margin-left: 57%;
-	margin-top: -28%;
+#cadastrarUsuario {
+    /* position: absolute; */
+    height: 533px;
+    width: 70%;
+    float: right;
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+@media only screen and (min-width: 901px) {
+    #cadastrarUsuario{
+        position: absolute;
+    	height: 533px;
+    	width: 27%;
+    	float: right;
+    	background-color: #c3c3c340;
+    	border-radius: 2%;
+    	margin-left: 57%;
+    	margin-top: -28%;
+    }
+    #loginUsuario {
+        width: 27%;
+    }
 }
 #loginUsuario {
-	width: 27%;
+	width: 70%;
 	height: 300px;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-left: 10%;
+	margin-left: 15%;
 	float: left;
 	margin-top: 3%;
 }
@@ -232,35 +254,39 @@ textarea {
 
 
 /* ---------------------------------------   INICO DO -OU-  -> CADASTRO.PHP  ------------------------- */
-.box {
-	width: 1%;
-	height: 100px;/*Altura da linha*/
-	margin: -3% auto;
+#ou {
+    display: none;
 }
-.linha-vertical {
-	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
-	box-sizing: border-box;
-	margin: auto;
-	color: #575757;
+@media only screen and (min-width: 901px) {
+    .box {
+    	width: 1%;
+    	height: 100px;/*Altura da linha*/
+    	margin: -3% auto;
+    }
+    .linha-vertical {
+    	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    	box-sizing: border-box;
+    	margin: auto;
+    	color: #575757;
+    }
+    #ou{
+    	margin-left: 49%;
+    	margin-top: 5%;
+    }
+    .box2 {
+    	width: 1%;
+    	margin: auto;
+    	height: 100%;/*Altura da linha*/
+    	margin-top: 5%;
+    }
+    .linha-vertical2 {
+    	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    	box-sizing: border-box;
+    	margin: auto;
+    	color: 	#575757;
+    }
+    /* ---------------------------------------   FIM DO -OU-  -> CADASTRO.PHP  ------------------------- */
 }
-#ou{
-	margin-left: 49%;
-	margin-top: 5%;
-}
-.box2 {
-	width: 1%;
-	margin: auto;
-	height: 100%;/*Altura da linha*/
-	margin-top: 5%;
-}
-.linha-vertical2 {
-	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
-	box-sizing: border-box;
-	margin: auto;
-	color: 	#575757;
-}
-/* ---------------------------------------   FIM DO -OU-  -> CADASTRO.PHP  ------------------------- */
-
 
 
 /* ---------------------------------------   INICIO DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
@@ -314,17 +340,31 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
+
 .collapsible{
-	width: 30%;
-	border-radius: 2%;
-	border-right: 10px solid #263238;
-	margin: auto;
-    text-align: left;
-    display: block;
-    margin: 4% 0% -2% 55%;
-	float: right;
-	margin-right: 15%;
-	margin-top: 6%;
+        width: 90%;
+        border-radius: 2%;
+        border-right: 10px solid #263238;
+        margin: auto;
+        text-align: left;
+        display: block;
+        margin: 4% 5% -2% 55%;
+        float: right;
+        margin-top: 6%;
+    }
+@media only screen and (min-width: 901px) {
+    .collapsible{
+    	width: 30%;
+    	border-radius: 2%;
+    	border-right: 10px solid #263238;
+    	margin: auto;
+        text-align: left;
+        display: block;
+        margin: 4% 0% -2% 55%;
+    	float: right;
+    	margin-right: 15%;
+    	margin-top: 6%;
+    }
 }
 .a{
 	text-align: blue;
@@ -348,7 +388,12 @@ html, body {
 	float: left;
 	margin-left: 15%;
 	margin-bottom: 3%;
-	margin-top: -13%;
+	margin-top: 10%;
+}
+@media only screen and (min-width: 901px) {
+    .filtros{
+        margin-top: -13%;
+    }
 }
 /* ---------------------------------------   FIM DO VER ANIMAIS -> MAPA.PHP  ------------------------- */
 
