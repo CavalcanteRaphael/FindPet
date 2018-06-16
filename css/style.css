@@ -225,6 +225,15 @@ textarea {
     margin-top: 10%;
     margin-bottom: 5%;
 }
+#loginUsuario {
+    width: 70%;
+    height: 300px;
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin-left: 15%;
+    float: left;
+    margin-top: 3%;
+}
 @media only screen and (min-width: 901px) {
     #cadastrarUsuario{
         position: absolute;
@@ -240,22 +249,13 @@ textarea {
         width: 27%;
     }
 }
-#loginUsuario {
-	width: 70%;
-	height: 300px;
-	background-color: #c3c3c340;
-	border-radius: 2%;
-	margin-left: 15%;
-	float: left;
-	margin-top: 3%;
-}
 /* ---------------------------------------   INICIO DO LOGIN E CADASTRO -> CADASTRO.PHP  ------------------------- */
 
 
 
 /* ---------------------------------------   INICO DO -OU-  -> CADASTRO.PHP  ------------------------- */
 #ou {
-    display: none;
+    visibility: hidden;
 }
 @media only screen and (min-width: 901px) {
     .box {
@@ -270,6 +270,7 @@ textarea {
     	color: #575757;
     }
     #ou{
+        visibility: visible;
     	margin-left: 49%;
     	margin-top: 5%;
     }
