@@ -27,7 +27,8 @@ INSERT INTO `usuario` (`idusuario`, `nome`, `email`, `img`, `telefone`, `senha`)
 (6, 'mariozan', 'mariozanjunior15@gmail.com', 'profile.jpg', '(12) 98213-5453', '12126eefdb32e502cce66879e8280a4d83418270'),
 (7, 'william', 'williamcrixi@gmail.com', 'profile.jpg', '(12) 98134-0420', '9048ead9080d9b27d6b2b6ed363cbf8cce795f7f'),
 (8, 'Mario', 'mariozanjunior15@gmail.com', 'profile.jpg', '(12) 98213-5453', '8cb2237d0679ca88db6464eac60da96345513964'),
-(9, 'Mayara Barbosa', 'mbarbosam@gmail.com', 'profile.jpg', '(12) 98305-8603', 'ab222d26d933c6dcc99185dbd218ea61faabf8dd');
+(9, 'Mayara Barbosa', 'mbarbosam@gmail.com', 'profile.jpg', '(12) 98305-8603', 'ab222d26d933c6dcc99185dbd218ea61faabf8dd'),
+(10, 'Raphel Fernandes','raphafrc81@gmail.com','profile.jpg','(12) 982695053', 'a5d124e34bcdc8f005b7d06ad05d5944e499a50e');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
