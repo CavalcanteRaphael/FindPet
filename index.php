@@ -192,6 +192,13 @@
                     }
                   }
 
+                  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent(browserHasGeolocation ?
+                                          'Erro, localização não encontrada.' :
+                                          'Erro, o navegador não suporta geolocalização.');
+                  }
+
                 </script>
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
