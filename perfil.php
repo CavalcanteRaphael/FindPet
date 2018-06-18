@@ -91,9 +91,10 @@
                 //FIM DA VALIDAÇÃO DO NOME
 
                 //INÍCIO DA VALIDAÇÃO DO EMAIL
+                var testeEmail = document.getElementById("icon_mail").value.split(".com");
                 if (document.getElementById("icon_mail").value.indexOf("@") == -1 ||
                     document.getElementById("icon_mail").value.indexOf(".com") == -1 ||
-                    document.getElementById("icon_mail").value.length < 7) {
+                    document.getElementById("icon_mail").value.length < 7 || testeEmail['1'] != '') {
                     notificar('error', 'Email Inválido!')
                     var emailValido = 0
                     } else {
