@@ -4,8 +4,8 @@
 	if(isset($_SESSION['id'])) {             
 	    $id = $_SESSION['id'];
 	    $nome = $_SESSION['nome'];
-
 	    $texto = $_POST['texto'];
+
 		try{
 			$stmt = $conn->prepare("INSERT INTO depoimentos (id,iduser,texto) Values (null,:iduser,:texto);");
 			$stmt->bindParam(':iduser', $id);
