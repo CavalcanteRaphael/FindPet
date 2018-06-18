@@ -27,16 +27,5 @@
         require 'footer.php';
     ?>
 <!--Footer-->
-<!--Script-->   
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('.slider').slider();
-        $(".dropdown-button").dropdown();
-        $(".button-collapse").sideNav();
-        });           
-    </script>
-<!--Script-->
     </body>
 </html>
