@@ -14,6 +14,7 @@
         $_SESSION['nome'] = $usuario['nome'];
         $_SESSION['img'] = $usuario['img'];
         $_SESSION['telefone'] = $usuario['telefone'];
+        $_SESSION['email'] = $usuario['email'];
         $resultado['login'] = 1;
         echo json_encode($resultado);
       }else {
