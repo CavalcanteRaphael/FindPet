@@ -38,7 +38,7 @@
         </div>
         <!-- Serviços -->
         <section class="espacamentoSuperior">
-            <div class="container" style="margin-top:650px;">
+            <div class="container" style="margin-top:700px;">
                 <div class="col s12 m6 l3 xl4 xxl2">
                     <h1 class="center-align">Nossos serviços</h1>
                     <p class="flow-text center-align">
@@ -119,7 +119,7 @@
 
         <?php 
         require "ajax/conexao.php";
-                $stmt = $conn->query("SELECT latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $stmt = $conn->query("SELECT idmapa, latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
                 $result = $stmt->fetchAll();
                 if($result){
                   foreach ($result as $row) { ?>
@@ -133,7 +133,8 @@
                   var marcador = new google.maps.Marker({
                     position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
                     map: map,
-                    icon: imgMarcador
+                    icon: imgMarcador,
+                    title: '<?php echo $row['idmapa'];?>'
                   });
 
                 <?php }} ?>

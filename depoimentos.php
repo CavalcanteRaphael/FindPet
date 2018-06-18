@@ -41,7 +41,7 @@
             ?>
             <textarea name="depoimento" rows=5 cols=35></textarea>
             <br/>
-            <a class="botaocomentario blue-grey darken-4 btn hoverable" onClick="adddepoimento()">Enviar</a>
+            <a class="botaocomentario blue-grey darken-4 btn hoverable" onClick="adddepoimento()">Enviar</a><br/><br/>
             <?php } ?>
         </div>
 
@@ -53,6 +53,16 @@
             // usuário da sessão
             function adddepoimento(){
                 var txtcomment = $('#novodepoimento textarea').val();
+                txtcomment = txtcomment.replace('<', "")
+                txtcomment = txtcomment.replace('?php', "")
+                txtcomment = txtcomment.replace('?>', "")
+                txtcomment = txtcomment.replace("<script", "")
+                txtcomment = txtcomment.replace("</", "")
+                txtcomment = txtcomment.replace("script>", "")
+                txtcomment = txtcomment.replace(">", "")
+
+
+
                 if (txtcomment.length > 0) {
                     $.ajax({
                         url: 'ajax/depoimento.php',

@@ -53,62 +53,12 @@
                             <p>Espécie: <?php echo $row['especie']; ?></p>
                             <p>Raça: <?php echo $row['raca']; ?></p>
                             <p>Sexo: Macho</p> 
-                            <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>
-                              
-                        <div id="map2"></div>
-                        <script>
-                  var map;
-                  function initMap() {
-                    var map = new google.maps.Map(document.getElementById('map2'), {
-                      center: {lat: -13.700000, lng: -47.9200000},
-                      mapTypeControl: false,
-                      streetViewControl: false,
-                      fullscreenControl: false,
-                      zoom: 4
-                    });
-                    var infoWindow = new google.maps.InfoWindow({map: map});
-
-                    var marcador = new google.maps.Marker({
-                      position: {lat: -15.826691, lng: -47.9218204},
-                      map: map,
-                      icon: 'img/iconeAzul.png'
-                    });
-
-                    // Try HTML5 geolocation.
-                    if (navigator.geolocation) {
-                      navigator.geolocation.getCurrentPosition(function(position) {
-                        var pos = {
-                          lat: position.coords.latitude,
-                          lng: position.coords.longitude
-                        };
-
-                        infoWindow.setPosition(pos);
-                        map.setCenter(pos);
-                        map.setZoom(13);
-                      }, function() {
-                        handleLocationError(true, infoWindow, map.getCenter());
-                      });
-                    } else {
-                      // Browser doesn't support Geolocation
-                      handleLocationError(false, infoWindow, map.getCenter());
-                    }
-                  }
-
-                  function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent(browserHasGeolocation ?
-                                          'Error: The Geolocation service failed.' :
-                                          'Error: Your browser doesn\'t support geolocation.');
-                  }
-                </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
-                </script>
-                              
+                            <a class="blue-grey darken-4 btn" href="#" id="localizacao"><i class="material-icons left">location_on</i>Ver no Mapa</a><br/><br/>
+                            <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>  
                         </div>
-                        </div>
-                      </div>
                     </div>
+                </div>
+            </div>
             <?php
               } 
           }?>
