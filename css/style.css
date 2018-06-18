@@ -520,4 +520,6 @@ html, body {
 }
 /* ---------------------------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
 
-
+.side-nav .user-view, .side-nav .userView{
+    background-color: #2f4f4f;
+}
