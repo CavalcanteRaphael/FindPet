@@ -76,6 +76,17 @@
                     var nomeValido = 0
                 } else {
                     var nomeValido = 1
+
+                    txtnome = $('#nome').val()
+                    txtnome = txtnome.replace('<', "")
+                    txtnome = txtnome.replace('?php', "")
+                    txtnome = txtnome.replace('?>', "")
+                    txtnome = txtnome.replace("<script", "")
+                    txtnome = txtnome.replace("</", "")
+                    txtnome = txtnome.replace("script>", "")
+                    txtnome = txtnome.replace(">", "")
+                    $('#nome').val(txtnome)
+
                 }
                 //FIM DA VALIDAÇÃO DO NOME
 
