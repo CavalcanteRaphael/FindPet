@@ -103,6 +103,9 @@
 .indicator-item{
 	background-color: #263238
 }
+.titulomap{
+    margin-top: 50px;
+}
 
 #map22{
     margin: 4%;
@@ -132,6 +135,7 @@
 	background-color: #2F4F4F;
     margin-top: 15%;
 	clear: both;
+    width: 100%;
 }
 .footer{
     background-color: black;
