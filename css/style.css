@@ -165,7 +165,12 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    width: 60%;
+    width: 100%;
+}
+@media only screen and (min-width: 901px) {
+    #novodepoimento{
+        width: 70%;
+    }
 }
 .avatardepoimento{
     float: left;
@@ -174,13 +179,18 @@
     border-radius: 25px;
 }
 .estilodepo{
-    width: 50%;
+    width: 80%;
     border: 6% solid #c3c3c340;
     background-color: #c3c3c340;
     border-radius: 1%;
     padding: 2%;
     margin: auto;
     margin-bottom: 5%;
+}
+@media only screen and (min-width: 901px) {
+    .estilodepo{
+        width: 50%;
+    }
 }
 .estilodepo2{
     width: 100%;
@@ -514,4 +524,6 @@ html, body {
 }
 /* ---------------------------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
 
-
+.side-nav .user-view, .side-nav .userView{
+    background-color: #2f4f4f;
+}
