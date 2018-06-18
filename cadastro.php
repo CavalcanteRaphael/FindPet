@@ -117,7 +117,7 @@
                 //FIM DA VALIDAÇÃO DA SENHA
 
                 $.ajax({
-                        url: 'ajax/verificaEmail.php',
+                        url: 'ajax/verificaEmailCadastro.php',
                         type: 'POST',
                         data: $('#email'),
                         dataType: 'json',
