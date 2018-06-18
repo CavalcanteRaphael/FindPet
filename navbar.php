@@ -88,7 +88,7 @@
             </ul>
             <ul id="dropdown3" class="dropdown-content">
                 <li><a href="perfil.php">Meu Perfil</a></li>
-                <li><a href="pets.php">Meus Pets</a></li>
+                <li><a href="meuspets.php">Meus Pets</a></li>
                 <li><a href="ajax/logoff.php">Sair</a></li>
             </ul>
             
