@@ -139,6 +139,7 @@ h5 {
 	clear: both;
     width: 100%;
     line-height: 19px;
+    margin-top: 15%;
 }
 @media only screen and (max-width: 901px) {
     .page-footer {
