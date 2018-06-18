@@ -12,6 +12,9 @@
 .invalido {
     color: red;
 }
+h5 {
+    margin: 0.82rem 0 -0.844rem 0;
+}
 /* indefinidos */
 
 
@@ -135,6 +138,12 @@
 	background-color: #2F4F4F;
 	clear: both;
     width: 100%;
+    line-height: 19px;
+}
+@media only screen and (max-width: 901px) {
+    .page-footer {
+        padding-top: 0px;
+    }
 }
 .footer{
     background-color: black;
@@ -142,6 +151,15 @@
 .footer-copyright{
     background-color: black;
 }
+@media only screen and (max-width: 901px) {
+    .descrifooter {
+        display: none;
+    }
+    .blocofooter{
+        margin-bottom: 0%;
+    }
+}
+
 /* ---------------------------------------   FIM DO FOOTER.PHP ------------------------- */
 
 
