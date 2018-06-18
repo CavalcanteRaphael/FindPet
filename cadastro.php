@@ -13,7 +13,7 @@
 	
 	<div id="loginUsuario" class="col s12 m6 hoverable">
 		<form id="login" method="post">
-			<center ><h4>Login</h4><div id="loginTitulo"></div></center>
+			<center ><h5>Faça seu login</h5><div id="loginTitulo"></div></center>
 			<div class="input-field col s12 ">
 				<label for="email">E-mail:</label><input type="text" required name="email" id="login_email"><br/>
 			</div>
@@ -39,7 +39,7 @@
 
 	<div id="cadastrarUsuario" class="col s12 m6 hoverable">
 		<form id="cadastro" method="post">
-			<center><h4>Cadastrar-se</h4></center>
+			<center><h5>Ainda não tem cadastro? Cadastrar-se</h5></center>
 			<div class="input-field col s12">
 				<label for="nome">Nome Completo:</label><input type="text" name="nome" id="nome"><br/>
 			</div>

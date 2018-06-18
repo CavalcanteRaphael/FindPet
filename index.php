@@ -70,41 +70,6 @@
             </div>
         </section>
         <hr id="hrindex">
-        <section class="depoimentosFavoritos">
-            <div class="container" style="margin-top:10%;margin-bottom:10%;">
-                <div class="row">
-                    <h1 class="center-align" style="margin-bottom:8%;">O que dizem sobre o site</h1>
-                    <div id="depoimentos">
-                        <?php 
-                            require "ajax/conexao.php";
-                                $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('1', '2', '3');");
-                                $result = $stmt->fetchAll();
-                                    if($result){
-                                        foreach($result as $row){ ?>
-                                            <div class="depoimento col s12 m6 l4 xl4 xxl2" data-id-depoimentos="<?php echo $row['id']; ?>">
-                                                <div class="estilodepo2 hoverable">
-                                                    <div class="bordacomentario">
-                                                        <?php if(isset($_SESSION['id'])) { ?>
-                                                            <?php if($row['iduser'] == $_SESSION['id']) { ?>
-                                                        <a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)"><i class="Small material-icons">delete</i></a>
-                                                            <?php } ?>
-                                                        <?php } ?>
-                                                        <img class="avatardepoimento" src="img/<?php echo $row['img']; ?>">
-                                                        <h5 class="nomedepouser"><?php echo $row['nome']; ?></h5>
-                                                    </div>
-                                                    <div class="textodepoimento">
-                                                        <br/><br/><p id="punico"><?php echo $row['texto']; ?></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                <?php 
-                                        }
-                                    } ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr id="hrindex">
         <center><h3 class="titulomap">Mapa dos Pets</h3></center>
         <ul class="collapsible" id="ajudamapa">
             <li>
@@ -203,6 +168,44 @@
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
                 </script>
+        
+        
+        <hr id="hrindex">
+      <section class="depoimentosFavoritos">
+            <div class="container" style="margin-top:10%;margin-bottom:10%;">
+                <div class="row">
+                    <h1 class="center-align" style="margin-bottom:8%;">O que dizem sobre o site</h1>
+                    <div id="depoimentos">
+                        <?php 
+                            require "ajax/conexao.php";
+                                $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('1', '2', '3');");
+                                $result = $stmt->fetchAll();
+                                    if($result){
+                                        foreach($result as $row){ ?>
+                                            <div class="depoimento col s12 m6 l4 xl4 xxl2" data-id-depoimentos="<?php echo $row['id']; ?>">
+                                                <div class="estilodepo2 hoverable">
+                                                    <div class="bordacomentario">
+                                                        <?php if(isset($_SESSION['id'])) { ?>
+                                                            <?php if($row['iduser'] == $_SESSION['id']) { ?>
+                                                        <a class="bordacomentario" onclick="apagardepoimento(<?php echo $row['id']; ?>)"><i class="Small material-icons">delete</i></a>
+                                                            <?php } ?>
+                                                        <?php } ?>
+                                                        <img class="avatardepoimento" src="img/<?php echo $row['img']; ?>">
+                                                        <h5 class="nomedepouser"><?php echo $row['nome']; ?></h5>
+                                                    </div>
+                                                    <div class="textodepoimento">
+                                                        <br/><br/><p id="punico"><?php echo $row['texto']; ?></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                <?php 
+                                        }
+                                    } ?>
+                    </div>
+                </div>
+                <center><a class="blue-grey darken-4 btn" href="cadastro.php" style="margin-top: 5%;">Junte-se ao Findpet</a></center>
+            </div>
+        </section>
         
         <?php
             require 'footer.php';
