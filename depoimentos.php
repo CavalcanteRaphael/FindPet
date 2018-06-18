@@ -53,6 +53,16 @@
             // usuário da sessão
             function adddepoimento(){
                 var txtcomment = $('#novodepoimento textarea').val();
+                txtcomment = txtcomment.replace('<', "")
+                txtcomment = txtcomment.replace('?php', "")
+                txtcomment = txtcomment.replace('?>', "")
+                txtcomment = txtcomment.replace("<script", "")
+                txtcomment = txtcomment.replace("</", "")
+                txtcomment = txtcomment.replace("script>", "")
+                txtcomment = txtcomment.replace(">", "")
+
+
+
                 if (txtcomment.length > 0) {
                     $.ajax({
                         url: 'ajax/depoimento.php',
