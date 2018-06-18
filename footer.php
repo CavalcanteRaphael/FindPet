@@ -1,7 +1,7 @@
 <footer class="page-footer">
     <div class="container">
-        <div class="row">
-                <div class="col s12 m6 l3">
+        <div class="blocofooter row">
+                <div class="descrifooter col s12 m6 l3">
                     <h5 class="white-text">FindPet</h5>
                     <p class="grey-text text-lighten-4">Findpet um site voltado para ajudar seu Pet</p>
                 </div>
