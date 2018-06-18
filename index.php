@@ -204,7 +204,11 @@
                                     } ?>
                     </div>
                 </div>
-                <center><a class="blue-grey darken-4 btn" href="cadastro.php" style="margin-top: 5%;">Junte-se ao Findpet</a></center>
+
+                <?php if(!isset($_SESSION['id'])){ ?>
+                    <center><a class="blue-grey darken-4 btn" href="cadastro.php" style="margin-top: 5%;">Junte-se ao Findpet</a></center>
+                <?php } ?>
+
             </div>
         </section>
         
