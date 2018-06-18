@@ -41,7 +41,7 @@
             ?>
             <textarea name="depoimento" rows=5 cols=35></textarea>
             <br/>
-            <a class="botaocomentario blue-grey darken-4 btn hoverable" onClick="adddepoimento()">Enviar</a>
+            <a class="botaocomentario blue-grey darken-4 btn hoverable" onClick="adddepoimento()">Enviar</a><br/><br/>
             <?php } ?>
         </div>
 
