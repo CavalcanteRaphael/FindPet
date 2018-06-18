@@ -79,7 +79,7 @@
 
         <?php 
         require "ajax/conexao.php";
-                $stmt = $conn->query("SELECT latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $stmt = $conn->query("SELECT idmapa, latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
                 $result = $stmt->fetchAll();
                 if($result){
                   foreach ($result as $row) { ?>
@@ -93,7 +93,8 @@
                   var marcador = new google.maps.Marker({
                     position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
                     map: map,
-                    icon: imgMarcador
+                    icon: imgMarcador,
+                    title: '<?php echo $row['idmapa'];?>'
                   });
 
                   <?php }} ?>
