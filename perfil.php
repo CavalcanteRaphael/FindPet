@@ -27,7 +27,12 @@
             <h4>Informações Pessoais</h4>
         </center>
         <div class="imgperfil">		
-            <div 
+            <script type="text/javascript">
+                function atualizaImg(){
+                    location.reload(this);
+                }
+            </script>
+            <div
                     class="slim imageuser"
                     data-min-size="150,150"
                     data-size="1000,1000"
@@ -35,6 +40,7 @@
                     data-instant-edit="true"
                     data-service="ajax/editarImagem.php"
                     data-push="true"
+                    data-div-upload="atualizaImg"
                     style="width: 160px;height: 160px;border-radius:90px; margin:auto;">
                 <img id="imageuser" src="img/<?php echo $usuario['img']; ?>"><br/>        
                 <input type="file" name="slim[]"/>
