@@ -74,7 +74,7 @@
         <ul class="collapsible" id="ajudamapa">
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">loupe</i>
+                    <img src="img/iconeAzul.png">
                     Doação
                     <span class="badge" id="badgeAzul">AZUL</span>
                 </div>
@@ -84,7 +84,7 @@
             </li>
             <li>
                 <div class="as collapsible-header">
-                    <i class="material-icons">notifications_active</i>
+                    <img src="img/iconeVermelho.png">
                     Perdidos
                     <span class="badge" id="badgeVermelho">VERMELHO</span>
                 </div>
@@ -94,7 +94,7 @@
             </li>
             <li>
                 <div class="as collapsible-header">
-                    <i class="material-icons">add_location</i>
+                    <img src="img/iconeVerde.png">
                     Encontrados
                     <span class="badge" id="badgeVerde">VERDE</span>
                 </div>
