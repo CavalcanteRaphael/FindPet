@@ -1,35 +1,6 @@
       <?php session_start(); ?>
       <?php require 'navbar.php'; ?> 
       <center><h4>Mapa</h4></center>
-	
-	<ul class="collapsible">
-		
-  <li>
-    <div class="collapsible-header">
-      <i class="material-icons">loupe</i>
-      Doação
-      <span class="badge" id="badgeAzul">AZUL</span></div>
-    <div class="collapsible-body"><p>Os pets em azul no mapa estão para disponíveis para doação.</p></div>
-  </li>
-		
-  <li>
-    <div class="as collapsible-header">
-      <i class="material-icons">notifications_active</i>
-      Perdidos
-      <span class="badge" id="badgeVermelho">VERMELHO</span></div>
-    <div class="collapsible-body"><p>Os pets em vermelho no mapa estão perdidos.</p></div>
-  </li>
-
-
-<li>
-    <div class="as collapsible-header">
-      <i class="material-icons">add_location</i>
-      Encontrados
-      <span class="badge" id="badgeVerde">VERDE</span></div>
-    <div class="collapsible-body"><p>Os pets em verde no mapa foram encontrados.</p></div>
-  </li>
-</ul>
-		<br/>
 
     <form class="filtros" action="#">     
        <center><h4 style="margin-top:3%;">Filtros:</h4></center>
@@ -63,6 +34,61 @@
         <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;margin-bottom: 3%;"></center>
     
     </form>
+  
+  <div id="explicacao">  
+  
+  <!-- Botão DOAÇÃO -->
+  <a class="waves-effect btn btnexp modal-trigger" href="#modal1">Doação</a>
+	<!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Doação</h4>
+      <p>Os pets em azul no mapa estão para disponíveis para doação.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+  </div>
+  
+  <br/>
+  
+  <!-- Botão PERDIDOS -->
+  <a class="waves-effect btn btnexp modal-trigger" href="#modal2">Perdidos</a>
+  
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Perdidos</h4>
+      <p>Os pets em vermelho no mapa estão perdidos.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+  </div>
+  
+  <br/>
+  
+  <!-- Botão ENCONTRADOS -->
+  <a class="waves-effect btn btnexp modal-trigger" href="#modal3">Encontrados</a>
+  
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Encontrados</h4>
+      <p>Os pets em verde no mapa foram encontrados.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close btn-flat">Fechar</a>
+    </div>
+  </div>
+  
+  <script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script> 
+        
+</div>
+	
+  <br/>
 
 	<div id="map"></div>
             <script>

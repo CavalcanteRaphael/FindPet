@@ -109,14 +109,17 @@
                 <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
                 <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
-                <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
             </form>
-        </div>
-        <br/>
+       
+       
+        
         <center>
-            <h4 style="display:inline-block;">Informe onde o pet está disponível para adoção(opcional)</h4>
+            <h4 style="display:inline-block;">Informe onde o pet está <br/>disponível para adoção (opcional)</h4><br/>
         </center>
+        
         <div id="mapdoacao"></div>
+	<center><input style="margin-top: 5%; margin-bottom: 5%;" type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal"></center>
+        </div>
         <script>
         var map;
         function initMap() {

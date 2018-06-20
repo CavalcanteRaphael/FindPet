@@ -112,7 +112,7 @@ h5 {
 
 #map22{
     margin: 4%;
-    width: 60%;
+    width: 51%;
     height: 60%;
 	border-radius: 1%; 
     display: inline-block
@@ -122,11 +122,14 @@ h5 {
 	border-radius: 2%;
 	border-right: 10px solid #263238;
 	float: right;
-    margin: 3%;
-    margin-top: 13%;
+    margin: 7%;
+    margin-top: 10%;
     display: inline-block;
-    font-size: 2vw;
+    font-size: 1vw;
+}
 
+.icon{
+	margin-right: 5%;
 }
 
 /* ---------------------------------------   FIM DO INDEX.PHP ------------------------- */
@@ -139,7 +142,6 @@ h5 {
 	clear: both;
     width: 100%;
     line-height: 19px;
-    margin-top: 15%;
 }
 @media only screen and (max-width: 901px) {
     .page-footer {
@@ -247,7 +249,6 @@ textarea {
 
 /* ---------------------------------------   INICIO DO LOGIN E CADASTRO -> CADASTRO.PHP ------------------------- */
 #cadastrarUsuario {
-    /* position: absolute; */
     height: 533px;
     width: 70%;
     float: right;
@@ -268,7 +269,6 @@ textarea {
 }
 @media only screen and (min-width: 901px) {
     #cadastrarUsuario{
-        position: absolute;
     	height: 533px;
     	width: 27%;
     	float: right;
@@ -357,7 +357,8 @@ textarea {
     height: 80%;
     width: 80%;
 	margin: auto;
-	border-radius: 1%; 
+	border-radius: 1%;
+	margin-bottom: 4%;
 }
 html, body {
     height: 100%;
@@ -421,11 +422,11 @@ html, body {
 	float: left;
 	margin-left: 15%;
 	margin-bottom: 3%;
-	margin-top: 10%;
+	margin-top: 3%;
 }
 @media only screen and (min-width: 901px) {
     .filtros{
-        margin-top: -13%;
+        margin-top: 3%;
     }
 }
 /* ---------------------------------------   FIM DO VER ANIMAIS -> MAPA.PHP  ------------------------- */
@@ -445,11 +446,11 @@ html, body {
 
 /* ---------------------------------------   INICIO DO CADASTRO DE PET PARA DOAR -> DOACAO.PHP  ------------------------- */
 #cadastrarDoaPet{
-	width: 50%;
-	height: 127%;
+	width: 60%;
+	height: 217%;
 	background-color: #c3c3c340;
 	border-radius: 2%;
-	margin-left: 25%;
+	margin-left: 20%;
 	float: left;
 	margin-top: 2%;
 	padding: 2%;
@@ -463,9 +464,26 @@ html, body {
 }
 #mapdoacao{
     margin: auto;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 35%;
 	border-radius: 1%; 
+}
+
+@media only screen
+(min-resolution: 144dpi)
+and (device-width: 1920px)
+and (orientation: landscape) 
+ {
+    #cadastrarDoaPet{
+	width: 95%;
+    height: 244%;
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin-left: 3%;
+    padding: 2%;
+    margin-bottom: 5%;
+        
+    }
 }
 /* ---------------------------------------   FIM DO CADASTRO DE PET PARA DOAR -> DOACAO.PHP  ------------------------- */
 
@@ -544,4 +562,19 @@ html, body {
 
 .side-nav .user-view, .side-nav .userView{
     background-color: #2f4f4f;
+}
+#teste{
+	background-color: #c3c3c340; 
+}
+
+.btn:hover {
+  background-color: #fdfcfc;
+}
+.btnexp {
+  background-color: #f0f0f0;
+  color: black;
+}
+.explicacao {
+  margin-top: 3%;
+  float: left;
 }
