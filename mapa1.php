@@ -5,7 +5,7 @@
     <form class="filtros" method="POST" action="filtros.php">     
        <center><h4 style="margin-top:3%;">Filtros:</h4></center>
        	<p>Categoria:</p>
-        <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
+        <input name="categoria" type="radio" value="doacao" id="adocao" checked class="with-gap" />
         <label for="adocao">
             <span>Adoção</span>
         </label>
