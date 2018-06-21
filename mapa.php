@@ -35,10 +35,12 @@
     
     </form>
   
+    <br/>
+    
   <div id="explicacao">  
   
   <!-- Botão DOAÇÃO -->
-  <a class="waves-effect btn btnexp modal-trigger" href="#modal1">Doação</a>
+  <a class="waves-effect btn btnexp modal-trigger" href="#modal1"><img class="material-icons left" src="img/iconeAzul.png">Doação</a>
 	<!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
@@ -53,7 +55,7 @@
   <br/>
   
   <!-- Botão PERDIDOS -->
-  <a class="waves-effect btn btnexp modal-trigger" href="#modal2">Perdidos</a>
+  <a class="waves-effect btn btnexp modal-trigger" href="#modal2"><img class="material-icons left" src="img/iconeVermelho.png">Perdidos</a>
   
   <div id="modal2" class="modal">
     <div class="modal-content">
@@ -68,7 +70,7 @@
   <br/>
   
   <!-- Botão ENCONTRADOS -->
-  <a class="waves-effect btn btnexp modal-trigger" href="#modal3">Encontrados</a>
+  <a class="waves-effect btn btnexp modal-trigger" href="#modal3"><img class="material-icons left" src="img/iconeVerde.png">Encontrados</a>
   
   <div id="modal3" class="modal">
     <div class="modal-content">

@@ -74,12 +74,8 @@
         <ul class="collapsible" id="ajudamapa">
             <li>
                 <div class="collapsible-header">
-<<<<<<< HEAD
-                     <img class="icon" src="img/iconeAzul.png" >
-=======
-                    <img src="img/iconeAzul.png">
->>>>>>> 0266c6835d34d4fd3ece6015512885c6c1c7405e
-                    Doação
+                    <img class="icon" src="img/iconeAzul.png" >
+                        Doação
                     <span class="badge" id="badgeAzul">AZUL</span>
                 </div>
                 <div class="collapsible-body">
@@ -88,11 +84,7 @@
             </li>
             <li>
                 <div class="as collapsible-header">
-<<<<<<< HEAD
                    <img class="icon" src="img/iconeVermelho.png">
-=======
-                    <img src="img/iconeVermelho.png">
->>>>>>> 0266c6835d34d4fd3ece6015512885c6c1c7405e
                     Perdidos
                     <span class="badge" id="badgeVermelho">VERMELHO</span>
                 </div>
@@ -102,13 +94,8 @@
             </li>
             <li>
                 <div class="as collapsible-header">
-<<<<<<< HEAD
                     <img class="icon" src="img/iconeVerde.png">
                      Encontrados
-=======
-                    <img src="img/iconeVerde.png">
-                    Encontrados
->>>>>>> 0266c6835d34d4fd3ece6015512885c6c1c7405e
                     <span class="badge" id="badgeVerde">VERDE</span>
                 </div>
                 <div class="collapsible-body">
