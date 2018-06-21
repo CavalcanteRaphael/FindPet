@@ -420,9 +420,8 @@ html, body {
     float: left;
     padding: 1%;
 	float: left;
-	margin-left: 15%;
+	margin-left: 20%;
 	margin-bottom: 3%;
-	margin-top: 3%;
 }
 @media only screen and (min-width: 901px) {
     .filtros{
@@ -439,6 +438,17 @@ html, body {
     width: 60%;
     height: 50%;
 	border-radius: 1%; 
+}
+#cadastrarDoaPet{
+	width: 60%;
+	height: 217%;
+	background-color: #c3c3c340;
+	border-radius: 2%;
+	margin-left: 20%;
+	float: left;
+	margin-top: 2%;
+	padding: 2%;
+	margin-bottom: 5%;
 }
 /* ---------------------------------------   FIM DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 

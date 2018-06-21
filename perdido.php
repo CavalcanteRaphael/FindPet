@@ -5,8 +5,8 @@
     require 'navbar.php';
 ?>  
         
-        <div id="Mapa" class="container hoverable">
-            <form id="cadastro" method="post">
+        <div id="cadastrarDoaPet" class="container hoverable">
+            <form id="cadastroperdido" method="post">
                 <center>
                     <h4>Cadastrar Pet Perdido</h4>
                 </center>
@@ -99,13 +99,14 @@
                 <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
                 <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
-                <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
             </form>
-        </div>
+        
         <center>
             <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez (opcional)</h4>
         </center>
         <div id="mapperdido"></div>
+        <center><input style="margin-top: 5%; margin-bottom: 5%;" type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Pet"></center>
+        </div>
         <script>
             var map;
             function initMap() {
