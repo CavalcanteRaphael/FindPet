@@ -2,7 +2,7 @@
       <?php require 'navbar.php'; ?> 
       <center><h4>Mapa</h4></center>
 
-    <form class="filtros" action="#">     
+    <form class="filtros" method="POST" action="filtros.php">     
        <center><h4 style="margin-top:3%;">Filtros:</h4></center>
        	<p>Categoria:</p>
         <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
