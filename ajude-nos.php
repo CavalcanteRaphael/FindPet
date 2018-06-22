@@ -3,7 +3,8 @@
     require 'navbar.php';
 ?>
 <section>
-    <center>em Andamento</center>
+    <center><h4>Link para ajuda financeira!</h4></center>
+    <center><a href="#">www.exemplo.com</a></center>
 </section>
 <?php
     require 'footer.php';
