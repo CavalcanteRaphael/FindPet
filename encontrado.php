@@ -156,9 +156,6 @@ require 'footer.php';
 ?>
 
 <script type="text/javascript">
-$(document).ready(function() {
-$('select').material_select();
-});
 
 $('#cadastro').submit(function(event){
 event.preventDefault();

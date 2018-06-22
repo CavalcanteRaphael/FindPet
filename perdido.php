@@ -5,7 +5,7 @@
     require 'navbar.php';
 ?>  
         
-        <div id="cadastrarDoaPet" class="container hoverable">
+        <div id="cadastrarPerdiPet" class="hoverable">
             <form id="cadastroperdido" method="post">
                 <center>
                     <h4>Cadastrar Pet Perdido</h4>
@@ -105,7 +105,11 @@
             <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez (opcional)</h4>
         </center>
         <div id="mapperdido"></div>
-        <center><input style="margin-top: 5%; margin-bottom: 5%;" type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Pet"></center>
+        
+        <form id="cadastro_btn">
+            <center><input style="margin-top: 5%; margin-bottom: 5%;" type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Pet"></center>
+        </form>
+        
         </div>
         <script>
             var map;
@@ -163,20 +167,18 @@
 ?>
 
         <script type="text/javascript">
-            $(document).ready(function() {
-                $('select').material_select();
-            });
-            $('#cadastro').submit(function(event){
+            
+            $('#cadastro_btn').submit(function(event){
                 event.preventDefault();
                 $.ajax({
                     url: 'ajax/cadastroAnimal.php',
                     type: 'POST',
-                    data: $('#cadastro').serialize(),
+                    data: $('#cadastroperdido').serialize(),
                     dataType: 'json',
                     success: function(response){
                         if(response.deucerto == 1){
                             notificar('success','Pet cadastrado com sucesso!')
-                            $("#cadastro").trigger("reset");
+                            $("#cadastroperdido").trigger("reset");
                         }
                     }
                 });

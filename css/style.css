@@ -435,11 +435,11 @@ html, body {
 /* ---------------------------------------   INICIO DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 #mapperdido{
     margin: auto;
-    width: 60%;
-    height: 50%;
-	border-radius: 1%; 
+    width: 100%;
+    height: 35%;
+    border-radius: 1%; 
 }
-#cadastrarDoaPet{
+#cadastrarPerdiPet{
 	width: 60%;
 	height: 217%;
 	background-color: #c3c3c340;

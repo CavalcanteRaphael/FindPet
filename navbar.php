@@ -125,7 +125,7 @@
                                 <ul id="dropdown1" class="dropdown-content">
                                     <li><a href="doacao.php">Doar</a></li>
                                     <li><a href="adotar.php">Adotar</a></li>
-                                    <li><a href="mapa.php">Perdi meu pet</a></li> 
+                                    <li><a href="perdido.php">Perdi meu pet</a></li> 
                                     <li><a href="encontrado.php">Encontrei um pet</a></li> 
                                 </ul>
                                 <ul class="right hide-on-med-and-down" id="areaLogin">
