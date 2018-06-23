@@ -16,7 +16,7 @@
                 data-ratio="1:1"
                 data-instant-edit="true"
                 style="width: 160px;height: 160px; margin:auto;">
-                      <img id="imageuser" src="img/doe.jpg"><br/>          
+                      <img id="imageuser" src="img/animalProfile.png"><br/>          
                       <input type="file" name="slim[]"/>
                 </div>
 
