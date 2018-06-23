@@ -4,7 +4,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 INSERT INTO `animal` (`idanimal`, `especie`, `raca`, `sexo`, `porte`, `cor`, `img`, `tipo`, `descricao`, `nome`, `castrado`, `idusuario`, `vacinado`, `nascimento`) VALUES
-(1, 'cachorro', 'buldogue', 2, 'pequeno', 'preto', 'animalProfile.png', 'doacao', 'não tenho paciencia para cuidar', 'vi ane ', 0, 10, 0, NULL),
+(1, 'cachorro', 'buldogue', 2, 'pequeno', 'preto', 'animalProfile.png', 'doacao', 'não tenho paciencia para cuidar', 'Neguinho', 0, 10, 0, NULL),
 (2, 'cachorro', 'vira lata', 1, 'medio', 'castanho', 'animalProfile.png', 'doacao', 'Não tenho como manter', 'dog', 1, 10, 1, NULL),
 (3, 'gato', 'himalaio', 1, 'mini', 'Castanho', 'animalProfile.png', 'perdido', 'Perdi caminhando pela praia no quiosque 32', 'juzo', 1, 10, 0, NULL),
 (4, 'cachorro', 'sheepdog', 1, 'medio', 'branco', 'animalProfile.png', 'perdido', 'ele saiu correndo em direção a uma avenida no indaiá ', 'Enio', 1, 10, 0, NULL),
@@ -49,7 +49,7 @@ INSERT INTO `mapa` (`idmapa`, `idanimal`, `latitude`, `longitude`) VALUES
 
 
 INSERT INTO `usuario` (`idusuario`, `nome`, `email`, `img`, `telefone`, `senha`) VALUES
-(1, 'Sandro Mariano', 'sandrolalo@hotmail.com', 'profile-1.JPG', '12997261834', 'a5d124e34bcdc8f005b7d06ad05d5944e499a50e'),
+(1, 'Sandro Mariano', 'sandrolalo@hotmail.com', 'profile-1.jpg', '12997261834', 'a5d124e34bcdc8f005b7d06ad05d5944e499a50e'),
 (2, 'Janayna Thomaz ', 'janayna.stefanini@gmail.com ', 'profile-2.jpg', '(12) 98208-6181', 'cb94cab4d2c696f73fd42be369ac28fb1faf6cf7'),
 (3, 'Gabriel Crisostomo S. de Farias', 'gabrielcrisostomo2001@outlook.com', 'profile-3.jpg', '(12) 98131-9911', 'ded43e5a454fe1bd2c09bfd499db518348abdb75'),
 (4, 'Caroline Rocha', 'carolinerocha034@gmail.com', 'profile-4.jpg', '(12) 99754-4206', '67cbf9b0aa143234fb538a36f234e1a30a5555f6'),

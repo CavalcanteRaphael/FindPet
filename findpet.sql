@@ -1,5 +1,4 @@
-CREATE DATABASE `findpet`;
-USE `findpet`;
+USE `findpet_dados`;
 
 CREATE TABLE `animal` (
   `idanimal` int(10) UNSIGNED NOT NULL,
@@ -32,7 +31,7 @@ CREATE TABLE `usuario` (
   `senha` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `findpet`.`mapa` (
+CREATE TABLE `mapa` (
   `idmapa` INT(11) NOT NULL AUTO_INCREMENT,
   `idanimal` INT(11) NOT NULL,
   `latitude` DECIMAL(20,16) NOT NULL,

@@ -179,7 +179,7 @@
                     <div id="depoimentos">
                         <?php 
                             require "ajax/conexao.php";
-                                $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('1', '2', '3');");
+                                $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('21', '2', '20');");
                                 $result = $stmt->fetchAll();
                                     if($result){
                                         foreach($result as $row){ ?>
