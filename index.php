@@ -64,7 +64,7 @@
                     <div class="col s12 m6 xl3 center-align">
                         <i class="medium material-icons">attach_money</i>
                         <p></p>
-                        <a class="blue-grey darken-4 btn">Ajude-nos</a>
+                        <a class="blue-grey darken-4 btn" href="ajude-nos.php">Ajude-nos</a>
                     </div>
                 </div>
             </div>
