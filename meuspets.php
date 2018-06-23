@@ -45,8 +45,6 @@
                             <p><b>Raça</b>: <?php echo $row['raca']; ?></p>
                             <p><b>Sexo</b>: <?php if( $row['sexo'] == 1) {echo "Macho";} else{echo "Fêmea";} ?></p> 
                             <p><b>Tipo</b>: <?php if( $row['tipo'] == 'doacao'){echo "Doação";} else if ( $row['tipo'] == 'perdido'){echo "Perdido";} else{echo "Encontrado";} ?></p>
-                            <a class="blue-grey darken-4 btn" href="#" id="localizacao"><i class="material-icons left">location_on</i>Ver no Mapa</a><br/><br/>
-                            <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>  
                         </div>
                     </div>
                 </div>
