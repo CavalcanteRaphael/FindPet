@@ -123,6 +123,7 @@
                                 <li><a href="mapa.php">Ver Animais</a></li>
                                 <li><a class="dropdown-button" href="#" data-activates="dropdown1">Serviços<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a href="depoimentos.php">Depoimentos</a></li>
+                                <li><a href="ajude-nos.php">Ajude-nos</a></li>
                                 <ul id="dropdown1" class="dropdown-content">
                                     <li><a href="doacao.php">Doar</a></li>
                                     <li><a href="adotar.php">Adotar</a></li>
