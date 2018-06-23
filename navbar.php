@@ -103,6 +103,7 @@
                                 <li><a href="mapa.php">Ver Animais</a></li>
                                 <li><a class="dropdown-button" href="#" data-activates="dropdown2">Serviços<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a href="depoimentos.php">Depoimentos</a></li>
+                                <li><a href="ajude-nos.php">Ajude-nos</a></li>
                                 <ul class="right hide-on-med-and-down" id="areaLogin">
                                     <li><a href="javascript:;" onclick="login()">Cadastrar/Entrar<img class="avatar" id="avatarnavbar" src="img/<?php echo $row['img']; ?>"></a></li>
                                 </ul>
@@ -122,6 +123,7 @@
                                 <li><a href="mapa.php">Ver Animais</a></li>
                                 <li><a class="dropdown-button" href="#" data-activates="dropdown1">Serviços<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a href="depoimentos.php">Depoimentos</a></li>
+                                <li><a href="ajude-nos.php">Ajude-nos</a></li>
                                 <ul id="dropdown1" class="dropdown-content">
                                     <li><a href="doacao.php">Doar</a></li>
                                     <li><a href="adotar.php">Adotar</a></li>

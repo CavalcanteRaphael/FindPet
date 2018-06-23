@@ -64,7 +64,7 @@
                     <div class="col s12 m6 xl3 center-align">
                         <i class="medium material-icons">attach_money</i>
                         <p></p>
-                        <a class="blue-grey darken-4 btn">Ajude-nos</a>
+                        <a class="blue-grey darken-4 btn" href="ajude-nos.php">Ajude-nos</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@
                     <div id="depoimentos">
                         <?php 
                             require "ajax/conexao.php";
-                                $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('1', '2', '3');");
+                                $stmt = $conn->query("SELECT depoimentos.id, depoimentos.iduser, depoimentos.texto, usuario.nome, usuario.img FROM depoimentos INNER JOIN usuario ON depoimentos.iduser = usuario.idusuario WHERE depoimentos.id IN ('21', '2', '20');");
                                 $result = $stmt->fetchAll();
                                     if($result){
                                         foreach($result as $row){ ?>
