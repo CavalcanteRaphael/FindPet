@@ -37,7 +37,7 @@
                             
                         
                           <div class="card-reveal" style="display: none; transform: translateY(0%);">
-                            <span class="card-title grey-text text-darken-4">Informações do Pet<i class="material-icons right">close</i></span>
+                            <span class="card-title grey-text text-darken-4"><b>Informações do Pet</b><i class="material-icons right">close</i></span>
                               <br/>
                             <p><b>Cor</b>: <?php echo $row['cor']; ?></p>
                             <p><b>Porte</b>: <?php echo $row['porte']; ?></p>
