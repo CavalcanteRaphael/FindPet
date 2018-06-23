@@ -92,7 +92,7 @@
         </div>
         <input name="castrado" type="hidden" value="null" id="sim" checked />
         <input name="vacinado" type="hidden" value="null" id="simvac" checked />
-        <input type="hidden" name="nome" id="nome" value="null">
+        <input type="hidden" name="nome" id="nome" value="naoidentificado">
         <input type="hidden" name="tipo" id="tipo" value="encontrado">
         <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
@@ -184,7 +184,8 @@ dataType: 'json',
 success: function(response){
 if(response.deucerto == 1){
 notificar('success','Pet cadastrado com sucesso!')
-$("#cadastro").trigger("reset");
+//$("#cadastro").trigger("reset");
+setInterval(function() { window.location = "meuspets.php"; }, 3000);
 }
 }
 });

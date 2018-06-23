@@ -19,7 +19,7 @@
     <div id="petsAdotar" class="row">
     <?php 
       require "ajax/conexao.php";
-      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo, animal.nome FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
+      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.sexo, animal.descricao, animal.tipo, animal.nome FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
       $result = $stmt->fetchAll();
           $i = 1;
           if($result){
@@ -48,11 +48,11 @@
                           <div class="card-reveal" style="display: none; transform: translateY(0%);">
                             <span class="card-title grey-text text-darken-4">Informações do Pet<i class="material-icons right">close</i></span>
                               <br/>
-                            <p>Cor: <?php echo $row['cor']; ?></p>
-                            <p>Porte: <?php echo $row['porte']; ?></p>
-                            <p>Espécie: <?php echo $row['especie']; ?></p>
-                            <p>Raça: <?php echo $row['raca']; ?></p>
-                            <p>Sexo: Macho</p> 
+                            <p><b>Cor</b>: <?php echo $row['cor']; ?></p>
+                            <p><b>Porte</b>: <?php echo $row['porte']; ?></p>
+                            <p><b>Espécie</b>: <?php echo $row['especie']; ?></p>
+                            <p><b>Raça</b>: <?php echo $row['raca']; ?></p>
+                            <p><b>Sexo</b>: <?php if( $row['sexo'] == 1) {echo "Macho";} else{echo "Fêmea";} ?></p> 
                             <a class="blue-grey darken-4 btn" href="#" id="localizacao"><i class="material-icons left">location_on</i>Ver no Mapa</a><br/><br/>
                             <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>  
                         </div>

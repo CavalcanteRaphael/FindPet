@@ -190,7 +190,8 @@
                     success: function(response){
                         if(response.deucerto == 1){
                             notificar('success','Pet cadastrado com sucesso!')
-                            $("#cadastroperdido").trigger("reset");
+                            //$("#cadastroperdido").trigger("reset");
+                            setInterval(function() { window.location = "meuspets.php"; }, 3000);
                         }
                     }
                 });
