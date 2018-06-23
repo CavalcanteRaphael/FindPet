@@ -43,13 +43,13 @@
 	$Mailer->Subject = 'Mensagem de ' .$_SESSION['nome'];
 	
 	//Corpo da Mensagem
-	$Mailer->Body = $mensagem . ' /n Remetente: ' . $email;
+	$Mailer->Body = $mensagem . ' <br />Remetente: ' . $_SESSION['nome'] . '<br /> Email do remetente: ' . $_SESSION['email'] . '<h5 style="color: red;">Esta mensagem foi enviada automaticamente através do site findpet.org, NÃO RESPONDA ESTA MENSAGEM<h5>';
 	
 	//Corpo da mensagem em texto
 	$Mailer->AltBody = 'conteudo do E-mail em texto';
 	
 	//Destinatario 
-	$Mailer->AddAddress('mar.sousa2061@gmail.com');
+	$Mailer->AddAddress("$email");
 	
 	if($Mailer->Send()){
 		echo json_encode("E-mail enviado com sucesso");
