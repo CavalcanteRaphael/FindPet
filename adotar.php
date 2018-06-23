@@ -19,7 +19,7 @@
     <div id="petsAdotar" class="row">
     <?php 
       require "ajax/conexao.php";
-      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo, animal.nome FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
+      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo, animal.nome FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
       $result = $stmt->fetchAll();
           $i = 1;
           if($result){
@@ -29,7 +29,7 @@
                     <div class="col-sm-6">
                         <div class="card sticky-action" style="overflow: visible;">
                           <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="img/doggo.jpg">
+                            <img class="activator" src="img/<?php echo $row['img'];?>">
                           </div>
                             
                           <div class="card-content">
