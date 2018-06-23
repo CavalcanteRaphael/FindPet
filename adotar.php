@@ -19,7 +19,7 @@
     <div id="petsAdotar" class="row">
     <?php 
       require "ajax/conexao.php";
-      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo, animal.nome FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
+      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.porte, animal.especie, animal.raca, animal.descricao, animal.tipo, animal.nome, usuario.email FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
       $result = $stmt->fetchAll();
           $i = 1;
           if($result){
@@ -52,9 +52,43 @@
                             <p>Porte: <?php echo $row['porte']; ?></p>
                             <p>Espécie: <?php echo $row['especie']; ?></p>
                             <p>Raça: <?php echo $row['raca']; ?></p>
-                            <p>Sexo: Macho</p> 
-                            <a class="blue-grey darken-4 btn" href="#" id="localizacao"><i class="material-icons left">location_on</i>Ver no Mapa</a><br/><br/>
-                            <a class="blue-grey darken-4 btn" id="salvar"><i class="material-icons left">chat</i>Falar com o dono</a>  
+                            <p>Sexo: Macho</p>
+                            <input type="hidden" name="idanimal" value="<?php echo $row['idanimal'];?>" id="idanimal<?php echo $row['idanimal'];?>">
+                            <a class="blue-grey darken-4 btn" id="localizacao<?php echo $row['idanimal'];?>"><i class="material-icons left">location_on</i>Ver no Mapa</a><br/><br/>
+                            <a class="blue-grey darken-4 btn modal-trigger" href="#modal<?php echo $row['idanimal']?>" id="email"><i class="material-icons left">chat</i>Falar com o dono</a>  
+
+                            <div id="modal<?php echo $row['idanimal']?>" class="modal">
+                              <div class="modal-content">
+                                <h4>Enviar Email</h4>
+                                <form id="enviaEmail<?php echo $row['idanimal']?>" method="post" action="#!">
+                                  Mensagem:<input type="text" name="mensagem">
+                                  <input type="hidden" name="emailDestino" value="<?php echo $row['email'];?>">
+                                  <input id="enviaEmail<?php echo $row['idanimal']?>" type="submit" class="modal-close waves-effect waves-green btn-flat">
+                                </form>
+                              </div>
+                            </div>
+
+                            <script>
+                              $('#enviaEmail<?php echo $row['idanimal']?>').submit(function(event) {
+                                event.preventDefault();
+                                $.ajax({
+                                  url: 'PHPMailer/enviar_email.php',
+                                  type: 'POST',
+                                  data: $('#enviaEmail<?php echo $row['idanimal']?>').serialize(),
+                                  dataType: 'json',
+                                  success: function(response) {
+                                    notificar('alert', response)
+                                  }
+                                })
+                              })
+
+                              $('#localizacao<?php echo $row['idanimal'];?>').click(function(event) {
+                                event.preventDefault();
+                                var idanimal = $('#idanimal<?php echo $row['idanimal'];?>').val();
+                                    $(location).attr('href', 'http://localhost/findpet/filtroAdotar.php?idanimal=' +idanimal)
+                              })
+                            </script>
+                            
                         </div>
                     </div>
                 </div>
@@ -65,6 +99,14 @@
 
         </div>
 
+        <script>
+          $(document).ready(function(){
+            $('.modal').modal({
+              preventScrolling: true
+            });
+          });
+
+        </script>
 <?php
     require 'footer.php';
 ?>

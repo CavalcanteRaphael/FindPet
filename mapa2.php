@@ -21,10 +21,18 @@
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
+            <?php if (isset($_GET['idanimal'])) {
+              echo "var pos = {
+                lat: {$row['latitude']},
+                lng: {$row['longitude']}
+              };";
+            } else {
+              echo 'var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+              };';
+            }
+            ?>
 
             map.setCenter(pos);
             map.setZoom(10);

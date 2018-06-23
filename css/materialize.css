@@ -5853,20 +5853,6 @@ button.btn-floating {
   margin: 6px 0;
 }
 
-.modal-overlay {
-  position: fixed;
-  z-index: 999;
-  top: -25%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 125%;
-  width: 100%;
-  background: #000;
-  display: none;
-  will-change: opacity;
-}
-
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
