@@ -64,7 +64,7 @@
                     <div class="col s12 m6 xl3 center-align">
                         <i class="medium material-icons">attach_money</i>
                         <p></p>
-                        <a class="blue-grey darken-4 btn">Ajude-nos</a>
+                        <a class="blue-grey darken-4 btn" href="ajude-nos.php">Ajude-nos</a>
                     </div>
                 </div>
             </div>
@@ -74,8 +74,8 @@
         <ul class="collapsible" id="ajudamapa">
             <li>
                 <div class="collapsible-header">
-                    <i class="material-icons">loupe</i>
-                    Doação
+                    <img class="icon" src="img/iconeAzul.png" >
+                        Doação
                     <span class="badge" id="badgeAzul">AZUL</span>
                 </div>
                 <div class="collapsible-body">
@@ -84,7 +84,7 @@
             </li>
             <li>
                 <div class="as collapsible-header">
-                    <i class="material-icons">notifications_active</i>
+                   <img class="icon" src="img/iconeVermelho.png">
                     Perdidos
                     <span class="badge" id="badgeVermelho">VERMELHO</span>
                 </div>
@@ -94,8 +94,8 @@
             </li>
             <li>
                 <div class="as collapsible-header">
-                    <i class="material-icons">add_location</i>
-                    Encontrados
+                    <img class="icon" src="img/iconeVerde.png">
+                     Encontrados
                     <span class="badge" id="badgeVerde">VERDE</span>
                 </div>
                 <div class="collapsible-body">
@@ -206,7 +206,7 @@
                 </div>
 
                 <?php if(!isset($_SESSION['id'])){ ?>
-                    <center><a class="blue-grey darken-4 btn" href="cadastro.php" style="margin-top: 5%;">Junte-se ao Findpet</a></center>
+                    <center><a class="blue-grey darken-4 btn" href="cadastro.php" style="margin-top: 5%; margin-bottom: -7%;">Junte-se ao Findpet</a></center>
                 <?php } ?>
 
             </div>

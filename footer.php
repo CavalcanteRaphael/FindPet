@@ -26,6 +26,7 @@
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="sobre.php">Sobre</a></li>
                         <li><a class="grey-text text-lighten-3" href="depoimentos.php">Depoimentos</a></li>
+                        <li><a class="grey-text text-lighten-3" href="ajude-nos.php">Ajude-nos</a></li>
                     </ul>
                 </div>
         </div>
