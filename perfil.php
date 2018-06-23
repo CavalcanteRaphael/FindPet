@@ -63,7 +63,7 @@
                     <input type="text" id="telefone" name="telefone" value="<?php echo $usuario['telefone']; ?>">
                 </div>
                 <input type="hidden" name="id" value="<?php echo $id; ?>">
-                <a class="blue-grey darken-4 btn" id="salvar" style="margin-left: 30%; margin-top: 3%;"><i class="material-icons left">done</i>Salvar</a>
+                <a class="blue-grey darken-4 btn" id="salvar" style="margin-top: 3%;"><i class="material-icons left">done</i>Salvar</a>
             </form>
         </div>
         </div>

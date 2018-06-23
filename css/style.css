@@ -340,13 +340,38 @@ textarea {
 }
 #corperfil{
 	width: 38%;
+    height: 90%;
     border: 6% solid #c3c3c340;
     background-color: #c3c3c340;
     border-radius: 1%;
     padding: 2%;
     margin: auto;
-    margin-bottom: -10%;
+    margin-bottom: 2%;
 	margin-top: 3%
+}
+#corperfil a{
+    margin-left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #navbar{
+        width: 100%;
+    }
+
+    #corperfil{
+        width: 68%;
+        height: 89%;
+        margin: 3%;
+    } 
+
+    #corperfil a{
+        margin-left: 10%;
+    }
+
+    #salvar{
+        margin-left: 23%;
+    }
 }
 /* ---------------------------------------   FIM DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
 
@@ -362,6 +387,7 @@ textarea {
 }
 html, body {
     height: 100%;
+    width: 100%;
   }
 #Mapa{
 	width: 60%;
