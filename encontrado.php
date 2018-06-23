@@ -9,6 +9,17 @@
         <center>
             <h4>Cadastrar Pet Encontrado</h4>
         </center>
+
+        <div class="slim imageuser"
+                data-min-size="150,150"
+                data-size="1000,1000"
+                data-ratio="1:1"
+                data-instant-edit="true"
+                style="width: 160px;height: 160px; margin:auto;">
+                      <img id="imageuser" src="img/animalProfile.png"><br/>          
+                      <input type="file" name="slim[]"/>
+        </div>
+
         <div class="input-field col s12">
             <label for="cor">Cor:</label>
             <input type="text" name="cor" id="cor">
@@ -86,25 +97,31 @@
         <input type="hidden" name="lat" id="inputLat">
                 <input type="hidden" name="lng" id="inputLng">
         <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
-        <input type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Animal">
+        
+    </form>
+
+    <center>
+        <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez</h4>
+    </center>
+
+    <div id="mapencontrado"></div>
+
+    <form id="cadastro_btn">
+        <center><input style="margin-top: 5%; margin-bottom: 5%;" type="submit" class="blue-grey darken-4 btn" name="" value="Cadastrar Pet"></center>
     </form>
 </div>
 
-<center>
-    <h4 style="display:inline-block;">Informe onde o pet foi visto pela última vez</h4>
-</center>
-<div id="map1"></div>
 <script>
 var map;
 function initMap() {
-    var map = new google.maps.Map(document.getElementById('map1'), {
+    var map = new google.maps.Map(document.getElementById('mapencontrado'), {
         center: {lat: -13.700000, lng: -47.9200000},
         mapTypeControl: false,
         streetViewControl: false,
         fullscreenControl: false,
         zoom: 4
     });
-    var infoWindow = new google.maps.InfoWindow({map: map});
+    //var infoWindow = new google.maps.InfoWindow({map: map});
 
     var marcador = new google.maps.Marker({
     position: {lat: -15.826691, lng: -47.9218204},
@@ -126,7 +143,7 @@ google.maps.event.addListener(marcador, 'dragend', function(event) {
     lng: position.coords.longitude
     };
 
-    infoWindow.setPosition(pos);
+    //infoWindow.setPosition(pos);
     map.setCenter(pos);
     map.setZoom(14);
     marcador.setPosition(pos);
@@ -157,7 +174,7 @@ require 'footer.php';
 
 <script type="text/javascript">
 
-$('#cadastro').submit(function(event){
+$('#cadastro_btn').submit(function(event){
 event.preventDefault();
 $.ajax({
 url: 'ajax/cadastroAnimal.php',

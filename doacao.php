@@ -9,6 +9,17 @@
                 <center>
                     <h4>Cadastrar Pet Para Doação</h4>
                 </center>
+
+                <div class="slim imageuser"
+                data-min-size="150,150"
+                data-size="1000,1000"
+                data-ratio="1:1"
+                data-instant-edit="true"
+                style="width: 160px;height: 160px; margin:auto;">
+                      <img id="imageuser" src="img/doe.jpg"><br/>          
+                      <input type="file" name="slim[]"/>
+                </div>
+
                   <div class="input-field col s12">
                     <label for="nome">Nome do Animal (opcional) :</label>
                     <input type="text" name="nome" id="nome">
@@ -134,7 +145,7 @@
         fullscreenControl: false,
         zoom: 4
         });
-        var infoWindow = new google.maps.InfoWindow({map: map});
+        //var infoWindow = new google.maps.InfoWindow({map: map});
 
         var marcador = new google.maps.Marker({
         position: {lat: -15.826691, lng: -47.9218204},
@@ -156,7 +167,7 @@
         lng: position.coords.longitude
         };
 
-        infoWindow.setPosition(pos);
+        //infoWindow.setPosition(pos);
         map.setCenter(pos);
         map.setZoom(14);
         marcador.setPosition(pos);
@@ -196,7 +207,8 @@
             success: function(response){
                 if(response.deucerto == 1){
                 notificar('success','Pet cadastrado com sucesso!')
-                $("#cadastro").trigger("reset");
+                //$("#cadastro").trigger("reset");
+                setInterval(function() { window.location = "/adotar.php"; }, 3000);
                 }
             }
             });
