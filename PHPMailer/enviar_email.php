@@ -43,7 +43,7 @@
 	$Mailer->Subject = 'Mensagem de ' .$_SESSION['nome'];
 	
 	//Corpo da Mensagem
-	$Mailer->Body = $mensagem . ' <br />Remetente: ' . $_SESSION['nome'] . '<br /> Email do remetente: ' . $_SESSION['email'] . '<h5 style="color: red;">Esta mensagem foi enviada automaticamente através do site findpet.org, NÃO RESPONDA ESTA MENSAGEM<h5>';
+	$Mailer->Body = $mensagem . ' <br />Remetente: ' . $_SESSION['nome'] . '<br /> Email do remetente: ' . $_SESSION['email'] . '<h5 style="color: orange;">Esta mensagem foi enviada automaticamente através do site findpet.org, NÃO RESPONDA ESTA MENSAGEM<h5>';
 	
 	//Corpo da mensagem em texto
 	$Mailer->AltBody = 'conteudo do E-mail em texto';
