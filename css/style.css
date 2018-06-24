@@ -378,6 +378,13 @@ textarea {
 
 
 /* ---------------------------------------   INICIO VER ANIMAIS -> MAPA.PHP  ------------------------- */
+.titulo_mapa{
+    margin: 42px 0px 29px 0px;
+}
+#explicacao {
+  margin-top: 6%;
+  float: left;
+}
 #map{
     height: 80%;
     width: 80%;
@@ -610,13 +617,9 @@ html, body {
   background-color: #f0f0f0;
   color: black;
 }
-.explicacao {
-  margin-top: 3%;
-  float: left;
-}
 .modal {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 30%;
 }
 .modal-overlay {
     display: none;
