@@ -64,10 +64,11 @@
         $Mailer->AddAddress("$email");
         
         if($Mailer->Send()){
-          echo json_encode("E-mail enviado com sucesso");
-          header("Location:  confereCodigo.php");
+          $resultado['existe'] = 1;
+          echo json_encode($resultado);
         }else{
-          echo json_encode("Erro no envio do e-mail: " . $Mailer->ErrorInfo);
+          $resultado['existe'] = 0;
+          echo json_encode($resultado);
         }
       }else {
         $resultado['existe'] = 0;
