@@ -1,7 +1,7 @@
 <?php  
 	$servername = 'localhost';
 	$username = 'root';
-	$password = '';
+	$password = 'aluno123';
 	$dbname = 'findpet';
 
 	try{
