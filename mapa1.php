@@ -1,6 +1,6 @@
       <?php session_start(); ?>
       <?php require 'navbar.php'; ?> 
-      <center><h4>Mapa</h4></center>
+      <center><h4>Mapa</h4><br/><br/></center>
 
     <form class="filtros" action="#">     
        <center><h4 style="margin-top:3%;"></h4></center>
