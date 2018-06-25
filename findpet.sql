@@ -1,4 +1,3 @@
-CREATE DATABASE `findpet`;
 USE `findpet`;
 
 CREATE TABLE `animal` (
