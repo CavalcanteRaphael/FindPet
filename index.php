@@ -102,7 +102,8 @@
                     <p>Os pets em verde no mapa foram encontrados.</p>
                 </div>
             </li>
-        </ul>
+        </ul> 
+        </br>
         <div id="map22"></div>
                         <script>
                   var map;
@@ -169,8 +170,8 @@
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
                 </script>
-        
-        
+        </br>
+        </br>
         <hr id="hrindex">
       <section class="depoimentosFavoritos">
             <div class="container" style="margin-top:10%;margin-bottom:10%;">
