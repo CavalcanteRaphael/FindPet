@@ -109,7 +109,7 @@
 
         <?php 
         require "ajax/conexao.php";
-                $stmt = $conn->query("SELECT idmapa, latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $stmt = $conn->query("SELECT mapa.idmapa, mapa.latitude, mapa.longitude, animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.sexo, animal.descricao, animal.tipo, animal.nome FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
                 $result = $stmt->fetchAll();
                 if($result){
                   foreach ($result as $row) { ?>

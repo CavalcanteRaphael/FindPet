@@ -9,11 +9,20 @@
                   } else {
                     var imgMarcador = 'img/iconeVerde.png'
                   }
-                  var marcador = new google.maps.Marker({
+                  var marcador<?php echo $row['idmapa']; ?> = new google.maps.Marker({
                     position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
                     map: map,
                     icon: imgMarcador,
                     title: '<?php echo $row['idmapa'];?>'
+                  });
+
+                  var infowindow = new google.maps.InfoWindow({
+                    content: 'Change the zoom level',
+                    position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>}
+                  });
+
+                  marcador<?php echo $row['idmapa']; ?>.addListener('click', function() {
+                    infowindow.open(map, marcador<?php echo $row['idmapa']; ?>);
                   });
 
                   <?php }} ?>
