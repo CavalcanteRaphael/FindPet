@@ -759,3 +759,12 @@ html, body {
     width: 121%;
 }
 
+@media screen and (max-width: 768px) {
+    .slim-image-editor .slim-container {
+        position: relative;
+        height: calc(90% - 8em);
+        width: 100%;
+        z-index: 2;
+        direction: ltr;
+    }
+}
