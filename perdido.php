@@ -5,7 +5,7 @@
     require 'navbar.php';
 ?>  
         
-        <div id="cadastrarDoaPet" class="container hoverable">
+        <div id="cadastrarPerdiPet" class="container hoverable">
             <form id="cadastroperdido" method="post">
                 <center>
                     <h4>Cadastrar Pet Perdido</h4>
