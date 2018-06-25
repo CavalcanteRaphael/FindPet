@@ -1,11 +1,11 @@
       <?php session_start(); ?>
       <?php require 'navbar.php'; ?> 
-      <center><h4 class="titulo_mapa">Mapa</h4><br/></center>
+      <center><h4>Mapa</h4></center>
 
-    <form class="filtros" method="POST" action="filtros.php">     
-       <center><h4 style="margin-top:3%;">Filtros:</h4></center>
-       	<p>Categoria:</p>
-        <input name="categoria" type="radio" value="doacao" id="adocao" checked class="with-gap" />
+    <form class="filtros" action="#">     
+       <center><h4 style="margin-top:3%;"></h4></center>
+        <p>Categoria:</p>
+        <input name="categoria" type="radio" value="adocao" id="adocao" checked class="with-gap" />
         <label for="adocao">
             <span>Adoção</span>
         </label>
@@ -31,7 +31,7 @@
             <span>Outros</span>
         </label><br />
         
-        <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;margin-bottom: 3%;"></center>
+        <center><input type="submit" class="blue-grey darken-4 btn" name="Filtrar" value="filtrar" style="margin-top:5%;margin-bottom: 3%;     margin-top: 10%; " ></center>
     
     </form>
   
@@ -40,8 +40,9 @@
   <div id="explicacao">  
   
   <!-- Botão DOAÇÃO -->
-  <a class="waves-effect btn btnexp modal-trigger" href="#modal1"><img class="material-icons left" src="img/iconeAzul.png">Doação</a>
-	<!-- Modal Structure -->
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 20%; margin-top: 4%; height: 60px;
+    line-height: 51px;" href="#modal1"><img class="material-icons left" src="img/iconeAzul.png" style="padding: 2%;">Doação</a>
+  <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Doação</h4>
@@ -55,7 +56,8 @@
   <br/>
   
   <!-- Botão PERDIDOS -->
-  <a class="waves-effect btn btnexp modal-trigger" href="#modal2"><img class="material-icons left" src="img/iconeVermelho.png">Perdidos</a>
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 20%;margin-bottom: 0%;height: 60px;
+    line-height: 51px;" href="#modal2"><img class="material-icons left" src="img/iconeVermelho.png" style="padding: 2%;">Perdidos</a>
   
   <div id="modal2" class="modal">
     <div class="modal-content">
@@ -70,7 +72,8 @@
   <br/>
   
   <!-- Botão ENCONTRADOS -->
-  <a class="waves-effect btn btnexp modal-trigger" href="#modal3"><img class="material-icons left" src="img/iconeVerde.png">Encontrados</a>
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 20%;margin-bottom: 1%;height: 60px;
+    line-height: 51px;"  href="#modal3"><img class="material-icons left" src="img/iconeVerde.png" style="padding: 2%;">Encontrados</a>
   
   <div id="modal3" class="modal">
     <div class="modal-content">
@@ -89,10 +92,10 @@
   </script> 
         
 </div>
-	
+  
   <br/>
 
-	<div id="map"></div>
+  <div id="map"></div>
             <script>
       var map;
       function initMap() {
