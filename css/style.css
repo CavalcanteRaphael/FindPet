@@ -429,7 +429,9 @@ html, body {
     	margin-right: 15%;
     	margin-top: 6%;
     }
+
 }
+
 .a{
 	text-align: blue;
 }
@@ -618,6 +620,25 @@ html, body {
     width: 50%;
     height: 30%;
 }
+@media screen and (max-width: 768px) {
+    .modal {
+        width: 94%;
+        height: 30%;
+    }
+    .filtros {
+        margin-top: 2%;
+        margin-bottom: 0px;
+    }
+    #explicacao {
+        float: left;
+        margin: 3% 20%;
+    }
+    #map {
+        width: 87%;
+        height: 54%;
+    }
+}
+
 .modal-overlay {
     display: none;
 }
