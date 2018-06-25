@@ -153,8 +153,6 @@ h5 {
 
 /* ---------------------------------------   FIM DO INDEX.PHP ------------------------- */
 
-
-
 /* ---------------------------------------   INICIO DO FOOTER.PHP ------------------------- */
 .page-footer {
 	background-color: #2F4F4F;
@@ -687,7 +685,7 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
-/* ---------------------------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
+/* ---------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ----------------------- */
 
 .side-nav .user-view, .side-nav .userView{
     background-color: #2f4f4f;
@@ -729,7 +727,11 @@ html, body {
 .modal-overlay {
     display: none;
 }
+/* ------------------- INICIO DO AJUDE - NOS -------------------- */
 
+.vakinha{
+    width: 15%;
+}
 #pagamentos{
     margin-top: 5%;
     margin-bottom: 2%;
@@ -754,6 +756,8 @@ html, body {
         padding: 2%;
     }
 }
+
+/* ----------------- FIM DO AJUDE - NOS ----------------------- */
 
 .infoCard {
     width: 121%;
