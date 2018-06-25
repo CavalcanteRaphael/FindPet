@@ -710,6 +710,24 @@ html, body {
 .modal-overlay {
     display: none;
 }
+<<<<<<< HEAD
+
+#pagamentos{
+    MARGIN-TOP: 5%;
+    MARGIN-BOTTOM: 2%;
+}
+
+#ajude{
+	width: 60%;
+	height: 207%;
+	background-color: #c3c3c340;
+	border-radius: 2%;
+	margin-top: 2%;
+	padding: 2%;
+	margin-bottom: 5%;
+}
+=======
 .infoCard {
     width: 121%;
 }
+>>>>>>> eaa667bf6b651f45824ba1d1cdc71926f1b5cedb
