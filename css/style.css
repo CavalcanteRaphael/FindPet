@@ -351,6 +351,7 @@ textarea {
 }
 #corperfil a{
     margin-left: 30%;
+    margin-top: 3%;
 }
 
 @media screen and (max-width: 768px) {
@@ -360,17 +361,13 @@ textarea {
     }
 
     #corperfil{
-        width: 68%;
+        width: 94%;
         height: 89%;
-        margin: 3%;
+        margin: 3% auto;
     } 
 
     #corperfil a{
-        margin-left: 10%;
-    }
-
-    #salvar{
-        margin-left: 23%;
+        margin: 3% 26%;
     }
 }
 /* ---------------------------------------   FIM DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
