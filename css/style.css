@@ -569,6 +569,12 @@ and (orientation: landscape)
     width: 82%;
     margin-left: 35%;
 }
+@media only screen and (max-width: 901px) {
+    #verMais{
+    width: 85%;
+    margin: auto;
+}
+}
 /* ---------------------------------------   INICIO DO ADOTAR  ------------------------- */
 
 
