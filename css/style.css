@@ -741,6 +741,9 @@ html, body {
     width: 50%;
     height: 30%;
 }
+#modal1{
+    width: 100%;
+}
 @media screen and (max-width: 768px) {
     .modal {
         width: 94%;
