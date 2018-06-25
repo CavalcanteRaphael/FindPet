@@ -185,7 +185,7 @@ success: function(response){
 if(response.deucerto == 1){
 notificar('success','Pet cadastrado com sucesso!')
 //$("#cadastro").trigger("reset");
-setInterval(function() { window.location = "meuspets.php"; }, 3000);
+setInterval(function() { window.location = "meuspets.php"; }, 2000);
 }
 }
 });
