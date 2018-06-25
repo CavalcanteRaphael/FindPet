@@ -471,7 +471,15 @@ html, body {
     height: 50%;
 	border-radius: 1%; 
 }
-#cadastrarDoaPet{
+@media screen and (max-width: 768px) {
+    #mapperdido{
+        margin: auto;
+        width: 100%;
+        height: 20%;
+        border-radius: 1%; 
+    }
+}
+#cadastrarPerdiPet{
 	width: 60%;
 	height: 243%;
 	background-color: #c3c3c340;
@@ -482,6 +490,17 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
+@media screen and (max-width: 768px) {
+    #cadastrarPerdiPet{
+        width: 94%;
+        height: 203%;
+        background-color: #c3c3c340;
+        border-radius: 2%;
+        float: left;
+        margin: 3% 3%;
+        padding: 2%;
+    } 
+}
 /* ---------------------------------------   FIM DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 
 
@@ -489,7 +508,7 @@ html, body {
 /* ---------------------------------------   INICIO DO CADASTRO DE PET PARA DOAR -> DOACAO.PHP  ------------------------- */
 #cadastrarDoaPet{
 	width: 60%;
-	height: 259%;
+	height: 237%;
 	background-color: #c3c3c340;
 	border-radius: 2%;
 	margin-left: 20%;
@@ -498,6 +517,18 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
+@media screen and (max-width: 768px) {
+    #cadastrarDoaPet{
+        width: 94%;
+        height: 230%;
+        background-color: #c3c3c340;
+        border-radius: 2%;
+        float: left;
+        margin: 3% 3%;
+        padding: 2%;
+    } 
+}
+
 /*buton radio*/[type="radio"]:checked+label:after,
 [type="radio"].with-gap:checked+label:before,
 [type="radio"].with-gap:checked+label:after {
@@ -509,6 +540,14 @@ html, body {
     width: 100%;
     height: 35%;
 	border-radius: 1%; 
+}
+@media screen and (max-width: 768px) {
+    #mapdoacao{
+        margin: auto;
+        width: 100%;
+        height: 20%;
+        border-radius: 1%; 
+    }
 }
 
 @media only screen
@@ -590,11 +629,30 @@ and (orientation: landscape)
 	padding: 2%;
 	margin-bottom: 5%;
 }
+@media screen and (max-width: 768px) {
+    #CadastroPetEncontrado{
+        width: 94%;
+        height: 175%;
+        background-color: #c3c3c340;
+        border-radius: 2%;
+        float: left;
+        margin: 3% 3%;
+        padding: 2%;
+    } 
+}
 #mapencontrado{
     margin: auto;
     width: 100%;
     height: 35%;
     border-radius: 1%; 
+}
+@media screen and (max-width: 768px) {
+    #mapencontrado{
+        margin: auto;
+        width: 100%;
+        height: 20%;
+        border-radius: 1%; 
+    }
 }
 html, body {
     height: 100%;
