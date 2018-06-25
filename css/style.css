@@ -762,7 +762,7 @@ html, body {
 @media screen and (max-width: 768px) {
     .slim-image-editor .slim-container {
         position: relative;
-        height: calc(90% - 8em);
+        height: calc(88% - 8em);
         width: 100%;
         z-index: 2;
         direction: ltr;
