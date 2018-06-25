@@ -106,7 +106,6 @@
           fullscreenControl: false,
           zoom: 4
         });
-        var infoWindow = new google.maps.InfoWindow({map: map});
 
         <?php 
         require "ajax/conexao.php";
@@ -126,6 +125,11 @@
                     map: map,
                     icon: imgMarcador,
                     title: '<?php echo $row['idmapa'];?>'
+                  });
+
+                  var infowindow = new google.maps.InfoWindow({
+                    content: 'Change the zoom level',
+                    position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>}
                   });
 
                   <?php }} ?>

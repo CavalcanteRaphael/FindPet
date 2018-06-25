@@ -21,18 +21,10 @@
         // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
-            <?php if (isset($_GET['idanimal'])) {
-              echo "var pos = {
-                lat: {$row['latitude']},
-                lng: {$row['longitude']}
-              };";
-            } else {
-              echo 'var pos = {
-                lat: position.coords.latitude,
-                lng: position.coords.longitude
-              };';
-            }
-            ?>
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
             map.setCenter(pos);
             map.setZoom(10);
@@ -50,7 +42,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhEAbQFcG2bVTRxjMpKIMWBDLD7ihbYsc&callback=initMap">
     </script>
    
-	
+  
       <?php
           require 'footer.php';
         ?>
