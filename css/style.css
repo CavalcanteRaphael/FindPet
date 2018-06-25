@@ -756,7 +756,9 @@ html, body {
         padding: 2%;
     }
 }
-
+.hrajude{
+    width: 50%;
+}
 /* ----------------- FIM DO AJUDE - NOS ----------------------- */
 
 .infoCard {

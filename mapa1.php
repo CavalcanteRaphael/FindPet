@@ -46,7 +46,9 @@
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Doação</h4>
-      <p>Os pets em azul no mapa estão para disponíveis para doação.</p>
+      <p>
+        Os ícones em azul no mapa são os pets que estarão disponíveis para doação, seja ele gato ou cachorro, com a ajuda do mapa mostramos a localização do pet, para facilitar o seu acesso até o animal.
+      </p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close btn-flat">Fechar</a>
@@ -62,7 +64,9 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
       <h4>Perdidos</h4>
-      <p>Os pets em vermelho no mapa estão perdidos.</p>
+      <p>
+        Os ícones em vermelho no mapa são os pets que estão perdidos, temos como objetivo mostrar aos usuários todos os animais que estão perdidos e o último local onde foi visto por seu dono. 
+      </p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close btn-flat">Fechar</a>
@@ -78,7 +82,7 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
       <h4>Encontrados</h4>
-      <p>Os pets em verde no mapa foram encontrados.</p>
+      <p>Os ícones em verde no mapa são pets que foram encontrados e um usuário o cadastrou, para ajudar a encontrar seu dono.</p>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-close btn-flat">Fechar</a>

@@ -17,9 +17,9 @@
             <br/>
         <div id="pagamentos">
             <a href="http://vaka.me/mf4a1v" target="_blank"><img src="img/vakinha.png" class="vakinha"></a>
-            <hr/>
+            <hr class="hrajude"/>
             <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
-            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" target="_blank" method="post" style="margin:-1%;">
+            <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" target="_blank" method="post">
                 <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO -->
                 <input type="hidden" name="currency" value="BRL" />
                 <input type="hidden" name="receiverEmail" value="equipefindpet@gmail.com" />
@@ -27,7 +27,7 @@
                 <input type="image" src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-cinza-assina.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
             </form>
             <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
-            <hr/>
+            <hr class="hrajude"/>
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                 <input type="hidden" name="cmd" value="_s-xclick">
                 <input type="hidden" name="hosted_button_id" value="QP9WBR4876NTS">
