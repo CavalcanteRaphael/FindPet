@@ -520,7 +520,7 @@ html, body {
 @media screen and (max-width: 768px) {
     #cadastrarDoaPet{
         width: 94%;
-        height: 229%;
+        height: 230%;
         background-color: #c3c3c340;
         border-radius: 2%;
         float: left;
