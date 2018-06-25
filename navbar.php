@@ -120,6 +120,9 @@
                                         <a href="javascript:;" onclick="login()"><span class="white-text name">Cadastro/Entrar</span></a>
                                     </div>
                                 </li>
+                                <?php if(isset($_SESSION['id'])){ ?>
+                                    <li><a href="meuspets.php">Meus Pets</a></li>
+                                <?php } ?>
                                 <li><a href="mapa.php">Ver Animais</a></li>
                                 <li><a class="dropdown-button" href="#" data-activates="dropdown1">Serviços<i class="material-icons right">arrow_drop_down</i></a></li>
                                 <li><a href="depoimentos.php">Depoimentos</a></li>

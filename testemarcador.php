@@ -109,7 +109,7 @@
 
         <?php 
         require "ajax/conexao.php";
-                $stmt = $conn->query("SELECT idmapa, latitude, longitude, tipo FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
+                $stmt = $conn->query("SELECT mapa.idmapa, mapa.latitude, mapa.longitude, animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.sexo, animal.descricao, animal.tipo, animal.nome FROM mapa INNER JOIN animal ON mapa.idanimal = animal.idanimal;");
                 $result = $stmt->fetchAll();
                 if($result){
                   foreach ($result as $row) { ?>
@@ -120,7 +120,7 @@
                   } else {
                     var imgMarcador = 'img/iconeVerde.png'
                   }
-                  var marcador = new google.maps.Marker({
+                  var marcador<?php echo $row['idmapa']; ?> = new google.maps.Marker({
                     position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>},
                     map: map,
                     icon: imgMarcador,
@@ -130,6 +130,10 @@
                   var infowindow = new google.maps.InfoWindow({
                     content: 'Change the zoom level',
                     position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>}
+                  });
+
+                  marcador<?php echo $row['idmapa']; ?>.addListener('click', function() {
+                    infowindow.open(map, marcador<?php echo $row['idmapa']; ?>);
                   });
 
                   <?php }} ?>

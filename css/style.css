@@ -351,6 +351,7 @@ textarea {
 }
 #corperfil a{
     margin-left: 30%;
+    margin-top: 3%;
 }
 
 @media screen and (max-width: 768px) {
@@ -360,17 +361,13 @@ textarea {
     }
 
     #corperfil{
-        width: 68%;
+        width: 94%;
         height: 89%;
-        margin: 3%;
+        margin: 3% auto;
     } 
 
     #corperfil a{
-        margin-left: 10%;
-    }
-
-    #salvar{
-        margin-left: 23%;
+        margin: 3% 26%;
     }
 }
 /* ---------------------------------------   FIM DO EDITAR PERFIL -> PERFIL.PHP  ------------------------- */
@@ -432,7 +429,9 @@ html, body {
     	margin-right: 15%;
     	margin-top: 6%;
     }
+
 }
+
 .a{
 	text-align: blue;
 }
@@ -566,6 +565,16 @@ and (orientation: landscape)
 #petsAdotar{
     max-width: 82%;
 }
+#verMais{
+    width: 82%;
+    margin-left: 35%;
+}
+@media only screen and (max-width: 901px) {
+    #verMais{
+    width: 85%;
+    margin: auto;
+}
+}
 /* ---------------------------------------   INICIO DO ADOTAR  ------------------------- */
 
 
@@ -621,9 +630,29 @@ html, body {
     width: 50%;
     height: 30%;
 }
+@media screen and (max-width: 768px) {
+    .modal {
+        width: 94%;
+        height: 30%;
+    }
+    .filtros {
+        margin-top: 2%;
+        margin-bottom: 0px;
+    }
+    #explicacao {
+        float: left;
+        margin: 3% 20%;
+    }
+    #map {
+        width: 87%;
+        height: 54%;
+    }
+}
+
 .modal-overlay {
     display: none;
 }
+<<<<<<< HEAD
 
 #pagamentos{
     MARGIN-TOP: 5%;
@@ -639,3 +668,8 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
+=======
+.infoCard {
+    width: 121%;
+}
+>>>>>>> eaa667bf6b651f45824ba1d1cdc71926f1b5cedb
