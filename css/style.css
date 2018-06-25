@@ -467,8 +467,8 @@ html, body {
 /* ---------------------------------------   INICIO DO PERDI MEU PET -> PERDIDO.PHP  ------------------------- */
 #mapperdido{
     margin: auto;
-    width: 60%;
-    height: 50%;
+    width: 100%;
+    height: 30%;
 	border-radius: 1%; 
 }
 @media screen and (max-width: 768px) {
@@ -481,14 +481,14 @@ html, body {
 }
 #cadastrarPerdiPet{
 	width: 60%;
-	height: 243%;
+	height: 199%;
 	background-color: #c3c3c340;
 	border-radius: 2%;
 	margin-left: 20%;
 	float: left;
 	margin-top: 2%;
 	padding: 2%;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
     #cadastrarPerdiPet{
@@ -515,7 +515,7 @@ html, body {
 	float: left;
 	margin-top: 2%;
 	padding: 2%;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
     #cadastrarDoaPet{
@@ -621,13 +621,13 @@ and (orientation: landscape)
 /* ---------------------------------------   INICIO DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
 #CadastroPetEncontrado{
 	width: 50%;
-	height: 207%;
+	height: 179%;
 	background-color: #c3c3c340;
 	border-radius: 2%;
 	margin-left: 25%;
 	margin-top: 2%;
 	padding: 2%;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
     #CadastroPetEncontrado{
