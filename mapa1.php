@@ -40,7 +40,7 @@
   <div id="explicacao">  
   
   <!-- Botão DOAÇÃO -->
-  <a class="waves-effect btn btnexp modal-trigger" style="width: 120%; margin-top: 4%; height: 60px;
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 120%; margin-top: -15%; height: 60px;
     line-height: 51px;" href="#modal1"><img class="material-icons left" src="img/iconeAzul.png" style="padding: 2%;">Doação</a>
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
