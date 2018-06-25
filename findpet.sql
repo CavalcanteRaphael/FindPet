@@ -1,4 +1,4 @@
-USE `Findpet`;
+USE `findpet`;
 
 CREATE TABLE `animal` (
   `idanimal` int(10) UNSIGNED NOT NULL,
