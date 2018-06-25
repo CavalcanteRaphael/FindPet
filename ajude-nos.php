@@ -12,6 +12,7 @@
     	<p>Carteira: 37PAe5p4PeWJ3hDkMdb2SKaEdkj7a8PuXp</p>
     </center>
 </section>
+<style margin-top: 20%;></style>
 <?php
     require 'footer.php';
 ?>
