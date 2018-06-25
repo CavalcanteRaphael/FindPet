@@ -40,7 +40,7 @@
   <div id="explicacao">  
   
   <!-- Botão DOAÇÃO -->
-  <a class="waves-effect btn btnexp modal-trigger" style="width: 20%; margin-top: 4%; height: 60px;
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 120%; margin-top: 4%; height: 60px;
     line-height: 51px;" href="#modal1"><img class="material-icons left" src="img/iconeAzul.png" style="padding: 2%;">Doação</a>
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
@@ -56,7 +56,7 @@
   <br/>
   
   <!-- Botão PERDIDOS -->
-  <a class="waves-effect btn btnexp modal-trigger" style="width: 20%;margin-bottom: 0%;height: 60px;
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 120%;margin-bottom: 0%;height: 60px;
     line-height: 51px;" href="#modal2"><img class="material-icons left" src="img/iconeVermelho.png" style="padding: 2%;">Perdidos</a>
   
   <div id="modal2" class="modal">
@@ -72,7 +72,7 @@
   <br/>
   
   <!-- Botão ENCONTRADOS -->
-  <a class="waves-effect btn btnexp modal-trigger" style="width: 20%;margin-bottom: 1%;height: 60px;
+  <a class="waves-effect btn btnexp modal-trigger" style="width: 120%;margin-bottom: 1%;height: 60px;
     line-height: 51px;"  href="#modal3"><img class="material-icons left" src="img/iconeVerde.png" style="padding: 2%;">Encontrados</a>
   
   <div id="modal3" class="modal">
