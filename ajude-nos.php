@@ -5,20 +5,23 @@
 <section>
     <center>
     
-    	<div id="ajude" class="hoverable">
+    <div id="ajude" class="hoverable">
     	
 		<h4>Faça a sua Doação</h4>
 		
- 		
  		<br/>
- 		<h6>O que é Lorem Ipsum?
-		Lorem Ipsum é simplesmente uma simulação<br/> de texto da indústria tipográfica e de impressos, e vem sendo utilizado<br/> desde o século XVI, quando um impressor desconhecido pegou uma<br/> bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem <br/>Ipsum sobreviveu não só a cinco séculos, <br/>como também ao salto para <br/> a editoração eletrônica, permanecendo essencialmente inalterado. Se <br/>popularizou na década de 60, quando a <br/>Letraset lançou decalques contendo passagens<br/> de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares<br/> de editoração <br/>eletrônica como Aldus PageMaker.</h6>
- 		
- 		
+
+ 		<h6>A sua ajuda é muito importante para continuarmos com o nosso serviço,</h6>  
+  	<h6>porque através dela nós conseguimos fazer uma família mais feliz!</h6>	
+
+  	<br/>
   		
-  		<br/>
-  		
-   		<h6>Faça sua doação para ajudar a manter o site FindPet no ar <br/>ajudando inúmeros pets e donos a se encontrarem!</h6><h6>TODOS OS CENTAVOS FAZEM A DIFERENÇA!</h6>
+ 		<h6>Faça sua doação para ajudar a manter o FindPet no ar,</h6> 
+    <h6>ajudando inúmeros pets e donos a se encontrarem!</h6>
+
+    </br>
+    
+    <h6>CADA CENTAVO FAZ A DIFERENÇA!</h6>
    		
    		<br/>
    		
