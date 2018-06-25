@@ -101,10 +101,10 @@ h5 {
 	background-color: #2f4f4f;
 }
 .indicator-item active{
-	background-color: #263238
+	background-color: #263238;
 }	
 .indicator-item{
-	background-color: #263238
+	background-color: #263238;
 }
 .titulomap{
     margin-top: 50px;
@@ -119,7 +119,7 @@ h5 {
 }
 @media screen and (max-width: 768px){
     #map22 {
-        width: 85%;
+        width: 84%;
         height: 54%;
         margin: 2% 8%;
     }
@@ -152,8 +152,6 @@ h5 {
 }
 
 /* ---------------------------------------   FIM DO INDEX.PHP ------------------------- */
-
-
 
 /* ---------------------------------------   INICIO DO FOOTER.PHP ------------------------- */
 .page-footer {
@@ -723,7 +721,7 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
-/* ---------------------------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
+/* ---------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ----------------------- */
 
 .side-nav .user-view, .side-nav .userView{
     background-color: #2f4f4f;
@@ -765,7 +763,11 @@ html, body {
 .modal-overlay {
     display: none;
 }
+/* ------------------- INICIO DO AJUDE - NOS -------------------- */
 
+.vakinha{
+    width: 15%;
+}
 #pagamentos{
     margin-top: 5%;
     margin-bottom: 2%;
@@ -778,7 +780,7 @@ html, body {
 	border-radius: 2%;
 	margin-top: 2%;
 	padding: 2%;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 @media screen and (max-width: 768px) {
     #ajude {
@@ -790,6 +792,8 @@ html, body {
         padding: 2%;
     }
 }
+
+/* ----------------- FIM DO AJUDE - NOS ----------------------- */
 
 .infoCard {
     width: 121%;
