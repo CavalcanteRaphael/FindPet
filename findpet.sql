@@ -1,4 +1,5 @@
-USE `findpet_dados`;
+CREATE DATABASE `findpet`;
+USE `findpet`;
 
 CREATE TABLE `animal` (
   `idanimal` int(10) UNSIGNED NOT NULL,
