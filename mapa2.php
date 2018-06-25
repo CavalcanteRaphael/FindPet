@@ -16,14 +16,20 @@
                     title: '<?php echo $row['idmapa'];?>'
                   });
 
-                  var infowindow = new google.maps.InfoWindow({
-                    content: 'Change the zoom level',
+                  var content<?php echo $row['idmapa']; ?> = '<div class="row""><div class="col s12"><img style="width: 320px; height: 320px;" src="img/<?php echo $row['img']; ?>"><?php if($row['nome'] == ''){ echo "";} else{ echo "<h5>".$row['nome']."</h5>";} ?><p><?php echo $row['descricao']; ?></p><form method="get" action="verMais.php"><input type="hidden" name="idanimal" value="<?php echo $row['idanimal'];?>"><input class="blue-grey darken-4 btn" type="submit" name="info" value="Ver Mais"></form></div></div>'
+
+                  var infowindow<?php echo $row['idmapa']; ?> = new google.maps.InfoWindow({
+                    content: content<?php echo $row['idmapa']; ?>,
                     position: {lat: <?php echo $row['latitude'];?>, lng: <?php echo $row['longitude'];?>}
                   });
 
                   marcador<?php echo $row['idmapa']; ?>.addListener('click', function() {
-                    infowindow.open(map, marcador<?php echo $row['idmapa']; ?>);
+                    infowindow<?php echo $row['idmapa']; ?>.open(map, marcador<?php echo $row['idmapa']; ?>);
                   });
+
+                  infowindow<?php echo $row['idmapa']; ?>.addListener('click', function() {
+                  infowindow<?php echo $row['idmapa']; ?>.close()
+                })
 
                   <?php }} ?>
 

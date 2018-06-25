@@ -566,6 +566,10 @@ and (orientation: landscape)
 #petsAdotar{
     max-width: 82%;
 }
+#verMais{
+    width: 82%;
+    margin-left: 35%;
+}
 /* ---------------------------------------   INICIO DO ADOTAR  ------------------------- */
 
 
@@ -623,4 +627,7 @@ html, body {
 }
 .modal-overlay {
     display: none;
+}
+.infoCard {
+    width: 121%;
 }

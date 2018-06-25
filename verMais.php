@@ -2,25 +2,11 @@
     session_start();
     require 'navbar.php';
 ?>
-
-<br/>
-<center><h4> Faça uma boa ação e adote um Pet. </h4></center>
-
-
-<?php if(!isset($_SESSION['id'])){ ?>
-    <br/>
-    <div id="adotarlogin"> 
-    <h6>Faça seu login para adotar.</h6>  <a class="blue-grey darken-4 btn" href="cadastro.php" ><i class="material-icons left">account_circle</i>Login</a>
-    </div>
-<?php } ?>
-
-<hr class="hr">
-<br/>
-    <div id="petsAdotar" class="row">
+	    <div id="verMais" class="row">
     <?php 
       require "ajax/conexao.php";
-
-      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.sexo, animal.descricao, animal.tipo, animal.nome, usuario.email FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.tipo ='doacao';");
+      $id = $_GET['idanimal'];
+      $stmt = $conn->query("SELECT animal.idanimal, animal.idusuario, animal.cor, animal.img, animal.porte, animal.especie, animal.raca, animal.sexo, animal.descricao, animal.tipo, animal.nome, usuario.email FROM animal INNER JOIN usuario ON animal.idusuario = usuario.idusuario WHERE animal.idanimal=$id;");
       $result = $stmt->fetchAll();
           $i = 1;
           if($result){
