@@ -729,11 +729,10 @@ html, body {
 .modal-overlay {
     display: none;
 }
-<<<<<<< HEAD
 
 #pagamentos{
-    MARGIN-TOP: 5%;
-    MARGIN-BOTTOM: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 #ajude{
@@ -745,8 +744,18 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
-=======
+@media screen and (max-width: 768px) {
+    #ajude {
+        width: 94%;
+        height: 207%;
+        background-color: #c3c3c340;
+        border-radius: 2%;
+        margin: 2% auto;
+        padding: 2%;
+    }
+}
+
 .infoCard {
     width: 121%;
 }
->>>>>>> eaa667bf6b651f45824ba1d1cdc71926f1b5cedb
+
