@@ -19,6 +19,7 @@
 			</div>
 			<div class="input-field col s12 ">
 				<label for="senha">Senha:</label><input type="password" required name="senha" id="login_senha"><br/>
+                <a href="recuperarSenha.php">Esqueceu sua senha?</a>
 			</div>
 			<input type="submit" value="login" class=" blue-grey darken-4 btn">
 		</form>

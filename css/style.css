@@ -153,8 +153,6 @@ h5 {
 
 /* ---------------------------------------   FIM DO INDEX.PHP ------------------------- */
 
-
-
 /* ---------------------------------------   INICIO DO FOOTER.PHP ------------------------- */
 .page-footer {
 	background-color: #2F4F4F;
@@ -286,6 +284,33 @@ textarea {
     float: left;
     margin-top: 3%;
 }
+#recuperaSenha{
+    width: 70%;
+    height: 300px;
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin-left: 15%;
+    float: left;
+    margin-top: 3%;
+}
+#alterarSenha{
+    width: 70%;
+    height: 300px;
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin-left: 15%;
+    float: left;
+    margin-top: 3%;
+}
+#confereCodigo{
+    width: 70%;
+    height: 300px;
+    background-color: #c3c3c340;
+    border-radius: 2%;
+    margin-left: 15%;
+    float: left;
+    margin-top: 3%;
+}
 @media only screen and (min-width: 901px) {
     #cadastrarUsuario{
     	height: 533px;
@@ -297,6 +322,15 @@ textarea {
     	margin-top: -28%;
     }
     #loginUsuario {
+        width: 27%;
+    }
+    #recuperaSenha {
+        width: 27%;
+    }
+    #alterarSenha {
+        width: 27%;
+    }
+    #confereCodigo {
         width: 27%;
     }
 }
@@ -687,7 +721,7 @@ html, body {
 	padding: 2%;
 	margin-bottom: 5%;
 }
-/* ---------------------------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ------------------------- */
+/* ---------------------   FIM DO CADASTRO DE PET ENCONTRADO -> ENCONTRADO.PHP  ----------------------- */
 
 .side-nav .user-view, .side-nav .userView{
     background-color: #2f4f4f;
@@ -707,6 +741,7 @@ html, body {
     width: 50%;
     height: 30%;
 }
+
 @media screen and (max-width: 768px) {
     .modal {
         width: 94%;
@@ -729,7 +764,11 @@ html, body {
 .modal-overlay {
     display: none;
 }
+/* ------------------- INICIO DO AJUDE - NOS -------------------- */
 
+.vakinha{
+    width: 15%;
+}
 #pagamentos{
     margin-top: 5%;
     margin-bottom: 2%;
@@ -754,6 +793,10 @@ html, body {
         padding: 2%;
     }
 }
+.hrajude{
+    width: 50%;
+}
+/* ----------------- FIM DO AJUDE - NOS ----------------------- */
 
 .infoCard {
     width: 121%;
