@@ -104,7 +104,6 @@
               preventScrolling: true
             });
           });
-
         </script>
 <?php
     require 'footer.php';

@@ -4,6 +4,12 @@
 <?php
     require 'navbar.php';
 ?>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
         <div id="cadastrarDoaPet" class="hoverable">
             <form id="cadastro" method="post">
                 <center>
@@ -214,6 +220,19 @@
             });
 
         });
+        $( function() {
+        var listaraca = [
+          "Pinscher",
+          "Schnauzer",
+          "Smoushond",
+          "Terrier Preto Russo",
+          "Pastor-alemão",
+          "Pastor-belga",
+        ];
+        $( "#raca" ).autocomplete({
+          source: listaraca
+    });
+  } );
         </script>
     </body>
 </html>
