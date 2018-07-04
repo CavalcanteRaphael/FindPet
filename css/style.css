@@ -23,13 +23,11 @@ h5 {
 #logo {
     padding: 10px 7px 5px 12px;
 }
-.brand-logo{
-	left: %;
-}
 
 .logo{
     width: 47px;
 	margin: 3px;
+    margin-left: 60px;
 }
 @media only screen and (min-width: 901px) {
     .logo{
@@ -50,6 +48,11 @@ h5 {
 #dropdown2 a{
 	color: #2F4F4F;
 }
+
+#dropdown2 li a {
+	text-align: center;
+}
+
 #avatarnavbar{
     float: right;
     margin: -34% -5% 0% 10%;
@@ -81,6 +84,18 @@ h5 {
     border-radius: 25px;
 	margin-top: 5%;
 }
+
+#dropdown4 a{
+	color: #2F4F4F;
+}
+
+#dropdown4{
+	width: 150px;
+}
+#dropdown4 li a {
+	text-align: center;
+}
+
 /*MOBILE*/.side-nav, background, white-text name {
     background-color: #fff;
 }
