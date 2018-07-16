@@ -148,7 +148,7 @@ h5 {
     margin: 7%;
     margin-top: 10%;
     display: inline-block;
-    font-size: 1vw;
+    font-size: 13px;
 }
 @media screen and (max-width: 768px){
     #ajudamapa{
