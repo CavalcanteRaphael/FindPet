@@ -15,7 +15,7 @@
 		<form id="login" method="post">
 			<center ><h5>Faça seu login</h5><div id="loginTitulo"></div></center>
 			<div class="input-field col s12 ">
-				<label for="email">E-mail:</label><input type="text" required name="email" id="login_email"><br/>
+				<label for="email">E-mail:</label><input type="email" class="validate" required name="email" id="login_email"><br/>
 			</div>
 			<div class="input-field col s12 ">
 				<label for="senha">Senha:</label><input type="password" required name="senha" id="login_senha"><br/>
@@ -45,7 +45,7 @@
 				<label for="nome">Nome Completo:</label><input type="text" name="nome" id="nome"><br/>
 			</div>
 			<div class="input-field col s12">
-				<label for="email">E-mail:</label><input type="text" name="email" id="email"><br/>
+				<label for="email">E-mail:</label><input type="email" class="validate" name="email" id="email"><br/>
 			</div>
 			<div class="input-field col s12">
 				<label for="telefone">Telefone:</label><input type="text" name="telefone" id="telefone"><br/>
